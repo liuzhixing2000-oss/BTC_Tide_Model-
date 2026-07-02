@@ -210,4 +210,5 @@ else:
 
 
 if __name__ == "__main__":
+    send_telegram_message("✅ BTC Tide Watch Telegram test message")
     check_signal()
