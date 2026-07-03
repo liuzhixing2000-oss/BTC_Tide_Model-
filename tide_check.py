@@ -157,7 +157,7 @@ def check_signal() -> None:
     print("Bars since signal:", bars_since_signal)
     print("Hours since signal:", hours_since_signal)
 
-        if bars_since_signal <= 1:
+            if bars_since_signal <= 1:
         status = "FRESH_SIGNAL"
         print("Status:", status)
         print("这是刚出现的信号，可以作为 forward test 候选入场。")
