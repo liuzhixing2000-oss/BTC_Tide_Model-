@@ -1,12 +1,12 @@
+import os
+import requests
 import yfinance as yf
 import pandas as pd
 import numpy as np
 from datetime import datetime, timezone
-import os
-import requests
 
 
-SYMBOL = "BTC-USD"
+SYMBOLS = ["BTC-USD", "ETH-USD"]
 
 LOOKBACK_BARS = 24          # 6h on 15m
 VOLUME_LOOKBACK = 24
@@ -14,6 +14,7 @@ VOLUME_MULTIPLIER = 1.5
 LOWER_WICK_THRESHOLD = 0.35
 CLUSTER_GAP_BARS = 72       # 18h on 15m
 HOLD_BARS = 24              # 6h on 15m
+
 
 def send_telegram_message(text: str) -> None:
     token = os.getenv("TELEGRAM_BOT_TOKEN")
@@ -79,6 +80,7 @@ def download_data(symbol: str, interval: str, period: str) -> pd.DataFrame:
 
 def build_1h_regime(df1h: pd.DataFrame) -> pd.DataFrame:
     df1h = df1h.copy()
+
     df1h["ma50"] = df1h["close"].rolling(50).mean()
     df1h["ma200"] = df1h["close"].rolling(200).mean()
 
@@ -91,9 +93,13 @@ def build_1h_regime(df1h: pd.DataFrame) -> pd.DataFrame:
     return df1h[["open_time", "ma50", "ma200", "regime_1h"]]
 
 
-def check_signal() -> None:
-    df1h = download_data(SYMBOL, "1h", "730d")
-    df15 = download_data(SYMBOL, "15m", "60d")
+def check_signal_for_symbol(symbol: str) -> None:
+    print("=" * 70)
+    print(f"Checking symbol: {symbol}")
+    print("=" * 70)
+
+    df1h = download_data(symbol, "1h", "730d")
+    df15 = download_data(symbol, "15m", "60d")
 
     regime = build_1h_regime(df1h)
 
@@ -112,7 +118,12 @@ def check_signal() -> None:
 
     df["lower_wick"] = df[["open", "close"]].min(axis=1) - df["low"]
     df["candle_range"] = df["high"] - df["low"]
-    df["lower_wick_ratio"] = df["lower_wick"] / df["candle_range"]
+
+    df["lower_wick_ratio"] = np.where(
+        df["candle_range"] > 0,
+        df["lower_wick"] / df["candle_range"],
+        0,
+    )
 
     df["strong_bullish_sweep_15m"] = (
         (df["low"] < df["rolling_low"])
@@ -127,6 +138,8 @@ def check_signal() -> None:
     )
 
     latest_row = df.iloc[-1]
+    latest_idx = df.index[-1]
+
     recent = df.tail(CLUSTER_GAP_BARS).copy()
     recent_signals = recent[recent["long_signal"]].copy()
 
@@ -137,17 +150,17 @@ def check_signal() -> None:
     print("Recent signal count in last 18h:", len(recent_signals))
 
     if len(recent_signals) == 0:
-        print("Status: NO_SIGNAL")
+        print(f"Status for {symbol}: NO_SIGNAL")
         return
 
     last_signal = recent_signals.iloc[-1]
     signal_idx = last_signal.name
-    latest_idx = df.index[-1]
+
     bars_since_signal = latest_idx - signal_idx
     hours_since_signal = bars_since_signal * 15 / 60
 
     print("")
-    print("Latest signal:")
+    print(f"Latest signal for {symbol}:")
     print("Signal time UTC:", last_signal["open_time"])
     print("Signal close / model entry:", last_signal["close"])
     print("Rolling low:", last_signal["rolling_low"])
@@ -163,7 +176,7 @@ def check_signal() -> None:
         print("这是刚出现的信号，可以作为 forward test 候选入场。")
 
         message = f"""
-🚨 BTC Tide Model Signal
+🚨 Tide Model Signal: {symbol}
 
 Status: {status}
 
@@ -179,7 +192,10 @@ Volume spike: {bool(last_signal["volume_spike"])}
 
 Hours since signal: {hours_since_signal:.2f}
 
-Note: Fresh forward-test candidate. Not financial advice.
+Note:
+{symbol} liquidity sweep signal.
+Fresh forward-test candidate.
+Not financial advice.
 """
         send_telegram_message(message)
 
@@ -189,7 +205,7 @@ Note: Fresh forward-test candidate. Not financial advice.
         print("信号仍在 6 小时模型窗口内，但不是刚出现。实际交易不建议追，只记录观察。")
 
         message = f"""
-⚠️ BTC Tide Model Active Signal
+⚠️ Tide Model Active Signal: {symbol}
 
 Status: {status}
 
@@ -200,7 +216,10 @@ Latest close: {latest_row["close"]:.2f}
 
 Hours since signal: {hours_since_signal:.2f}
 
-Note: Signal is still inside 6h model window, but not fresh. Do not chase; record only.
+Note:
+Signal is still inside 6h model window, but not fresh.
+Do not chase; record only.
+Not financial advice.
 """
         send_telegram_message(message)
 
@@ -209,5 +228,21 @@ Note: Signal is still inside 6h model window, but not fresh. Do not chase; recor
         print("信号已经超过 6 小时模型窗口，不应追。只能复盘。")
 
 
+def main() -> None:
+    for symbol in SYMBOLS:
+        try:
+            check_signal_for_symbol(symbol)
+        except Exception as e:
+            print(f"Error while checking {symbol}: {e}")
+
+            error_message = f"""
+❌ Tide Model Error: {symbol}
+
+Error:
+{e}
+"""
+            send_telegram_message(error_message)
+
+
 if __name__ == "__main__":
-    check_signal()
+    main()
