@@ -157,12 +157,12 @@ def check_signal() -> None:
     print("Bars since signal:", bars_since_signal)
     print("Hours since signal:", hours_since_signal)
 
-    if bars_since_signal <= 1:
-    status = "FRESH_SIGNAL"
-    print("Status:", status)
-    print("这是刚出现的信号，可以作为 forward test 候选入场。")
+        if bars_since_signal <= 1:
+        status = "FRESH_SIGNAL"
+        print("Status:", status)
+        print("这是刚出现的信号，可以作为 forward test 候选入场。")
 
-    message = f"""
+        message = f"""
 🚨 BTC Tide Model Signal
 
 Status: {status}
@@ -181,14 +181,14 @@ Hours since signal: {hours_since_signal:.2f}
 
 Note: Fresh forward-test candidate. Not financial advice.
 """
-    send_telegram_message(message)
+        send_telegram_message(message)
 
-elif bars_since_signal <= HOLD_BARS:
-    status = "ACTIVE_BUT_LATE"
-    print("Status:", status)
-    print("信号仍在 6 小时模型窗口内，但不是刚出现。实际交易不建议追，只记录观察。")
+    elif bars_since_signal <= HOLD_BARS:
+        status = "ACTIVE_BUT_LATE"
+        print("Status:", status)
+        print("信号仍在 6 小时模型窗口内，但不是刚出现。实际交易不建议追，只记录观察。")
 
-    message = f"""
+        message = f"""
 ⚠️ BTC Tide Model Active Signal
 
 Status: {status}
@@ -202,11 +202,11 @@ Hours since signal: {hours_since_signal:.2f}
 
 Note: Signal is still inside 6h model window, but not fresh. Do not chase; record only.
 """
-    send_telegram_message(message)
+        send_telegram_message(message)
 
-else:
-    print("Status: EXPIRED_SIGNAL")
-    print("信号已经超过 6 小时模型窗口，不应追。只能复盘。")
+    else:
+        print("Status: EXPIRED_SIGNAL")
+        print("信号已经超过 6 小时模型窗口，不应追。只能复盘。")
 
 
 if __name__ == "__main__":
