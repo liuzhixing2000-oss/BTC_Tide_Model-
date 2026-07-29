@@ -306,6 +306,21 @@ def run_symbol(symbol: str) -> tuple[pd.DataFrame, pd.DataFrame]:
         "cooldown_first_6h": select_cooldown_first(df),
         "cluster_last_18h": select_cluster_last(df),
     }
+        print("\n------------------------------")
+    print(f"{symbol} SIGNAL COUNTS")
+    print("------------------------------")
+    print(
+        f"Raw signals: "
+        f"{len(modes['raw_all_signals'])}"
+    )
+    print(
+        f"Cooldown first 6h: "
+        f"{len(modes['cooldown_first_6h'])}"
+    )
+    print(
+        f"Cluster last 18h: "
+        f"{len(modes['cluster_last_18h'])}"
+    )
 
     summaries = []
     all_trades = []
