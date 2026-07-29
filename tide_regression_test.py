@@ -306,7 +306,7 @@ def run_symbol(symbol: str) -> tuple[pd.DataFrame, pd.DataFrame]:
         "cooldown_first_6h": select_cooldown_first(df),
         "cluster_last_18h": select_cluster_last(df),
     }
-        print("\n------------------------------")
+    print("\n------------------------------")
     print(f"{symbol} SIGNAL COUNTS")
     print("------------------------------")
     print(
