@@ -16,12 +16,13 @@ from pybit.unified_trading import HTTP, WebSocket
 
 SYMBOLS = ["BTCUSDT", "ETHUSDT"]
 
-LOOKBACK_BARS = 24          # 过去6小时，15m × 24
+LOOKBACK_BARS = 24
 VOLUME_LOOKBACK = 24
 VOLUME_MULTIPLIER = 1.5
 LOWER_WICK_THRESHOLD = 0.35
-CLUSTER_GAP_BARS = 72       # 18小时
-FRESH_MINUTES = 30
+
+# 仅在15m K线收盘前最后3分钟发送预警
+PRE_ALERT_WINDOW_MINUTES = 3
 
 STATE_FILE = "alert_state.json"
 
@@ -35,26 +36,35 @@ def send_telegram_message(text: str) -> None:
     chat_id = os.getenv("TELEGRAM_CHAT_ID")
 
     if not token or not chat_id:
-        print("Telegram secrets are missing.")
+        print("Telegram secrets are missing.", flush=True)
         return
 
-    response = requests.post(
-        f"https://api.telegram.org/bot{token}/sendMessage",
-        data={
-            "chat_id": chat_id,
-            "text": text,
-        },
-        timeout=20,
-    )
+    try:
+        response = requests.post(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            data={
+                "chat_id": chat_id,
+                "text": text,
+            },
+            timeout=20,
+        )
 
-    if response.status_code == 200:
-        print("Telegram message sent.")
-    else:
-        print("Telegram send failed:", response.text)
+        if response.status_code == 200:
+            print("Telegram message sent.", flush=True)
+        else:
+            print(
+                "Telegram send failed:",
+                response.status_code,
+                response.text,
+                flush=True,
+            )
+
+    except Exception as error:
+        print("Telegram request error:", error, flush=True)
 
 
 # ============================================================
-# Alert state — same signal only sends once
+# Alert state
 # ============================================================
 
 state_lock = threading.Lock()
@@ -72,11 +82,26 @@ def load_alert_state() -> dict:
 
 
 def save_alert_state(state: dict) -> None:
-    with open(STATE_FILE, "w", encoding="utf-8") as file:
-        json.dump(state, file, indent=2)
+    try:
+        with open(STATE_FILE, "w", encoding="utf-8") as file:
+            json.dump(state, file, indent=2)
+    except Exception as error:
+        print("Could not save alert state:", error, flush=True)
 
 
 alert_state = load_alert_state()
+
+
+def already_alerted(symbol: str, alert_type: str, signal_key: str) -> bool:
+    with state_lock:
+        symbol_state = alert_state.setdefault(symbol, {})
+
+        if symbol_state.get(alert_type) == signal_key:
+            return True
+
+        symbol_state[alert_type] = signal_key
+        save_alert_state(alert_state)
+        return False
 
 
 # ============================================================
@@ -101,14 +126,20 @@ def get_historical_klines(
     rows = response["result"]["list"]
 
     if not rows:
-        raise RuntimeError(f"No historical data returned for {symbol} {interval}")
+        raise RuntimeError(
+            f"No historical data returned for {symbol} {interval}"
+        )
 
     parsed = []
 
     for row in rows:
         parsed.append(
             {
-                "open_time": pd.to_datetime(int(row[0]), unit="ms", utc=True),
+                "open_time": pd.to_datetime(
+                    int(row[0]),
+                    unit="ms",
+                    utc=True,
+                ),
                 "open": float(row[1]),
                 "high": float(row[2]),
                 "low": float(row[3]),
@@ -117,11 +148,12 @@ def get_historical_klines(
             }
         )
 
-    df = pd.DataFrame(parsed)
-    df = df.sort_values("open_time").drop_duplicates("open_time")
-    df = df.reset_index(drop=True)
-
-    return df
+    return (
+        pd.DataFrame(parsed)
+        .sort_values("open_time")
+        .drop_duplicates("open_time")
+        .reset_index(drop=True)
+    )
 
 
 # ============================================================
@@ -140,33 +172,85 @@ market_data = {
 
 
 # ============================================================
-# Model
+# Data update
 # ============================================================
 
-def calculate_signal(symbol: str) -> None:
+def update_candle(
+    symbol: str,
+    interval: str,
+    candle: dict,
+) -> None:
+    row = {
+        "open_time": pd.to_datetime(
+            int(candle["start"]),
+            unit="ms",
+            utc=True,
+        ),
+        "open": float(candle["open"]),
+        "high": float(candle["high"]),
+        "low": float(candle["low"]),
+        "close": float(candle["close"]),
+        "volume": float(candle["volume"]),
+    }
+
+    with data_lock:
+        df = market_data[symbol][interval]
+
+        df = df[df["open_time"] != row["open_time"]]
+
+        df = pd.concat(
+            [df, pd.DataFrame([row])],
+            ignore_index=True,
+        )
+
+        market_data[symbol][interval] = (
+            df.sort_values("open_time")
+            .drop_duplicates("open_time")
+            .tail(400)
+            .reset_index(drop=True)
+        )
+
+
+# ============================================================
+# Model calculation
+# ============================================================
+
+def build_model_frame(symbol: str) -> pd.DataFrame:
     with data_lock:
         df15 = market_data[symbol]["15"].copy()
         df1h = market_data[symbol]["60"].copy()
 
-    if len(df15) < 50 or len(df1h) < 210:
-        print(f"{symbol}: insufficient data")
-        return
+    now = pd.Timestamp.now(tz="UTC")
 
-    # 1h regime
-    df1h["ma50"] = df1h["close"].rolling(50).mean()
-    df1h["ma200"] = df1h["close"].rolling(200).mean()
+    # 1h趋势只使用已经收盘的1h K线，避免趋势状态盘中重绘
+    df1h["close_time"] = (
+        df1h["open_time"] + pd.Timedelta(hours=1)
+    )
 
-    df1h["regime_1h"] = np.where(
-        df1h["ma50"] < df1h["ma200"],
+    closed_1h = df1h[df1h["close_time"] <= now].copy()
+
+    if len(df15) < 50 or len(closed_1h) < 210:
+        raise RuntimeError(f"{symbol}: insufficient historical data")
+
+    closed_1h["ma50"] = (
+        closed_1h["close"].rolling(50).mean()
+    )
+
+    closed_1h["ma200"] = (
+        closed_1h["close"].rolling(200).mean()
+    )
+
+    closed_1h["regime_1h"] = np.where(
+        closed_1h["ma50"] < closed_1h["ma200"],
         "downtrend",
         np.where(
-            df1h["ma50"] > df1h["ma200"],
+            closed_1h["ma50"] > closed_1h["ma200"],
             "uptrend",
             "range",
         ),
     )
 
-    regime = df1h[
+    regime = closed_1h[
         ["open_time", "regime_1h", "ma50", "ma200"]
     ].sort_values("open_time")
 
@@ -198,8 +282,14 @@ def calculate_signal(symbol: str) -> None:
         .shift(1)
     )
 
+    df["volume_multiple"] = np.where(
+        df["avg_volume"] > 0,
+        df["volume"] / df["avg_volume"],
+        0,
+    )
+
     df["volume_spike"] = (
-        df["volume"] > df["avg_volume"] * VOLUME_MULTIPLIER
+        df["volume_multiple"] > VOLUME_MULTIPLIER
     )
 
     df["lower_wick"] = (
@@ -214,54 +304,74 @@ def calculate_signal(symbol: str) -> None:
         0,
     )
 
+    df["break_rolling_low"] = (
+        df["low"] < df["rolling_low"]
+    )
+
+    df["reclaim_rolling_low"] = (
+        df["close"] > df["rolling_low"]
+    )
+
     df["long_signal"] = (
         (df["regime_1h"] == "downtrend")
-        & (df["low"] < df["rolling_low"])
-        & (df["close"] > df["rolling_low"])
+        & df["break_rolling_low"]
+        & df["reclaim_rolling_low"]
         & (df["lower_wick_ratio"] > LOWER_WICK_THRESHOLD)
-        & (df["volume_spike"])
+        & df["volume_spike"]
     )
 
-    latest = df.iloc[-1]
+    return df
 
-    print(
-        f'{symbol} | {latest["open_time"]} | '
-        f'close={latest["close"]:.2f} | '
-        f'regime={latest["regime_1h"]} | '
-        f'signal={bool(latest["long_signal"])}'
+
+def send_signal_alert(
+    symbol: str,
+    latest: pd.Series,
+    alert_type: str,
+    minutes_to_close: float,
+) -> None:
+    candle_open_time = latest["open_time"]
+    candle_close_time = (
+        candle_open_time + pd.Timedelta(minutes=15)
     )
 
-    if not bool(latest["long_signal"]):
-        return
+    signal_key = candle_open_time.isoformat()
 
-    signal_time = latest["open_time"]
-    signal_key = signal_time.isoformat()
-
-    now = pd.Timestamp.now(tz="UTC")
-    minutes_since_signal = (
-        now - signal_time
-    ).total_seconds() / 60
-
-    if minutes_since_signal > FRESH_MINUTES:
+    if already_alerted(symbol, alert_type, signal_key):
         print(
-            f"{symbol}: signal is already late "
-            f"({minutes_since_signal:.1f} minutes). No alert."
+            f"{symbol}: duplicate {alert_type}; skipped.",
+            flush=True,
         )
         return
 
-    with state_lock:
-        if alert_state.get(symbol) == signal_key:
-            print(f"{symbol}: duplicate signal, no alert.")
-            return
+    if alert_type == "pre":
+        title = f"⚠️ Tide Model PRE-SIGNAL: {symbol}"
+        explanation = (
+            "Conditions are currently satisfied, but the "
+            "15m candle has not closed yet.\n"
+            "This signal may disappear before candle close."
+        )
+    else:
+        title = f"🚨 Tide Model CONFIRMED SIGNAL: {symbol}"
+        explanation = (
+            "The 15m candle has formally closed and the "
+            "signal remains valid."
+        )
 
-        alert_state[symbol] = signal_key
-        save_alert_state(alert_state)
+    if symbol == "BTCUSDT":
+        exit_plan = "BTC exit plan: fixed 6 hours."
+    else:
+        exit_plan = (
+            "ETH exit plan: rolling-high target, "
+            "otherwise maximum 12 hours."
+        )
 
     message = f"""
-🚨 Tide Model FRESH SIGNAL: {symbol}
+{title}
 
-Signal time UTC: {signal_time}
-Entry price: {latest["close"]:.2f}
+Candle open UTC: {candle_open_time}
+Candle close UTC: {candle_close_time}
+
+Current / entry price: {latest["close"]:.2f}
 1h regime: {latest["regime_1h"]}
 
 Rolling low: {latest["rolling_low"]:.2f}
@@ -269,65 +379,82 @@ Rolling high: {latest["rolling_high"]:.2f}
 Signal low: {latest["low"]:.2f}
 
 Lower wick ratio: {latest["lower_wick_ratio"]:.4f}
-Volume multiple: {latest["volume"] / latest["avg_volume"]:.2f}
+Volume multiple: {latest["volume_multiple"]:.2f}
 
-Signal age: {minutes_since_signal:.1f} minutes
+Minutes to candle close: {minutes_to_close:.1f}
 
-BTC exit plan:
-Fixed 6 hours.
+{explanation}
 
-ETH exit plan:
-Rolling high target or maximum 12 hours.
+{exit_plan}
 
-Fresh signal only. Do not chase late entries.
+Do not chase delayed signals.
 """
 
     send_telegram_message(message)
 
 
-# ============================================================
-# Update closed candles
-# ============================================================
-
-def update_closed_candle(
+def calculate_signal(
     symbol: str,
-    interval: str,
-    candle: dict,
+    candle_confirmed: bool,
 ) -> None:
-    row = {
-        "open_time": pd.to_datetime(
-            int(candle["start"]),
-            unit="ms",
-            utc=True,
+    df = build_model_frame(symbol)
+    latest = df.iloc[-1]
+
+    now = pd.Timestamp.now(tz="UTC")
+    candle_close_time = (
+        latest["open_time"] + pd.Timedelta(minutes=15)
+    )
+
+    minutes_to_close = (
+        candle_close_time - now
+    ).total_seconds() / 60
+
+    conditions = {
+        "downtrend": latest["regime_1h"] == "downtrend",
+        "break_low": bool(latest["break_rolling_low"]),
+        "reclaim": bool(latest["reclaim_rolling_low"]),
+        "wick": (
+            latest["lower_wick_ratio"]
+            > LOWER_WICK_THRESHOLD
         ),
-        "open": float(candle["open"]),
-        "high": float(candle["high"]),
-        "low": float(candle["low"]),
-        "close": float(candle["close"]),
-        "volume": float(candle["volume"]),
+        "volume": bool(latest["volume_spike"]),
     }
 
-    with data_lock:
-        df = market_data[symbol][interval]
+    print(
+        f'{symbol} | {latest["open_time"]} | '
+        f'close={latest["close"]:.2f} | '
+        f'confirmed={candle_confirmed} | '
+        f'regime={latest["regime_1h"]} | '
+        f'conditions={conditions} | '
+        f'minutes_to_close={minutes_to_close:.2f}',
+        flush=True,
+    )
 
-        df = df[df["open_time"] != row["open_time"]]
-        df = pd.concat(
-            [df, pd.DataFrame([row])],
-            ignore_index=True,
+    if not bool(latest["long_signal"]):
+        return
+
+    # 正式收盘确认
+    if candle_confirmed:
+        send_signal_alert(
+            symbol=symbol,
+            latest=latest,
+            alert_type="confirmed",
+            minutes_to_close=0,
         )
+        return
 
-        df = (
-            df.sort_values("open_time")
-            .drop_duplicates("open_time")
-            .tail(400)
-            .reset_index(drop=True)
+    # 盘中预警：只在收盘前最后3分钟发送
+    if 0 <= minutes_to_close <= PRE_ALERT_WINDOW_MINUTES:
+        send_signal_alert(
+            symbol=symbol,
+            latest=latest,
+            alert_type="pre",
+            minutes_to_close=minutes_to_close,
         )
-
-        market_data[symbol][interval] = df
 
 
 # ============================================================
-# WebSocket callbacks
+# WebSocket callback
 # ============================================================
 
 def make_callback(symbol: str, interval: str):
@@ -336,38 +463,52 @@ def make_callback(symbol: str, interval: str):
             candles = message.get("data", [])
 
             for candle in candles:
-                # Only use a formally closed candle
-                if not candle.get("confirm", False):
-                    continue
-
-                update_closed_candle(symbol, interval, candle)
-
-                print(
-                    f"Closed candle received: "
-                    f"{symbol} {interval}m "
-                    f'{candle["start"]}'
+                confirmed = bool(
+                    candle.get("confirm", False)
                 )
 
-                # Recalculate after each closed 15m candle
-                if interval == "15":
-                    calculate_signal(symbol)
+                # 无论是否收盘，都更新当前K线
+                update_candle(
+                    symbol=symbol,
+                    interval=interval,
+                    candle=candle,
+                )
+
+                # 1h只负责更新趋势数据
+                if interval == "60":
+                    if confirmed:
+                        print(
+                            f"Closed 1h candle: {symbol}",
+                            flush=True,
+                        )
+                    continue
+
+                # 15m每次推送都重新计算
+                calculate_signal(
+                    symbol=symbol,
+                    candle_confirmed=confirmed,
+                )
 
         except Exception as error:
             print(
-                f"Callback error for {symbol} "
-                f"{interval}: {error}"
+                f"Callback error: {symbol} {interval}: {error}",
+                flush=True,
             )
 
     return callback
 
 
 # ============================================================
-# Start websocket
+# Start monitor
 # ============================================================
 
 def main() -> None:
-    print("Starting Tide Model real-time monitor...")
-    print("Symbols:", SYMBOLS)
+    print(
+        "Starting Tide Model V2.1 real-time monitor...",
+        flush=True,
+    )
+
+    print("Symbols:", SYMBOLS, flush=True)
 
     websocket = WebSocket(
         testnet=False,
@@ -388,10 +529,18 @@ def main() -> None:
         )
 
     send_telegram_message(
-        "✅ Tide Model real-time monitor started."
+        "✅ Tide Model V2.1 monitor started.\n\n"
+        "BTCUSDT + ETHUSDT\n"
+        "PRE_SIGNAL: last 3 minutes before 15m close\n"
+        "CONFIRMED: after formal 15m close"
     )
 
     while True:
+        print(
+            "Heartbeat:",
+            datetime.now(timezone.utc).isoformat(),
+            flush=True,
+        )
         time.sleep(60)
 
 
