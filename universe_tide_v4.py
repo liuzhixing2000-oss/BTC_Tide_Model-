@@ -14,7 +14,7 @@ from matplotlib.figure import Figure
 from pybit.unified_trading import HTTP, WebSocket
 
 # ============================================================
-# Tide Universe V4 — two-stage robust screening
+# Tide Universe V4.1 — scored signals + regime-aware watchlist
 # ============================================================
 
 # ---------- Universe ----------
@@ -49,7 +49,9 @@ MAX_ALLOWED_DRAWDOWN = -0.12
 
 # ---------- Realtime ----------
 PRE_ALERT_WINDOW_MINUTES = 3
-RESCAN_HOURS = 168  # weekly; reduces Railway cost and selection churn
+FULL_RESCAN_HOURS = 168      # full 180-day backtest once per week
+WATCHLIST_REFRESH_HOURS = 6   # lightweight regime-aware watchlist refresh
+BASE_MARGIN_USDT = float(os.getenv("BASE_MARGIN_USDT", "200"))
 
 # ---------- Output ----------
 STAGE1_CSV = Path("stage1_results.csv")
@@ -71,6 +73,7 @@ http = HTTP(testnet=False)
 market_data: dict[str, dict[str, pd.DataFrame]] = {}
 data_lock = threading.Lock()
 state_lock = threading.Lock()
+live_metadata: dict[str, dict] = {}
 
 
 def log(*parts) -> None:
@@ -436,6 +439,152 @@ def robust_stage2_score(results: pd.DataFrame) -> pd.DataFrame:
     )
 
 
+
+# ============================================================
+# Live ranking / scoring helpers
+# ============================================================
+
+def current_1h_regime(symbol: str) -> str:
+    """Return the latest closed-1h MA50/MA200 regime."""
+    df1h = fetch_klines(symbol, "60", 14).copy()
+    now = pd.Timestamp.now(tz="UTC")
+    df1h["close_time"] = df1h["open_time"] + pd.Timedelta(hours=1)
+    closed = df1h[df1h["close_time"] <= now].copy()
+    if len(closed) < 200:
+        return "unknown"
+    ma50 = float(closed["close"].tail(50).mean())
+    ma200 = float(closed["close"].tail(200).mean())
+    if ma50 < ma200:
+        return "downtrend"
+    if ma50 > ma200:
+        return "uptrend"
+    return "range"
+
+
+def select_current_watchlist(results: pd.DataFrame) -> list[str]:
+    """Select the highest-ranked eligible coins that are in a live 1h downtrend.
+
+    This is deliberately lightweight: it reuses the weekly stage-2 backtest and only
+    refreshes the current 1h regime every WATCHLIST_REFRESH_HOURS.
+    """
+    global live_metadata
+    live_metadata = {}
+
+    pool = results.loc[results["eligible"]].copy()
+    pool = pool.sort_values(
+        ["score", "validation_return", "total_return"],
+        ascending=[False, False, False],
+        na_position="last",
+    )
+
+    selected: list[str] = []
+    status_lines = []
+    for row in pool.itertuples(index=False):
+        if len(selected) >= TOP_N_TO_MONITOR:
+            break
+        try:
+            regime = current_1h_regime(row.symbol)
+        except Exception as exc:
+            log("Regime check failed", row.symbol, repr(exc))
+            regime = "unknown"
+
+        status_lines.append(f"{row.symbol}: {regime}")
+        if regime != "downtrend":
+            continue
+
+        selected.append(row.symbol)
+        live_metadata[row.symbol] = {
+            "historical_score": None if pd.isna(row.score) else float(row.score),
+            "validation_return": float(row.validation_return),
+            "validation_trades": int(row.validation_trades),
+            "win_rate": float(row.win_rate),
+            "median_return": float(row.median_return),
+            "max_drawdown": float(row.max_drawdown),
+            "live_regime": regime,
+        }
+        time.sleep(0.08)
+
+    save_json(SELECTED_JSON, {
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "selected": selected,
+        "refresh_hours": WATCHLIST_REFRESH_HOURS,
+        "selection_rule": "eligible stage-2 coins currently in 1h downtrend",
+    })
+
+    send_tg(
+        "🔄 Tide V4.1 watchlist refreshed\n\n"
+        f"Current downtrend symbols: {len(selected)}\n"
+        + ("\n".join(selected) if selected else "No eligible coin is currently in a 1h downtrend.")
+    )
+    log("Regime checks:", " | ".join(status_lines))
+    return selected
+
+
+def signal_score(latest: pd.Series, historical_score: float | None) -> float:
+    """Continuous 0-100 score; it does not delay or reject an otherwise valid signal."""
+    hist = 0.50 if historical_score is None or np.isnan(historical_score) else historical_score
+
+    wick_norm = np.clip(
+        (float(latest["lower_wick_ratio"]) - LOWER_WICK_THRESHOLD) /
+        (0.95 - LOWER_WICK_THRESHOLD),
+        0,
+        1,
+    )
+    volume_norm = np.clip(
+        (float(latest["volume_multiple"]) - VOLUME_MULTIPLIER) /
+        (4.0 - VOLUME_MULTIPLIER),
+        0,
+        1,
+    )
+    candle_range = max(float(latest["high"] - latest["low"]), 1e-12)
+    close_position = np.clip(
+        (float(latest["close"] - latest["low"])) / candle_range,
+        0,
+        1,
+    )
+
+    score = (
+        40.0 * np.clip(hist, 0, 1)
+        + 25.0 * wick_norm
+        + 20.0 * volume_norm
+        + 15.0 * close_position
+    )
+    return round(float(score), 1)
+
+
+def risk_tier(score: float) -> tuple[str, float]:
+    """Research sizing tier. 1R equals BASE_MARGIN_USDT margin, not account risk."""
+    if score >= 85:
+        return "1.00R", 1.00
+    if score >= 75:
+        return "0.75R", 0.75
+    if score >= 65:
+        return "0.50R", 0.50
+    return "0.25R", 0.25
+
+
+def cache_is_fresh(path: Path, max_age_hours: float) -> bool:
+    if not path.exists():
+        return False
+    age_seconds = time.time() - path.stat().st_mtime
+    return age_seconds <= max_age_hours * 3600
+
+
+def load_or_run_stage2() -> pd.DataFrame:
+    if cache_is_fresh(STAGE2_CSV, FULL_RESCAN_HOURS):
+        try:
+            cached = pd.read_csv(STAGE2_CSV)
+            if not cached.empty and "eligible" in cached.columns:
+                cached["eligible"] = cached["eligible"].astype(str).str.lower().eq("true")
+                log("Using cached weekly stage-2 results")
+                return cached
+        except Exception as exc:
+            log("Could not load cached stage-2 results", repr(exc))
+
+    log("Weekly full rescan is due")
+    _, stage2 = scan_and_select()
+    return stage2
+
 # ============================================================
 # Visual report
 # ============================================================
@@ -634,6 +783,19 @@ def send_live_alert(symbol: str, latest: pd.Series, alert_type: str, minutes_to_
         else "The 15m candle closed and the setup remains valid."
     )
     candle_close = latest["open_time"] + pd.Timedelta(minutes=15)
+
+    meta = live_metadata.get(symbol, {})
+    hist_score = meta.get("historical_score")
+    score = signal_score(latest, hist_score)
+    tier_label, tier_multiplier = risk_tier(score)
+    suggested_margin = BASE_MARGIN_USDT * tier_multiplier
+
+    history_text = "n/a" if hist_score is None else f"{hist_score:.3f}"
+    validation_text = (
+        "n/a" if "validation_return" not in meta
+        else f"{meta['validation_return']:.1%}"
+    )
+
     send_tg(f"""{title}
 
 Candle close UTC: {candle_close}
@@ -646,9 +808,16 @@ Lower wick ratio: {latest['lower_wick_ratio']:.4f}
 Volume multiple: {latest['volume_multiple']:.2f}
 Minutes to close: {max(0, minutes_to_close):.1f}
 
+Signal score: {score:.1f}/100
+Historical score: {history_text}
+Validation return: {validation_text}
+Research position tier: {tier_label}
+Example margin at 1R={BASE_MARGIN_USDT:.0f} USDT: {suggested_margin:.0f} USDT
+
 Research exit: fixed 6 hours.
 {note}
-Do not chase delayed alerts.""")
+Do not chase delayed alerts.
+The score changes sizing only; it does not guarantee profit.""")
 
 
 def calculate_live_signal(symbol: str, confirmed: bool) -> None:
@@ -687,9 +856,16 @@ def make_callback(symbol: str, interval: str):
 
 def start_monitor(symbols: list[str]) -> None:
     if not symbols:
-        send_tg("⚠️ V4 found no robust symbol. It will rescan in one week.")
+        send_tg(
+            "⚠️ V4.1 found no eligible coin currently in a 1h downtrend.\n"
+            f"The watchlist will refresh again in {WATCHLIST_REFRESH_HOURS} hours."
+        )
+        started = time.monotonic()
         while True:
-            time.sleep(3600)
+            if (time.monotonic() - started) / 3600 >= WATCHLIST_REFRESH_HOURS:
+                log("Watchlist refresh due; restarting process.")
+                os.execv(sys.executable, [sys.executable, *sys.argv])
+            time.sleep(60)
 
     initialise_market_data(symbols)
     websocket = WebSocket(testnet=False, channel_type="linear")
@@ -705,18 +881,23 @@ def start_monitor(symbols: list[str]) -> None:
             callback=make_callback(symbol, "60"),
         )
 
-    send_tg("✅ Tide Universe V4 realtime monitor started\n\n" + "\n".join(symbols))
+    send_tg(
+        "✅ Tide Universe V4.1 realtime monitor started\n\n"
+        + "\n".join(symbols)
+        + f"\n\nWatchlist refresh: every {WATCHLIST_REFRESH_HOURS} hours"
+        + f"\nFull backtest refresh: every {FULL_RESCAN_HOURS} hours"
+    )
     started = time.monotonic()
     while True:
-        if (time.monotonic() - started) / 3600 >= RESCAN_HOURS:
-            log("Weekly rescan due; restarting process.")
+        if (time.monotonic() - started) / 3600 >= WATCHLIST_REFRESH_HOURS:
+            log("Watchlist refresh due; restarting process.")
             os.execv(sys.executable, [sys.executable, *sys.argv])
         log("Heartbeat monitoring", len(symbols), "symbols")
         time.sleep(60)
 
-
 def main() -> None:
-    selected, _ = scan_and_select()
+    stage2 = load_or_run_stage2()
+    selected = select_current_watchlist(stage2)
     start_monitor(selected)
 
 
