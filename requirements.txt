@@ -3,3 +3,4 @@ pandas
 requests
 pybit
 matplotlib
+yfinance>=0.2.40
