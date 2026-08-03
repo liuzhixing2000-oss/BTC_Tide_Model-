@@ -1,0 +1,30 @@
+name: Universe AB Backtest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run AB Backtest
+        run: |
+          python universe_ab_backtest.py
+
+      - name: Upload Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: universe-ab-results
+          path: ab_results/
