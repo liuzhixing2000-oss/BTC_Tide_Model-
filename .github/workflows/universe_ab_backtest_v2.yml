@@ -1,0 +1,68 @@
+name: Universe AB Backtest V2
+
+on:
+  workflow_dispatch:
+    inputs:
+      configs:
+        description: "Configs separated by spaces"
+        required: false
+        default: "current expanded_same_cap expanded_full"
+      max_workers:
+        description: "Parallel workers (2-4 recommended)"
+        required: false
+        default: "4"
+
+permissions:
+  contents: read
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Restore candle cache
+        uses: actions/cache@v4
+        with:
+          path: ab_cache
+          key: tide-ab-cache-${{ runner.os }}-${{ hashFiles('universe_ab_backtest_v2.py') }}
+          restore-keys: |
+            tide-ab-cache-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run parallel A/B backtest
+        shell: bash
+        run: |
+          python universe_ab_backtest_v2.py \
+            --model-file tide_universe_v7_1_stop_alerts.py \
+            --configs ${{ github.event.inputs.configs }} \
+            --max-workers ${{ github.event.inputs.max_workers }}
+
+      - name: Show recommendation
+        if: always()
+        run: |
+          if [ -f ab_results/universe_ab_recommendation.txt ]; then
+            cat ab_results/universe_ab_recommendation.txt
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: universe-ab-results-v2
+          path: ab_results/
+          if-no-files-found: warn
+          retention-days: 30
