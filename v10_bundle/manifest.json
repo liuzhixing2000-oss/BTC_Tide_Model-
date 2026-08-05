@@ -1,0 +1,44 @@
+{
+  "bundle_version": "10.1",
+  "generated_at_utc": "2026-08-04T16:00:45.804888+00:00",
+  "stage2_rows": 493,
+  "eligible_symbols": 234,
+  "files": {
+    "stage2_full_results.csv": {
+      "sha256": "9d4345c90cd8e6bc4c6ff4d5e50f4b7054e24fea044184dc3dd292d4c642ca52",
+      "bytes": 185733
+    },
+    "exit_config.json": {
+      "sha256": "fe680826f765c591531d3c8c14e68eb6ed973e9324b91ec19e9fa274eacea6ee",
+      "bytes": 206549
+    },
+    "entry_parameter_config.json": {
+      "sha256": "185a968da0af68ec199355e9a84aad7b9492efd4988a7762eee73c73d99be860",
+      "bytes": 303
+    },
+    "online_learning.json": {
+      "sha256": "550e2d11e4daf045065f5421c95cce07271b1a46ed729984c6b3990e0d51eb0d",
+      "bytes": 240
+    },
+    "market_regime.json": {
+      "sha256": "e4f2252b06327082d8c949a778158ef762667003783cd9381cf16dc7fb6e9fe6",
+      "bytes": 407
+    },
+    "stage1_results.csv": {
+      "sha256": "37542fd1ed59afa41b24b80b86d4a3fe4f186b8969ce26f1cf2064e3b864daa3",
+      "bytes": 120757
+    },
+    "exit_method_results.csv": {
+      "sha256": "981d5631638b4dbd9be04519c890081e569fd572d74f9d19fd69f9398cb79ee4",
+      "bytes": 1456158
+    },
+    "entry_parameter_results.csv": {
+      "sha256": "9351dc0d53227e507af5c24bce80ef4b44c19a96f19952556c13ed21eecfac8f",
+      "bytes": 1416
+    },
+    "selected_symbols.json": {
+      "sha256": "d2561c2d0a9646bc1762c2cd6349d5e8da6cfdd3f5aba79f1482caa8e7877384",
+      "bytes": 12572
+    }
+  }
+}

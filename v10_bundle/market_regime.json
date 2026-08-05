@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-08-04T16:00:45.784469+00:00",
+  "mode": "supportive",
+  "reason": "orderly_weakness_with_usable_breadth",
+  "monitor_cap": 9999,
+  "minimum_signal_score": 60.0,
+  "btc_return_24h": 0.00680470863217808,
+  "btc_distance_ma200": 0.0062139737288591235,
+  "btc_atr_percentile": 0.6904761904761905,
+  "stage2_downtrend_share": 0.5833333333333334,
+  "sampled_symbols": 12
+}

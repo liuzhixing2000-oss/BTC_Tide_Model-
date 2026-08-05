@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-08-04T14:39:42.645880+00:00",
+  "selected_parameters": {
+    "lookback_bars": 24,
+    "volume_lookback": 24,
+    "volume_multiplier": 1.5,
+    "lower_wick_threshold": 0.35,
+    "cooldown_bars": 24
+  },
+  "selection_note": "kept_previous_no_parameter_set_passed"
+}

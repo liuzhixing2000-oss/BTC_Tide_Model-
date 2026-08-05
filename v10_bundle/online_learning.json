@@ -1,0 +1,11 @@
+{
+  "updated_at_utc": "2026-08-04T16:00:43.787301+00:00",
+  "sample_count": 0,
+  "weights": {
+    "historical": 0.4,
+    "wick": 0.25,
+    "volume": 0.2,
+    "close_position": 0.15
+  },
+  "note": "waiting_for_live_trade_history"
+}
