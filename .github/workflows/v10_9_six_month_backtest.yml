@@ -1,0 +1,41 @@
+name: V10.9 Six-Month Backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Replay length in days"
+        required: true
+        default: "180"
+      max_symbols:
+        description: "0 = all current eligible symbols; use 5-10 for a quick test"
+        required: true
+        default: "0"
+
+permissions:
+  contents: read
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy requests matplotlib pybit
+      - name: Run current-policy replay
+        run: |
+          python backtest_v10_9_six_month.py \
+            --days "${{ inputs.days }}" \
+            --max-symbols "${{ inputs.max_symbols }}"
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: v10-9-six-month-backtest
+          path: reports/v10_9_six_month/
+          retention-days: 30
