@@ -152,26 +152,70 @@ def _parse_event(text):
     key_time=record.get('candle_close_utc') or now;record['event_key']=f"{event_type}:{symbol}:{key_time}:{record.get('grade') or record.get('exit_reason') or ''}";return record
 
 def install_forward_ledger(model,runtime_dir):
-    ledger_dir=runtime_dir/'forward_ledger';ledger_dir.mkdir(parents=True,exist_ok=True);jsonl=ledger_dir/'tide_forward_events.jsonl';csv_path=ledger_dir/'tide_forward_events.csv';lock=threading.Lock();seen=set()
+    ledger_dir=runtime_dir/'forward_ledger';ledger_dir.mkdir(parents=True,exist_ok=True);jsonl=ledger_dir/'tide_forward_events.jsonl';csv_path=ledger_dir/'tide_forward_events.csv';send_cache_path=ledger_dir/'telegram_send_cache.json';lock=threading.Lock();seen=set();send_cache={};installed_at=time.time()
     if jsonl.exists():
         try:
             for line in jsonl.read_text(encoding='utf-8').splitlines():
                 try:seen.add(json.loads(line).get('event_key'))
                 except Exception:pass
         except Exception:pass
+    if send_cache_path.exists():
+        try:send_cache=json.loads(send_cache_path.read_text(encoding='utf-8'))
+        except Exception:send_cache={}
     original_send=model.send_tg
     def persist(record):
-        if not record:return
+        if not record:return True
         with lock:
             key=record.get('event_key')
-            if key in seen:return
+            if key in seen:
+                print('TELEGRAM_DUPLICATE_SUPPRESSED',key,flush=True)
+                return False
             seen.add(key)
             with jsonl.open('a',encoding='utf-8') as f:f.write(json.dumps(record,ensure_ascii=False,default=str)+'\n')
             flat={k:v for k,v in record.items() if k!='raw_message'};pd.DataFrame([flat]).to_csv(csv_path,mode='a',header=not csv_path.exists(),index=False)
             print('FORWARD_LEDGER',json.dumps({k:flat.get(k) for k in ('event_type','symbol','grade','candle_close_utc','reference_price','signal_score','exit_reason','net_return')},default=str),flush=True)
+            return True
+    def generic_message_key(text):
+        """Create a stable key for startup/status messages not parsed as trades."""
+        title=(text.strip().splitlines() or [''])[0].strip()
+        candle=_rx(r'Candle close UTC:\s*([^\n]+)',text)
+        symbol_m=re.search(r'\b([A-Z0-9]{2,}USDT)\b',text)
+        if candle and symbol_m:
+            raw=f'candle-message:{title}:{symbol_m.group(1)}:{candle}'
+        else:
+            raw='exact-message:'+text.strip()
+        return hashlib.sha256(raw.encode('utf-8')).hexdigest()
+    def reserve_generic_send(text,cooldown_seconds=21600):
+        """Persist before transmission so rapid redeploys cannot replay messages."""
+        now=time.time();key=generic_message_key(text)
+        with lock:
+            previous=float(send_cache.get(key,0) or 0)
+            if now-previous<cooldown_seconds:
+                print('TELEGRAM_REDEPLOY_REPLAY_SUPPRESSED',key,flush=True)
+                return False
+            send_cache[key]=now
+            cutoff=now-7*86400
+            stale=[k for k,v in send_cache.items() if float(v or 0)<cutoff]
+            for k in stale:send_cache.pop(k,None)
+            tmp=send_cache_path.with_suffix('.tmp')
+            tmp.write_text(json.dumps(send_cache,sort_keys=True),encoding='utf-8')
+            tmp.replace(send_cache_path)
+            return True
     def wrapped_send(text):
-        try:persist(_parse_event(str(text)))
-        except Exception as exc:print('FORWARD_LEDGER_ERROR',repr(exc),flush=True)
+        text=str(text);record=None
+        try:
+            record=_parse_event(text)
+            if record and not persist(record):return None
+            # Engines sometimes replay non-trade position/status updates while
+            # rebuilding state. Signals and exits are parsed above; silence only
+            # unparsed replay traffic during the first five minutes.
+            if not record and time.time()-installed_at<300 and 'Stable Online' not in text:
+                print('TELEGRAM_STARTUP_REPLAY_SUPPRESSED',generic_message_key(text),flush=True)
+                return None
+            if not reserve_generic_send(text):return None
+        except Exception as exc:
+            # A persistence failure must not permanently disable genuine alerts.
+            print('FORWARD_LEDGER_ERROR',repr(exc),flush=True)
         return original_send(text)
     model.send_tg=wrapped_send
     def backup_loop():
