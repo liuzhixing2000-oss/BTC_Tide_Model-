@@ -4,3 +4,4 @@ requests
 pybit
 matplotlib
 yfinance>=0.2.40
+scikit-learn>=1.3
