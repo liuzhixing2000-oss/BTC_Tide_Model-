@@ -1,13 +1,13 @@
 {
-  "rows": 10713,
+  "rows": 11628,
   "confirmed_true_literals": 0,
   "score_confirmed_true_literals": 0,
   "raw_signal_true_literals": 2,
   "segments": 1720,
   "unique_events": 0,
   "report_version": "v4.1-counter-fix",
-  "deployments": 134,
-  "log_fetch_ok": 134,
+  "deployments": 135,
+  "log_fetch_ok": 135,
   "log_fetch_failed": 0,
-  "log_rows": 10713
+  "log_rows": 11628
 }
