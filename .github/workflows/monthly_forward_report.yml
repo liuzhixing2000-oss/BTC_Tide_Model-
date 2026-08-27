@@ -1,0 +1,39 @@
+name: Tide Monthly Forward Report
+
+on:
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "Month in UTC (YYYY-MM)"
+        required: true
+        default: "2026-08"
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install pandas requests
+      - name: Build report from Railway logs
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_SERVICE_ID: ${{ secrets.RAILWAY_SERVICE_ID }}
+        run: python monthly_forward_report.py --month "${{ inputs.month }}"
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tide-forward-report-${{ inputs.month }}
+          path: reports/
+      - name: Commit report to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet || git commit -m "Add Tide forward report ${{ inputs.month }}"
+          git push
