@@ -1,25 +1,13 @@
 {
-  "month": "2026-08",
-  "window_utc": [
-    "2026-08-01T00:00:00+00:00",
-    "2026-08-27T04:00:20.898444+00:00"
-  ],
-  "services": [
-    "BTC_Tide_Model-"
-  ],
-  "deployments_inspected": 131,
-  "deployment_log_fetches_successful": 131,
-  "deployment_log_fetches_failed": 0,
-  "deployments_at_1000_row_cap": 7,
-  "log_rows_fetched": 7955,
-  "parser": {
-    "rows": 7955,
-    "literal_confirmed_true": 0,
-    "literal_score_confirmed_true": 0,
-    "literal_raw_signal_true": 2,
-    "literal_tide_grade": 0,
-    "literal_tide_signal": 0,
-    "segments": 1720,
-    "unique_events": 0
-  }
+  "rows": 10713,
+  "confirmed_true_literals": 0,
+  "score_confirmed_true_literals": 0,
+  "raw_signal_true_literals": 2,
+  "segments": 1720,
+  "unique_events": 0,
+  "report_version": "v4.1-counter-fix",
+  "deployments": 134,
+  "log_fetch_ok": 134,
+  "log_fetch_failed": 0,
+  "log_rows": 10713
 }
