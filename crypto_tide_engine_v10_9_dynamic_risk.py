@@ -3018,14 +3018,31 @@ def realtime_exit_update(symbol: str, latest: pd.Series) -> None:
 # Realtime monitor
 # ============================================================
 
-def initialise_market_data(symbols: list[str]) -> None:
+def initialise_market_data(symbols: list[str]) -> list[str]:
+    """Load available symbols without letting one stale listing kill the service."""
+    loaded: list[str] = []
+    skipped: list[str] = []
     for idx, symbol in enumerate(symbols, start=1):
         log(f"Loading live [{idx}/{len(symbols)}] {symbol}")
-        market_data[symbol] = {
-            "15": fetch_klines(symbol, "15", 4),
-            "60": fetch_klines(symbol, "60", 14),
-        }
+        try:
+            candles_15 = fetch_klines(symbol, "15", 4)
+            candles_60 = fetch_klines(symbol, "60", 14)
+            if candles_15.empty or candles_60.empty:
+                raise RuntimeError("empty 15m or 60m kline frame")
+            market_data[symbol] = {"15": candles_15, "60": candles_60}
+            loaded.append(symbol)
+        except Exception as exc:
+            market_data.pop(symbol, None)
+            skipped.append(symbol)
+            log("Skipping unavailable live symbol", symbol, repr(exc))
         time.sleep(0.1)
+    log(
+        "Market data initialisation complete",
+        f"loaded={len(loaded)}",
+        f"skipped={len(skipped)}",
+        f"skipped_symbols={','.join(skipped) if skipped else 'none'}",
+    )
+    return loaded
 
 
 def update_candle(symbol: str, interval: str, candle: dict) -> None:
@@ -4047,7 +4064,9 @@ def start_monitor(symbols: list[str]) -> None:
                 os.execv(sys.executable, [sys.executable, *sys.argv])
             time.sleep(60)
 
-    initialise_market_data(symbols)
+    symbols = initialise_market_data(symbols)
+    if not symbols:
+        raise RuntimeError("No watchlist symbols returned usable 15m and 60m market data")
 
     # A single websocket carrying hundreds of symbols is fragile. V9 divides
     # the all-eligible universe across several connections.
