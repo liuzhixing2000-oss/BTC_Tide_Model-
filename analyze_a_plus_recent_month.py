@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import math, os
+import math, os, subprocess, sys
 from pathlib import Path
 import pandas as pd
 
@@ -28,15 +28,32 @@ def metrics(df):
     return {'n':len(df),'pnl':p.sum(),'ret':p.sum()/START_EQUITY,'win':(p>0).mean(),'pf':pf(p),'meanR':r.mean(),'medianR':r.median(),'maxdd':dd,'stop':(df.exit_reason.astype(str)=='hard_structure_stop').mean()}
 
 
+def ensure_replay():
+    if INFILE.exists():
+        print(f'Using existing replay: {INFILE}', flush=True)
+        return
+    print('='*90, flush=True)
+    print('TIDE V10.9 — RECENT 30-DAY A+ ANALYSIS', flush=True)
+    print('='*90, flush=True)
+    print(f'Missing {INFILE}. Auto-generating the V10.9 100-day replay in THIS Railway service...', flush=True)
+    cmd=[sys.executable,'backtest_v10_9_six_month.py','--days','100','--max-symbols','0','--out',str(BASE)]
+    print('Replay command:',' '.join(cmd),flush=True)
+    rc=subprocess.call(cmd)
+    if rc!=0:
+        raise SystemExit(rc)
+    if not INFILE.exists():
+        raise SystemExit(f'Replay finished but {INFILE} is still missing.')
+
+
 def main():
-    if not INFILE.exists(): raise SystemExit(f'Missing {INFILE}; run backtest_v10_9_six_month.py first')
+    ensure_replay()
     df=pd.read_csv(INFILE)
     df['entry_time']=pd.to_datetime(df.entry_time,utc=True,errors='coerce')
     df=df.dropna(subset=['entry_time']).sort_values('entry_time')
     a=df[df.grade.astype(str)=='A+'].copy()
     if a.empty: raise SystemExit('No A+ trades')
 
-    # Exact latest 30 calendar days ending at the replay's latest timestamp.
+    # Exact latest 30 calendar days ending at the replay's latest admitted-trade timestamp.
     end=df.entry_time.max()
     start=end-pd.Timedelta(days=30)
     recent=a[(a.entry_time>=start)&(a.entry_time<=end)].copy()
@@ -51,6 +68,7 @@ def main():
             lines.append(f"- {r.entry_time.isoformat()} | {r.get('symbol','?')} | score={r.get('signal_score','?')} | risk={r.get('actual_risk_usdt','?')}U | P/L={float(r.get('pnl_usdt',0)):+.2f}U | R={float(r.get('R',0)):+.3f}")
     summary='\n'.join(lines)
     (OUT/'SUMMARY.md').write_text(summary,encoding='utf-8')
-    print(summary)
+    print(summary, flush=True)
+    print('RECENT_A_PLUS_DIR:',OUT,flush=True)
 
 if __name__=='__main__': main()
