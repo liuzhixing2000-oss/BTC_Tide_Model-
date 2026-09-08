@@ -234,6 +234,12 @@ def install_forward_ledger(model,runtime_dir):
 def main():
     a=parse_args();print('='*100,flush=True);print('CRYPTO TIDE V10.9 B+ MINIMUM TELEGRAM LIVE ENGINE',flush=True);print('='*100,flush=True);print('Startup UTC:',datetime.now(timezone.utc).isoformat(),flush=True)
     manifest=validate_bundle(a.bundle_dir);fp=fingerprint(a.bundle_dir);prepare_runtime(a.bundle_dir,a.runtime_dir);model=load_model(a.model_file,a.runtime_dir);install_forward_ledger(model,a.runtime_dir)
+    try:
+        from tide_forward_audit import build_audit
+        audit = build_audit(a.runtime_dir, os.getenv('RAILWAY_GIT_COMMIT_SHA', 'unknown'))
+        print('TIDE_AUDIT_REPORT ' + json.dumps(audit, ensure_ascii=False, allow_nan=False), flush=True)
+    except Exception as exc:
+        print('TIDE_AUDIT_ERROR', repr(exc), flush=True)
     token,chat_id=model.telegram_credentials();print('Telegram token configured:',bool(token),flush=True);print('Telegram chat ID configured:',bool(chat_id),flush=True)
     if not token or not chat_id:raise RuntimeError('Add TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID to Railway Variables.')
     stage2=pd.read_csv(model.STAGE2_CSV);stage2['eligible']=stage2['eligible'].astype(str).str.lower().eq('true');selected=model.select_current_watchlist(stage2);version=manifest.get('bundle_version','unknown');generated=manifest.get('generated_at_utc','unknown');eligible=manifest.get('eligible_symbols',int(stage2['eligible'].sum()))
@@ -241,3 +247,4 @@ def main():
     print('Bundle version:',version,flush=True);print('Bundle generated:',generated,flush=True);print('Realtime symbols selected:',len(selected),flush=True);print('Research scan skipped: yes',flush=True)
     threading.Thread(target=watch_bundle,args=(a.bundle_dir,fp,a.bundle_check_seconds,model.log),daemon=True).start();model.start_monitor(selected)
 if __name__=='__main__':main()
+

@@ -392,7 +392,7 @@ live_metadata: dict[str, dict] = {}
 
 
 def log(*parts) -> None:
-    print(datetime.now(timezone.utc).isoformat(), *parts, flush=True)
+    print(datetime.now(timezone.utc).isoformat() + " " + " ".join(map(str, parts)), flush=True)
 
 
 def load_json(path: Path, default):
@@ -605,6 +605,15 @@ def parameter_key(params: dict) -> str:
 
 
 def append_live_trade(row: dict) -> None:
+    # Separate structured stream: preserve the legacy CSV column schema.
+    event = dict(row)
+    event['recorded_at_utc'] = datetime.now(timezone.utc).isoformat()
+    event['code_commit'] = os.getenv('RAILWAY_GIT_COMMIT_SHA', 'unknown')
+    event['entry_decision_utc'] = (pd.Timestamp(row['entry_time']) + pd.Timedelta(minutes=15)).isoformat()
+    event['exit_decision_utc'] = (pd.Timestamp(row['exit_time']) + pd.Timedelta(minutes=15)).isoformat()
+    with (DATA_DIR / 'model_trade_events.jsonl').open('a', encoding='utf-8') as handle:
+        handle.write(json.dumps(event, default=str) + '\n')
+    log('TIDE_CLOSED_TRADE', json.dumps(event, default=str))
     frame = pd.DataFrame([row])
     header = not LIVE_TRADE_JOURNAL_CSV.exists()
     frame.to_csv(
@@ -4031,7 +4040,9 @@ def make_callback(symbol: str, interval: str):
             for candle in message.get("data", []):
                 confirmed = bool(candle.get("confirm", False))
                 update_candle(symbol, interval, candle)
-                if interval == "15":
+                if interval == "15" and confirmed:
+                    # Pre-alerts are disabled. Keep intrabar cache updates, but
+                    # reserve expensive scoring and logs for candle closes.
                     calculate_live_signal(symbol, confirmed)
                 elif confirmed:
                     log("Closed 1h candle", symbol)

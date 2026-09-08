@@ -1,0 +1,32 @@
+name: Tide audit corrected replay
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - backtest_v10_9_six_month.py
+      - tide_replay_support.py
+      - .github/workflows/tide_audit_replay.yml
+permissions:
+  contents: read
+jobs:
+  corrected-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install pandas numpy requests matplotlib pybit
+      - name: Regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Frozen 180-day replay
+        run: python backtest_v10_9_six_month.py --days 180 --end 2026-09-08T04:00:00Z --out reports/corrected_replay_2026-09-08
+      - name: Keep reviewable results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tide-corrected-replay-${{ github.sha }}
+          path: reports/corrected_replay_2026-09-08/
+          retention-days: 90

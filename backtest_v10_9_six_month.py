@@ -19,12 +19,14 @@ some bars in the replay window. Output explicitly labels this survivorship/looka
 limitation. Forward ledger data remains the decisive OOS test going forward.
 """
 from __future__ import annotations
-import argparse, importlib.util, json, math, os, time
+import argparse, importlib.util, json, math, os, sys, tempfile, shutil, time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import numpy as np
 import pandas as pd
 import requests
+
+from tide_replay_support import simulate_live_exit, chronological_portfolio
 
 BYBIT='https://api.bybit.com/v5/market/kline'
 ACCOUNT_START=1000.0
@@ -61,17 +63,19 @@ def fetch_range(symbol: str, interval: str, start: datetime, end: datetime) -> p
     if not rows:return pd.DataFrame(columns=['open_time','open','high','low','close','volume','turnover'])
     df=pd.DataFrame(rows,columns=['ts','open','high','low','close','volume','turnover'])
     df['ts']=pd.to_numeric(df.ts);df=df.drop_duplicates('ts').sort_values('ts')
-    df=df[(df.ts>=start_ms)&(df.ts<int(end.timestamp()*1000))]
+    df=df[(df.ts>=start_ms)&(df.ts+int(interval)*60000<=int(end.timestamp()*1000))]
     df['open_time']=pd.to_datetime(df.ts,unit='ms',utc=True)
     for c in ['open','high','low','close','volume','turnover']:df[c]=pd.to_numeric(df[c],errors='coerce')
     return df[['open_time','open','high','low','close','volume','turnover']].reset_index(drop=True)
 
 
 def load_engine(repo: Path):
-    # Engine runtime paths may point into TIDE_DATA_DIR. Use the checked-in bundle.
-    os.environ.setdefault('TIDE_DATA_DIR',str((repo/'v10_bundle').resolve()))
-    spec=importlib.util.spec_from_file_location('tide_engine',repo/'crypto_tide_engine_v10_9_dynamic_risk.py')
-    mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod);return mod
+    # Load through the same account-profile wrapper as production, in scratch.
+    import crypto_tide_v10_9_dynamic_risk_live as launcher
+    runtime = Path(tempfile.mkdtemp(prefix='tide-replay-'))
+    for name in ['entry_parameter_config.json','online_learning.json','market_regime.json']:
+        shutil.copy2(repo/'v10_bundle'/name, runtime/name)
+    return launcher.load_model(repo/'crypto_tide_engine_v10_9_dynamic_risk.py', runtime)
 
 
 def htf_snapshot(engine, df: pd.DataFrame, hours: int, signal_close: pd.Timestamp) -> dict:
@@ -96,7 +100,8 @@ def candidate_trades(engine, symbol, hist_score, df15, df1h, df4h, entry_params,
     frame=engine.model_frame(df15,df1h,entry_params)
     if frame.empty or 'signal' not in frame.columns:return []
     out=[]
-    signal_idx=np.flatnonzero(frame['signal'].fillna(False).astype(bool).to_numpy())
+    # Match live has_scored_setup, including the existing Rescue/B+ paths.
+    signal_idx=np.flatnonzero(frame['combined_setup_score'].notna().to_numpy())
     for i in signal_idx:
         if i+16>=len(frame):continue
         latest=frame.iloc[i]
@@ -111,13 +116,12 @@ def candidate_trades(engine, symbol, hist_score, df15, df1h, df4h, entry_params,
         grade=engine.tide_grade(latest,score,assessment,htf)
         if grade.get('grade') not in {'A+','A','A-','B+'}:continue
         risk=assessment['risk'];entry=float(risk['entry_price']);stop=float(risk['hard_stop']);stop_pct=max((entry-stop)/entry,1e-9)
-        planned=risk_usdt(score);notional=float(np.clip(planned/stop_pct,MIN_NOTIONAL,MAX_NOTIONAL))
-        # If capped notional cannot consume planned R, actual risk is lower.
-        actual_risk=notional*stop_pct
-        exit_idx=i+16;exit_price=float(frame.iloc[exit_idx]['close']);reason='fixed_4h';hit_idx=None
-        for j in range(i+1,min(i+17,len(frame))):
-            if float(frame.iloc[j]['low'])<=stop:
-                hit_idx=j;exit_idx=j;exit_price=stop;reason='hard_structure_stop';break
+        sizing=engine.dynamic_position_size(score,risk)
+        planned=sizing['planned_loss_usdt'];notional=sizing['suggested_notional_usdt']
+        actual_risk=sizing['effective_planned_loss_usdt']
+        result=simulate_live_exit(engine,frame,i,risk)
+        if result is None:continue
+        exit_idx,exit_price,reason,_=result
         gross=exit_price/entry-1;net=gross-float(engine.FEE_SLIPPAGE);pnl=notional*net
         window=frame.iloc[i+1:exit_idx+1]
         mfe=(float(window.high.max())/entry-1) if not window.empty else 0.0
@@ -128,41 +132,29 @@ def candidate_trades(engine, symbol, hist_score, df15, df1h, df4h, entry_params,
                     'combined':float(assessment['combined_quality']),'confirmation_tests':int(assessment['confirmation_tests']),
                     'volume_multiple':float(latest.get('volume_multiple',np.nan)),'h4_trend':htf['h4_trend'],'h1_trend':htf['h1_trend'],'h1_strength':htf['h1_strength'],
                     'entry':entry,'stop':stop,'stop_pct':stop_pct,'planned_risk_usdt':planned,'actual_risk_usdt':actual_risk,'notional':notional,
-                    'margin_at_50x':notional/DISPLAY_LEVERAGE,'exit':exit_price,'exit_reason':reason,'gross_return':gross,'net_return':net,'pnl_usdt':pnl,
+                    'margin':sizing['suggested_margin_usdt'],'leverage':sizing['suggested_leverage'],'exit':exit_price,'exit_reason':reason,'gross_return':gross,'net_return':net,'pnl_usdt':pnl,
                     'mfe':mfe,'mae':mae,'bars_held':exit_idx-i})
     return out
 
 
-def portfolio(candidates: pd.DataFrame):
-    if candidates.empty:return candidates.copy(),pd.DataFrame()
-    c=candidates.sort_values(['entry_time','grade','signal_score'],ascending=[True,True,False]).copy()
-    active=[];accepted=[];rejected=[];equity=ACCOUNT_START;daily_loss={}
-    grade_priority={'A+':0,'A':1,'A-':2,'B+':3}
-    c['_gp']=c.grade.map(grade_priority).fillna(9);c=c.sort_values(['entry_time','_gp','signal_score'],ascending=[True,True,False])
-    for row in c.to_dict('records'):
-        t=pd.Timestamp(row['entry_time']);active=[a for a in active if pd.Timestamp(a['exit_time'])>t]
-        day=t.tz_convert('Australia/Sydney').date().isoformat();loss=daily_loss.get(day,0.0)
-        reasons=[]
-        if len(active)>=MAX_POSITIONS:reasons.append('max_positions')
-        if sum(float(a['actual_risk_usdt']) for a in active)+row['actual_risk_usdt']>MAX_OPEN_RISK+1e-9:reasons.append('max_open_risk')
-        if sum(float(a['margin_at_50x']) for a in active)+row['margin_at_50x']>MAX_MARGIN+1e-9:reasons.append('max_margin')
-        if loss>=MAX_DAILY_LOSS-1e-9:reasons.append('daily_loss_limit')
-        if reasons:row['admitted']=False;row['reject_reason']='|'.join(reasons);rejected.append(row);continue
-        row['admitted']=True;row['reject_reason']='';row['equity_before']=equity;equity+=row['pnl_usdt'];row['equity_after']=equity
-        if row['pnl_usdt']<0:daily_loss[day]=daily_loss.get(day,0.0)-row['pnl_usdt']
-        accepted.append(row);active.append(row)
-    a=pd.DataFrame(accepted);r=pd.DataFrame(rejected)
-    return a,r
+def portfolio(candidates: pd.DataFrame, engine=None):
+    if engine is None:
+        return chronological_portfolio(candidates)
+    return chronological_portfolio(candidates, capital=engine.PORTFOLIO_CAPITAL_USDT,
+        max_positions=engine.PORTFOLIO_MAX_POSITIONS,
+        max_open_risk=engine.PORTFOLIO_CAPITAL_USDT*engine.MAX_TOTAL_OPEN_RISK_PCT,
+        max_margin=engine.PORTFOLIO_CAPITAL_USDT*engine.PORTFOLIO_MAX_MARGIN_UTILISATION,
+        max_daily_loss=engine.PORTFOLIO_CAPITAL_USDT*engine.MAX_DAILY_LOSS_PCT)
 
 
 def summary(trades: pd.DataFrame,start,end,candidates,rejected):
     if trades.empty:return {'start':str(start),'end':str(end),'trades':0,'ending_equity':ACCOUNT_START,'net_pnl':0.0,'return_pct':0.0}
-    pnl=trades.pnl_usdt.astype(float);wins=pnl>0;eq=ACCOUNT_START+pnl.cumsum();peak=eq.cummax();dd=eq/peak-1
+    pnl=trades.pnl_usdt.astype(float);wins=pnl>0;eq=ACCOUNT_START+pnl.cumsum();peak=eq.cummax().clip(lower=ACCOUNT_START);dd=eq/peak-1
     gp=pnl[pnl>0].sum();gl=-pnl[pnl<0].sum();pf=float(gp/gl) if gl>0 else math.inf
     return {'start':str(start),'end':str(end),'candidates':int(len(candidates)),'admitted':int(len(trades)),'rejected_by_portfolio':int(len(rejected)),
             'ending_equity':float(eq.iloc[-1]),'net_pnl':float(pnl.sum()),'return_pct':float(eq.iloc[-1]/ACCOUNT_START-1),'win_rate':float(wins.mean()),
             'profit_factor':pf,'avg_pnl_usdt':float(pnl.mean()),'median_pnl_usdt':float(pnl.median()),'max_drawdown':float(dd.min()),
-            'stop_rate':float((trades.exit_reason=='hard_structure_stop').mean()),'avg_net_return':float(trades.net_return.mean())}
+            'stop_rate':float(trades.exit_reason.astype(str).str.contains('stop').mean()),'avg_net_return':float(trades.net_return.mean())}
 
 
 def main():
@@ -185,7 +177,18 @@ def main():
             hs=historical_score(pd.Series(row._asdict()));tr=candidate_trades(engine,sym,hs,d15,d1,d4,entry_params,start,end);alltr.extend(tr);print('  candidates',len(tr))
         except Exception as ex:errors.append({'symbol':sym,'error':repr(ex)});print('  ERROR',repr(ex))
         time.sleep(.05)
-    cand=pd.DataFrame(alltr);accepted,rejected=portfolio(cand);s=summary(accepted,start,end,cand,rejected)
+    cand=pd.DataFrame(alltr);accepted,rejected=portfolio(cand,engine);core=accepted[accepted.tracking_class.eq('production')] if not accepted.empty else accepted;s=summary(core,start,end,cand,rejected)
+    s.update(replay_version='2026-09-08-corrected',symbols_requested=len(eligible),symbols_failed=len(errors),symbols_completed=len(eligible)-len(errors),coverage_status='COMPLETE_REQUESTED_UNIVERSE' if not errors else 'INCOMPLETE',market_gate_assumption=70,tie_order='exits_then_symbol',oos=False)
+    diagnostics=[]
+    if not cand.empty:
+        diag=cand.copy();diag['unit_r_net']=diag['net_return']/diag['stop_pct']
+        diag['score_band']=pd.cut(diag.signal_score,[-np.inf,70,80,90,np.inf],right=False,labels=['<70','70-79','80-89','90+'])
+        diag['time_half']=np.where(pd.to_datetime(diag.entry_time,utc=True)<pd.Timestamp(start)+(pd.Timestamp(end)-pd.Timestamp(start))/2,'first','second')
+        for columns in [['grade'],['score_band'],['grade','time_half']]:
+            for key,group in diag.groupby(columns,observed=True):
+                values=group.unit_r_net.dropna();trimmed=values.sort_values(ascending=False).iloc[3:]
+                diagnostics.append(dict(group=str(key),dimension='/'.join(columns),n=len(values),mean_R=float(values.mean()),median_R=float(values.median()),mean_R_without_top3=float(trimmed.mean()) if len(trimmed) else None,evidence='retrospective_candidates_not_independent_OOS'))
+    pd.DataFrame(diagnostics).to_csv(out/'score_grade_diagnostics.csv',index=False)
     if not cand.empty:cand.to_csv(out/'candidate_trades.csv',index=False)
     if not accepted.empty:accepted.to_csv(out/'portfolio_trades.csv',index=False)
     if not rejected.empty:rejected.to_csv(out/'portfolio_rejections.csv',index=False)
@@ -193,15 +196,18 @@ def main():
     by_grade=[]
     if not accepted.empty:
         for g,x in accepted.groupby('grade'):
-            by_grade.append({'grade':g,'trades':len(x),'win_rate':float((x.pnl_usdt>0).mean()),'net_pnl':float(x.pnl_usdt.sum()),'avg_net_return':float(x.net_return.mean()),'stop_rate':float((x.exit_reason=='hard_structure_stop').mean())})
+            by_grade.append({'grade':g,'trades':len(x),'win_rate':float((x.pnl_usdt>0).mean()),'net_pnl':float(x.pnl_usdt.sum()),'avg_net_return':float(x.net_return.mean()),'stop_rate':float(x.exit_reason.astype(str).str.contains('stop').mean())})
     pd.DataFrame(by_grade).to_csv(out/'by_grade.csv',index=False)
+    s['grade_score_diagnostics']=diagnostics
+    print('TIDE_REPLAY_REPORT '+json.dumps(s,default=str),flush=True)
     (out/'summary.json').write_text(json.dumps(s,indent=2,default=str))
-    lines=['# Tide V10.9 — current-policy six-month replay','',f"Window: {start.isoformat()} → {end.isoformat()}",f"Current eligible symbols replayed: {len(eligible)}",'',
-           '## Portfolio assumptions','', '- Starting account: **1000 USDT**','- 1R: **20 USDT (2%)**','- Score risk tiers: <70=5U, 70–79=10U, 80–89=15U, >=90=20U','- Max simultaneous planned risk: **60U**','- Daily realised-loss gate: **40U**','- Maximum positions: **12**','- Exit: current structure stop or fixed 4h','- Costs: engine `FEE_SLIPPAGE` deducted once per completed trade','',
+    lines=['# Tide V10.9 — corrected historical policy replay (not OOS)','',f"Window: {start.isoformat()} → {end.isoformat()}",f"Current eligible symbols replayed: {len(eligible)}",'',
+           '## Portfolio assumptions','', '- Starting account: **1000 USDT**','- 1R: **20 USDT (2%)**','- Score risk tiers: <70=5U, 70–79=10U, 80–89=15U, >=90=20U','- Max simultaneous planned risk: **60U**','- Daily realised-loss gate: **40U**','- Maximum positions: **12**','- Exit: actual production exit function (including structural stop updates), or fixed 4h','- B+ is separate shadow tracking and contributes zero account P/L','- Simultaneous events: exits first, then entries in symbol order','- Historical market gate remains CAUTION=70; production environment overrides and websocket arrival order are not reconstructed','- Costs: engine `FEE_SLIPPAGE` deducted once per completed trade',f'- Data coverage: {len(eligible)-len(errors)}/{len(eligible)} symbols completed; {len(errors)} failed','',
            '## Headline','',f"- Candidate signals: **{s.get('candidates',0)}**",f"- Admitted trades: **{s.get('admitted',s.get('trades',0))}**",f"- Ending equity: **{s.get('ending_equity',ACCOUNT_START):.2f} USDT**",f"- Net P/L: **{s.get('net_pnl',0):+.2f} USDT**",f"- Return: **{s.get('return_pct',0):+.2%}**",f"- Win rate: **{s.get('win_rate',0):.1%}**",f"- Profit factor: **{s.get('profit_factor',0):.2f}**",f"- Max drawdown: **{s.get('max_drawdown',0):.2%}**",f"- Stop rate: **{s.get('stop_rate',0):.1%}**",'',
-           '## Interpretation warning','', '**This is not a clean out-of-sample validation.** It replays today’s frozen V10.9 policy and today’s eligible-symbol bundle backward through the last six months. Because the current bundle was selected with later information, symbol selection / historical score contain survivorship-lookahead. Use this to understand policy behaviour and account risk, not to claim a proven live edge. The new forward ledger is the clean OOS test.','']
+           '## Interpretation warning','', '**This is not a clean out-of-sample validation.** It replays today’s frozen V10.9 policy and today’s eligible-symbol bundle backward through the last six months. Because the current bundle was selected with later information, symbol selection / historical score contain survivorship-lookahead. Use this to understand policy behaviour and account risk, not to claim a proven live edge. Only complete, reconciled forward records can support a prospective test. Historical replay uses CAUTION=70, frozen bundle settings and deterministic callback ordering; it is not an exact reproduction of the live service.','']
     if by_grade:
         lines+=['## By grade','']+[f"- {x['grade']}: n={x['trades']}, win={x['win_rate']:.1%}, P/L={x['net_pnl']:+.2f}U, avg return={x['avg_net_return']:+.3%}, stop={x['stop_rate']:.1%}" for x in by_grade]
     (out/'SUMMARY.md').write_text('\n'.join(lines),encoding='utf-8');print('\n'.join(lines))
 
 if __name__=='__main__':main()
+
