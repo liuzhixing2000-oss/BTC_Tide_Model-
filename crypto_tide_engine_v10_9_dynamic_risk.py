@@ -2944,12 +2944,8 @@ Estimated net return: {net_return:.2%}
 Signal low: {float(position['signal_low']):.8g}
 Tracked hard stop: {float(position['hard_stop']):.8g}
 Highest tracked price: {float(position['highest_price']):.8g}
-Maximum favourable excursion: {
-    float(position.get('maximum_favourable_excursion_pct', 0.0)):.2%
-}
-Maximum adverse excursion: {
-    float(position.get('maximum_adverse_excursion_pct', 0.0)):.2%
-}
+Maximum favourable excursion: {float(position.get('maximum_favourable_excursion_pct', 0.0)):.2%}
+Maximum adverse excursion: {float(position.get('maximum_adverse_excursion_pct', 0.0)):.2%}
 Bars held: {bars}
 Hours held: {bars * 0.25:.2f}
 
