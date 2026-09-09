@@ -82,6 +82,9 @@ def candidates(frame, symbol, start, end, risk=10., cost=.001, max_notional=2500
             event['status'] = 'invalid_stop'; continue
         passed = bool(confirmation_pass(frame.iloc[i+1]))
         event['confirmation_pass'] = passed
+        for name, col, threshold in [('raw_pass','raw_quality_score',58),('next_pass','confirmation_quality_score',95),('combined_pass','combined_setup_score',70)]:
+            event[name] = bool(frame.iloc[i+1][col] >= threshold)
+            event[col] = float(frame.iloc[i+1][col])
         for arm, entry_i in [('early', i+1), ('confirmed', i+2)]:
             if arm == 'confirmed' and not passed:
                 continue
@@ -179,13 +182,15 @@ def main():
         accepted.to_csv(out/f'{arm}_accepted.csv',index=False)
         rejected.to_csv(out/f'{arm}_rejected.csv',index=False)
         summary['arms'][arm]=dict(**stats(accepted),portfolio_rejected=len(rejected))
+        summary['arms'][arm]['by_symbol'] = {str(k): stats(g) for k,g in accepted.groupby('symbol')} if not accepted.empty else {}
         if not subset.empty:
             summary['diagnostics'][arm]={str(k):stats(g) for k,g in subset.groupby('confirmation_eventually_passed')}
     summary['raw_event_counts']=events.status.value_counts().to_dict() if not events.empty else {}
+    summary['confirmation_diagnostics'] = {name: int(events[name].fillna(False).sum()) if name in events else 0 for name in ['raw_pass','next_pass','combined_pass','confirmation_pass']}
     summary['source_sha256']={name:hashlib.sha256((repo/name).read_bytes()).hexdigest() for name in
         ['backtest_tide_early_entry.py','crypto_tide_engine_v10_9_dynamic_risk.py','tide_replay_support.py']}
     (out/'summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False))
-    print(json.dumps(summary,indent=2,allow_nan=False),flush=True)
+    print('TIDE_EARLY_REPORT '+json.dumps(summary,allow_nan=False),flush=True)
     return 2 if errors else 0
 
 
