@@ -8,12 +8,19 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from backtest_v10_9_six_month import fetch_range, load_engine
 from tide_replay_support import chronological_portfolio
 
 PARAMS = dict(lookback_bars=24, volume_lookback=24, volume_multiplier=1.5,
               lower_wick_threshold=0.35, cooldown_bars=24)
 BAR = pd.Timedelta(minutes=15)
+
+
+def raw_quality_at_close(row):
+    """Only original-bar data; never read next candle for shared eligibility."""
+    wick = np.clip((row.lower_wick_ratio-.35)/(.95-.35), 0, 1)
+    volume = np.clip((row.volume_multiple-1.5)/(4.-1.5), 0, 1)
+    close_position = np.clip((row.close-row.low)/max(row.high-row.low, 1e-12),0,1)
+    return float(100*(.45*wick+.35*volume+.20*close_position))
 
 
 def confirmation_pass(row):
@@ -68,6 +75,9 @@ def candidates(frame, symbol, start, end, risk=10., cost=.001, max_notional=2500
         event = dict(event_id=f'{symbol}:{raw.open_time.isoformat()}', symbol=symbol,
                      raw_time=raw.open_time+BAR, status='complete', confirmation_pass=False)
         events.append(event)
+        event['raw_at_close'] = raw_quality_at_close(raw)
+        if not np.isfinite(event['raw_at_close']) or event['raw_at_close'] < 58:
+            event['status'] = 'raw_below_58'; continue
         # Equal observable horizon for both arms; exclude only data incompleteness,
         # never confirmation failure or outcome. Do not fetch beyond --end.
         if i+17 >= len(frame) or frame.iloc[i+17].open_time+BAR > end:
@@ -85,7 +95,7 @@ def candidates(frame, symbol, start, end, risk=10., cost=.001, max_notional=2500
         for name, col, threshold in [('raw_pass','raw_quality_score',58),('next_pass','confirmation_quality_score',95),('combined_pass','combined_setup_score',70)]:
             event[name] = bool(frame.iloc[i+1][col] >= threshold)
             event[col] = float(frame.iloc[i+1][col])
-        for arm, entry_i in [('early', i+1), ('confirmed', i+2)]:
+        for arm, entry_i in [('early', i+1), ('delayed', i+2), ('confirmed', i+2)]:
             if arm == 'confirmed' and not passed:
                 continue
             trade = make_trade(frame, i, entry_i, symbol, arm, stop, risk, cost, max_notional)
@@ -111,6 +121,7 @@ def stats(frame):
 
 
 def main():
+    from backtest_v10_9_six_month import fetch_range, load_engine
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--symbols', default='BTCUSDT,ETHUSDT,SOLUSDT')
     parser.add_argument('--days', type=int, default=100)
@@ -167,16 +178,17 @@ def main():
             print(f'FAILED {symbol}: {exc}',flush=True)
     t=pd.DataFrame(all_trades); events=pd.DataFrame(all_events)
     t.to_csv(out/'candidates.csv',index=False); events.to_csv(out/'raw_events.csv',index=False)
-    summary=dict(version=1,start=str(start),end=str(end),symbols=symbols,errors=errors,
+    summary=dict(version=2,start=str(start),end=str(end),symbols=symbols,errors=errors,
                  coverage=coverage,status='INCOMPLETE' if errors else 'COMPLETE',
                  settings=vars(args),params=PARAMS,arms={},diagnostics={},
                  limitations=['Retrospective, not OOS; user-selected universe.',
-                 'Confirmation arm uses Raw58/Next95/Combined70/2of3 only, not full live scoring or Rescue.',
+                 'All arms require original Raw>=58 computed at raw close; delayed enters without confirmation filter.',
+                 'Confirmation arm additionally requires Next95/Combined70/2of3; not full live scoring or Rescue.',
                  'Both arms use fixed original low minus 0.5 raw ATR stop and 16 bars, no live trailing stop.',
                  'Next-open fills; round-trip costs fixed, funding excluded; no intrabar price path.',
                  'Stop exits timestamped at bar close; drawdown uses realized equity, not floating P/L.',
                  '50x margin convention; no exchange liquidation simulation; not an execution recommendation.'])
-    for arm in ['early','confirmed']:
+    for arm in ['early','delayed','confirmed']:
         subset=t[t.arm.eq(arm)].copy() if not t.empty else t.copy()
         accepted,rejected=chronological_portfolio(subset)
         accepted.to_csv(out/f'{arm}_accepted.csv',index=False)
@@ -187,9 +199,21 @@ def main():
             summary['diagnostics'][arm]={str(k):stats(g) for k,g in subset.groupby('confirmation_eventually_passed')}
     summary['raw_event_counts']=events.status.value_counts().to_dict() if not events.empty else {}
     summary['confirmation_diagnostics'] = {name: int(events[name].fillna(False).sum()) if name in events else 0 for name in ['raw_pass','next_pass','combined_pass','confirmation_pass']}
+    summary['paired_candidates'] = {}
+    if not t.empty:
+        pairs=t[t.arm.isin(['early','delayed'])].pivot(index='event_id',columns='arm',values='net_R')
+        if {'early','delayed'}.issubset(pairs.columns):
+            pairs=pairs.dropna(subset=['early','delayed'])
+            delta=pairs['delayed']-pairs['early']
+            summary['paired_candidates']=dict(n=len(pairs),mean_delayed_minus_early_R=float(delta.mean()) if len(delta) else None)
     summary['source_sha256']={name:hashlib.sha256((repo/name).read_bytes()).hexdigest() for name in
         ['backtest_tide_early_entry.py','crypto_tide_engine_v10_9_dynamic_risk.py','tide_replay_support.py']}
     (out/'summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False))
+    # Persist reconstructable trade evidence in platform logs before finite job exits.
+    for record in all_events:
+        print('TIDE_RAW_EVENT '+json.dumps(record,default=str,allow_nan=False),flush=True)
+    for record in all_trades:
+        print('TIDE_CANDIDATE '+json.dumps(record,default=str,allow_nan=False),flush=True)
     print('TIDE_EARLY_REPORT '+json.dumps(summary,allow_nan=False),flush=True)
     return 2 if errors else 0
 
