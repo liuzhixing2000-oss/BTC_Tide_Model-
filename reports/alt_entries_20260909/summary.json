@@ -1,0 +1,6091 @@
+{
+  "version": 3,
+  "start": "2026-06-01 00:00:00+00:00",
+  "end": "2026-09-09 00:00:00+00:00",
+  "symbols": [
+    "1000000MOGUSDT",
+    "10000SATSUSDT",
+    "1000NEIROCTOUSDT",
+    "1000PEPEUSDT",
+    "1000RATSUSDT",
+    "1000TAGUSDT",
+    "1000TOSHIUSDT",
+    "1000TURBOUSDT",
+    "1000XECUSDT",
+    "1INCHUSDT",
+    "4USDT",
+    "ACEUSDT",
+    "ACHUSDT",
+    "ACXUSDT",
+    "AEVOUSDT",
+    "AGIUSDT",
+    "AIOUSDT",
+    "AIXBTUSDT",
+    "ALCHUSDT",
+    "ALGOUSDT",
+    "ALICEUSDT",
+    "ALTUSDT",
+    "ANKRUSDT",
+    "APTUSDT",
+    "ARBUSDT",
+    "ARCUSDT",
+    "ARKUSDT",
+    "ASTRUSDT",
+    "ATHUSDT",
+    "ATOMUSDT",
+    "AUCTIONUSDT",
+    "AUSDT",
+    "AVAAIUSDT",
+    "AVAUSDT",
+    "AVAXUSDT",
+    "AWEUSDT",
+    "AZTECUSDT",
+    "B2USDT",
+    "BABYUSDT",
+    "BANANAUSDT",
+    "BANDUSDT",
+    "BATUSDT",
+    "BBUSDT",
+    "BCHUSDT",
+    "BEATUSDT",
+    "BELUSDT",
+    "BICOUSDT",
+    "BIOUSDT",
+    "BLUAIUSDT",
+    "BLURUSDT",
+    "BNTUSDT",
+    "BOBAUSDT",
+    "BOMEUSDT",
+    "BRUSDT",
+    "BUSDT",
+    "C98USDT",
+    "CETUSUSDT",
+    "CFXUSDT",
+    "CGPTUSDT",
+    "CHILLGUYUSDT",
+    "CHRUSDT",
+    "CKBUSDT",
+    "CLANKERUSDT",
+    "CLUSDT",
+    "COOKIEUSDT",
+    "COREUSDT",
+    "COTIUSDT",
+    "CRVUSDT",
+    "CUSDT",
+    "CVCUSDT",
+    "CYBERUSDT",
+    "DBRUSDT",
+    "DIAUSDT",
+    "DOLOUSDT",
+    "DRIFTUSDT",
+    "DUSKUSDT",
+    "DYDXUSDT",
+    "EDENUSDT",
+    "EDGEUSDT",
+    "EDUUSDT",
+    "EGLDUSDT",
+    "EIGENUSDT",
+    "ELSAUSDT",
+    "ENAUSDT",
+    "ENSUSDT",
+    "ERAUSDT",
+    "ESPUSDT",
+    "ETCUSDT",
+    "ETHFIUSDT",
+    "EVAAUSDT",
+    "FARTCOINUSDT",
+    "FHEUSDT",
+    "FILUSDT",
+    "FLOCKUSDT",
+    "FLRUSDT",
+    "FOGOUSDT",
+    "FORMUSDT",
+    "FUSDT",
+    "GIGGLEUSDT",
+    "GMTUSDT",
+    "GMXUSDT",
+    "GOATUSDT",
+    "GPSUSDT",
+    "GRIFFAINUSDT",
+    "GRTUSDT",
+    "GUNUSDT",
+    "HANAUSDT",
+    "HOLOUSDT",
+    "HOMEUSDT",
+    "HUMAUSDT",
+    "HYPERUSDT",
+    "ICNTUSDT",
+    "IMXUSDT",
+    "INITUSDT",
+    "INUSDT",
+    "IOTXUSDT",
+    "IOUSDT",
+    "JASMYUSDT",
+    "JELLYJELLYUSDT",
+    "KAIAUSDT",
+    "KASUSDT",
+    "KATUSDT",
+    "KERNELUSDT",
+    "KGENUSDT",
+    "KITEUSDT",
+    "KNCUSDT",
+    "KSMUSDT",
+    "LIGHTUSDT",
+    "MAGICUSDT",
+    "MAGMAUSDT",
+    "MANAUSDT",
+    "MANTAUSDT",
+    "MASKUSDT",
+    "MAVIAUSDT",
+    "MAVUSDT",
+    "MEGAUSDT",
+    "METISUSDT",
+    "MEUSDT",
+    "MEWUSDT",
+    "MINAUSDT",
+    "MITOUSDT",
+    "MMTUSDT",
+    "MONUSDT",
+    "MOODENGUSDT",
+    "MORPHOUSDT",
+    "NAORISUSDT",
+    "NEWTUSDT",
+    "NIGHTUSDT",
+    "NILUSDT",
+    "NOTUSDT",
+    "NXPCUSDT",
+    "OGUSDT",
+    "ONDOUSDT",
+    "ORCAUSDT",
+    "ORDERUSDT",
+    "ORDIUSDT",
+    "PEOPLEUSDT",
+    "PIEVERSEUSDT",
+    "PIXELUSDT",
+    "PLUMEUSDT",
+    "POLUSDT",
+    "PROVEUSDT",
+    "PUNDIXUSDT",
+    "PYTHUSDT",
+    "QTUMUSDT",
+    "QUSDT",
+    "RAREUSDT",
+    "RAYDIUMUSDT",
+    "RESOLVUSDT",
+    "REZUSDT",
+    "RLCUSDT",
+    "RONINUSDT",
+    "ROSEUSDT",
+    "RPLUSDT",
+    "RUNEUSDT",
+    "SAFEUSDT",
+    "SAHARAUSDT",
+    "SAPIENUSDT",
+    "SENTUSDT",
+    "SHELLUSDT",
+    "SIRENUSDT",
+    "SKRUSDT",
+    "SKYUSDT",
+    "SNTUSDT",
+    "SOLAYERUSDT",
+    "SOMIUSDT",
+    "SONICUSDT",
+    "SOPHUSDT",
+    "SOSOUSDT",
+    "SPKUSDT",
+    "SPORTFUNUSDT",
+    "SPXUSDT",
+    "SQDUSDT",
+    "SSVUSDT",
+    "STABLEUSDT",
+    "STEEMUSDT",
+    "STGUSDT",
+    "STORJUSDT",
+    "STXUSDT",
+    "SUPERUSDT",
+    "TAOUSDT",
+    "TAUSDT",
+    "TNSRUSDT",
+    "TOWNSUSDT",
+    "TRUMPUSDT",
+    "TRUSTUSDT",
+    "TRUTHUSDT",
+    "TUTUSDT",
+    "UNIUSDT",
+    "USUALUSDT",
+    "VANAUSDT",
+    "VETUSDT",
+    "VINEUSDT",
+    "VIRTUALUSDT",
+    "VVVUSDT",
+    "WALUSDT",
+    "WAVESUSDT",
+    "WAXPUSDT",
+    "WCTUSDT",
+    "WIFUSDT",
+    "WOOUSDT",
+    "WUSDT",
+    "XAIUSDT",
+    "XANUSDT",
+    "XMRUSDT",
+    "XTZUSDT",
+    "XVSUSDT",
+    "YGGUSDT",
+    "ZBCNUSDT",
+    "ZBTUSDT",
+    "ZECUSDT",
+    "ZETAUSDT",
+    "ZKPUSDT",
+    "ZKUSDT"
+  ],
+  "status": "PARTIAL_DATA",
+  "settings": {
+    "symbols": "ALT_BUNDLE",
+    "days": 100,
+    "end": "2026-09-09T00:00:00Z",
+    "risk": 10.0,
+    "cost": 0.001,
+    "max_notional": 2500.0,
+    "data_dir": null,
+    "out": "/data/tide_alt_entries"
+  },
+  "params": {
+    "lookback_bars": 24,
+    "volume_lookback": 24,
+    "volume_multiplier": 1.5,
+    "lower_wick_threshold": 0.35,
+    "cooldown_bars": 24
+  },
+  "limitations": [
+    "Retrospective, not OOS; current eligible bundle selected using later information: survivorship/lookahead risk.",
+    "ALT_BUNDLE excludes BTC/ETH/SOL. Partial coverage excluded from both arms equally; no invented candles.",
+    "Fixed 10U planned risk; additional affordability gate rejects entries exceeding remaining realized equity.",
+    "Both arms require original Raw>=58 computed at raw close; no future confirmation used for early selection.",
+    "Confirmation arm additionally requires Next95/Combined70/2of3; not full live scoring or Rescue.",
+    "Both arms use fixed original low minus 0.5 raw ATR stop and 16 bars, no live trailing stop.",
+    "Next-open fills; round-trip costs fixed, funding excluded; no intrabar price path.",
+    "Stop exits timestamped at bar close; drawdown uses realized equity, not floating P/L.",
+    "50x margin convention; no exchange liquidation simulation; not an execution recommendation."
+  ],
+  "source_sha256": {
+    "backtest_tide_alt_entries.py": "2b05cb040bb1b5368e94d9c1e9620aa28c9da821a74bdc9a550b506551b75190",
+    "crypto_tide_engine_v10_9_dynamic_risk.py": "f8df07bb2aefd707bcda31e36e39413a09fb9e4cf5106884651a2cf083396951",
+    "tide_replay_support.py": "771cd12b87af9cbd12a340e0c39369ff4db746c6cb167bce2fb703acc837f696",
+    "v10_bundle/stage2_full_results.csv": "9d4345c90cd8e6bc4c6ff4d5e50f4b7054e24fea044184dc3dd292d4c642ca52"
+  },
+  "errors": [
+    {
+      "symbol": "ACXUSDT",
+      "error": "Insufficient 15 data"
+    },
+    {
+      "symbol": "VINEUSDT",
+      "error": "Insufficient 15 data"
+    }
+  ],
+  "coverage": [
+    {
+      "symbol": "1000000MOGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "13009919230f06b7f6df74562a9364ea2cd9c5cc6181a0ae0b20725cd01ffac4"
+    },
+    {
+      "symbol": "1000000MOGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "ba4639764f645cf0dc12afd04232965b06ee023f5d80d123f2ef296da0fe67e5"
+    },
+    {
+      "symbol": "10000SATSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5f37372bc57e2345e247b37defbbefea3f1d3fed70a3f1cdeb58afdd73d3d89a"
+    },
+    {
+      "symbol": "10000SATSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b176df70937877e3de7ad1a1a8ccff34403ffc7ac099d54417209c2319d1cf44"
+    },
+    {
+      "symbol": "1000NEIROCTOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8b92499e4d80f9e76f178872f2c44894cd98761a3145dc7c266e11c67267ee08"
+    },
+    {
+      "symbol": "1000NEIROCTOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0ff3e65cfd8e4d3dd7527e76b5d293ae78371de5f4d93a7c6b7c527afd799cef"
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ee04c18db8391e871cc3f79959df9bba31c6474fd813945440d5845e9991da29"
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3428cd962f158f1693a16023e437ad12e2889ce403ab63e01fc16fcbf5c84134"
+    },
+    {
+      "symbol": "1000RATSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "45a3e6380abe61b99078167b627de9c5e0147aa60b9f69c73f1f0f7d94dd4257"
+    },
+    {
+      "symbol": "1000RATSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "69c4a2af0a71acf74dcb2b7b91b271fd3509c425c29f11f212c2f199619afebc"
+    },
+    {
+      "symbol": "1000TAGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b21dddd0da0b2d0ee30e7246ae2504c93f0109f1d39f3c1cb0f22f1e4e6db34d"
+    },
+    {
+      "symbol": "1000TAGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "5470ff6ed7a561b2a409a5653c19aa521143de123338fd29e7232e72d5abacbf"
+    },
+    {
+      "symbol": "1000TOSHIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1ed95d5daae302003972e472cc5b205fcf6e4a36997ca8ef26938e1324d64ffd"
+    },
+    {
+      "symbol": "1000TOSHIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "80557eec3b7a43aed346ac2b4899d1e2fd26869f00098ac9b00c6b9a9a392e4e"
+    },
+    {
+      "symbol": "1000TURBOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bec667b9d4f678953c9674467e847ac89baee6366feb5dda96cfa768fe12f7e5"
+    },
+    {
+      "symbol": "1000TURBOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f3906ebfa9f5d7f90c6f6a02202ab2d7a199cf6bf4268f9f6027df3b7e2d8755"
+    },
+    {
+      "symbol": "1000XECUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e8b423f53f0f5b90d465893e8c465a5183a4f27b742702d246b6ee22c26e3928"
+    },
+    {
+      "symbol": "1000XECUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "588bedcc0526a0649b4fbbae2b2d9bb249df32854beea273b57c91537891d2bf"
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "043d4a39709f272482c4b2bdc235ea04d3a5a394637ccb97373069b95529681d"
+    },
+    {
+      "symbol": "1INCHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d46cee9e7b36988fdd424fb273ddba356c781f77fbcb0a0fa80cee1367a3084d"
+    },
+    {
+      "symbol": "4USDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "368d5ad6451bb7287510f6ced7df3228a94a01220697ba5275888de13725a6d5"
+    },
+    {
+      "symbol": "4USDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c3a04a767fa202e01669e2c029c52499501e165f23b3f70acd265c451aaab325"
+    },
+    {
+      "symbol": "ACEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "054b134b1fa439a46f1270b2e75209b7c772d3d28c64224b474d52c9b8d8f080"
+    },
+    {
+      "symbol": "ACEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a72541e3d1cc2f0b867e38d12ba1c2bb89bbedc9c7bf39da14e88e4ed8374c7b"
+    },
+    {
+      "symbol": "ACHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "7c30d688a33248ea95df6b95ee66f08348ad674d4596aca44fc11ff21e8bd1ac"
+    },
+    {
+      "symbol": "ACHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4cb2ce950992ee8430c7fff982bc9236de02be889a9945cc1de581b6567c0634"
+    },
+    {
+      "symbol": "AEVOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8cee21a3818b6dc87ef2763dab29e8f4f154a43dc13ca10630b8b007b142f666"
+    },
+    {
+      "symbol": "AEVOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8883fe99944213b61c4e73e10356e8f3889f4d780109d84d83a0a23b2e5a2b39"
+    },
+    {
+      "symbol": "AGIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b19beed6a3b4e230e21eb720cfcf949970abc256ec70031fa22bc405c3725e2e"
+    },
+    {
+      "symbol": "AGIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7e0f623a7a2994b9c52b7006dae2ef95257a4e9e371b797cde15f413944ae499"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ae852e3c30330ce9b0d5d5ed51560be5992df90293c3d9de12cad99c217ccce0"
+    },
+    {
+      "symbol": "AIOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "ba3a17a66627a8b378efba8b7f28e1f05e3bce5d24b0afd3093d5bac0756b1b6"
+    },
+    {
+      "symbol": "AIXBTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "822c772362544a4cf4d962611e7360259fcb082ce9c218c458054d6bacbe03cc"
+    },
+    {
+      "symbol": "AIXBTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "32a14de1e0e84bd8df2edbf00783b7ff4962b08087eb0e9f923153204d1230d9"
+    },
+    {
+      "symbol": "ALCHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "66e98e28f0b3acfe28521e2c4db5abaf12f105315cdd2f1976cbbdb792820d4e"
+    },
+    {
+      "symbol": "ALCHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "44edb31e430165a2f6740915ffbbf6f047c3e47f6b4574cc39500f2455fc6c6a"
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "30cf449f75cdaaf14669bc197ccdaf828be56a1f2ac13a57043d2992e1d54845"
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "5b11bbbf7d8561696e016c4558ba087cfdd0bd97fed466655f51fe2bed2bcbb7"
+    },
+    {
+      "symbol": "ALICEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "44f4903ac776215eb2b4c26933402c5cdee7b23ffea83e9eefba2c6c67940c05"
+    },
+    {
+      "symbol": "ALICEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c43c99931a0a457dc3f71def1c3343b4dc11f36e3f91a5befe1a3ec5bc2ca1f8"
+    },
+    {
+      "symbol": "ALTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fdf0af05f61dbd9a02885204b331a86d6b55977074d7d22bfb5f011a7287c71e"
+    },
+    {
+      "symbol": "ALTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a222423a94eb5dae19f0cb403ac7fba5acfb1ff139b976b95843d2acf5615eef"
+    },
+    {
+      "symbol": "ANKRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "56382e2c1ccdf8e4c330ce2db6a546eab705de1f5cd92398293d4e240a64246e"
+    },
+    {
+      "symbol": "ANKRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7d7378edf3981d0feacbbe05df94195dd6b78a3771228ffd63cd4f5c0b4d4863"
+    },
+    {
+      "symbol": "APTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3b33ef98cb5f4dd1f678cd5e029e8d4df32989da8a5344f01836908a10f19443"
+    },
+    {
+      "symbol": "APTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cdf519b5418a9a631b97008aacc9aed3f0fca98ef3ec0f0ec97759a75497ef49"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8610053837da30d87d3512e338cdcaccfcfc47e206af63895d38b661f9367498"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "938852eb508399f2d58688b2ca80adf81faecc67eb3e1be7adae56e6eacb8794"
+    },
+    {
+      "symbol": "ARCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fea6f9563b447b5de0e372c876fb934f6766e52d288698ab86a00001c39ddf71"
+    },
+    {
+      "symbol": "ARCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "14a46459c3ee123dc337d534914ea7152a04b4be9a6c859e9cc3efa90f27dee3"
+    },
+    {
+      "symbol": "ARKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0dd94b463ba7655c0d34213900a54ca6fa5c44041ce279833345dca4c5ce0ae7"
+    },
+    {
+      "symbol": "ARKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "39e41f91e980a12136bd0a7f5a909b4c294492a2871270a437409a1d42f08ffe"
+    },
+    {
+      "symbol": "ASTRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "4b245f783b3f0502205ad6d6c7bdddbc3148707dd33e5e39d98c2e0db2a9ad2e"
+    },
+    {
+      "symbol": "ASTRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "56fb9e440f19fb96a438bd2b4fcb4291bc4685934c8b7f818199595de01ff325"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3d4659a8c9962fdcde9b8f6499b49882f413330003f4c6a3e85d516de11facc3"
+    },
+    {
+      "symbol": "ATHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9d5d60eff38a2d823fbfe26a35c884438e0c573ab7d5f5bca40a899288ddd469"
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a8596399ccd1293ddcb7018f009c47e4da896726c2fdb46fe6413aca5b976d63"
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "2ff1e1f49103791b0bee3e23f4b364f8a61f7c1cbf6b553f614964774df6118d"
+    },
+    {
+      "symbol": "AUCTIONUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5633c9c8b05fb389ca5608f6e340c97cc3e35948c4c79428330e730c83b4e45d"
+    },
+    {
+      "symbol": "AUCTIONUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "24e20c621d7a3d34f1d101b74beac7e778bba9cea8f3872d115b26644479ee9b"
+    },
+    {
+      "symbol": "AUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "c3585ab13e644821a24d3642d589b8c42e895ba6a53af07c94ee60bb0d914842"
+    },
+    {
+      "symbol": "AUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "32d45db827570b6aa78138db9702049b9799761b12af1e30ee8ad2945d49dec6"
+    },
+    {
+      "symbol": "AVAAIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "92253b25798b2c6930ad9cca29d76e3dc6ac6eea7b336d82697cb1b68da1c96b"
+    },
+    {
+      "symbol": "AVAAIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c166538048a70f5f4077e52d5b3762c912bb838275186587667c78f972e0bcbe"
+    },
+    {
+      "symbol": "AVAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d830c52c20ae0c9c2852087ca9d7c27d66e710efc33a4c5884ffeded37ea8aba"
+    },
+    {
+      "symbol": "AVAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e35b38eff4a7b1a12ae1d21f5614870d6af801a83d1241a5f81b02cf3a8f17d7"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6665f37bd08712c3057941abb5b48a3ea46d82308dfa0ff11467c127488e3435"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c2fed70e3f10c51a80bb4074502d683e295743938af1eb7384ef1a410fb96171"
+    },
+    {
+      "symbol": "AWEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "acc209ee0f9b71d6c4f984be510579f20bcfd0a080f9df0836135ed72b6477d6"
+    },
+    {
+      "symbol": "AWEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8b18b8bf354a62630fc897e15a7540207fa7e05fb1906762e73423d9f7f176b8"
+    },
+    {
+      "symbol": "AZTECUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "dcdcdc8a5d7ff20c45bcda2ec6cd5975712f69b210df09e3418fcf15cdd0b6fb"
+    },
+    {
+      "symbol": "AZTECUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9da87803c7147f45da66e262bfe2bb28ba23f2caf01429ecd6b722bbfc2a2fc2"
+    },
+    {
+      "symbol": "BABYUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cf94c942cc7b07094023403a7234060cc0dd132cbe0269c7ef939192c39b7215"
+    },
+    {
+      "symbol": "BABYUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cf8ab898b82e653c44742c20f409ca250aac43b414166e604f18e64598e1929d"
+    },
+    {
+      "symbol": "BANANAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "977cc4c51a57857d3c58145e345f81ed7c39bae67239cb17a1772d867d7e23cd"
+    },
+    {
+      "symbol": "BANANAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8d95d941e47aa819c3725b55d39d3c57cb98344c566beda53de7c1cde8f5cfa8"
+    },
+    {
+      "symbol": "BANDUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "65b0e349c16841c4cf2492241091ba7454016b1cc6353f13db376407fa873e61"
+    },
+    {
+      "symbol": "BANDUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "44e4ae9275ec6632f94195de81ab7bcd94056d6ecbdae815366bcd76d8e65f50"
+    },
+    {
+      "symbol": "BATUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "140262d824653d3e29b8b7718b3283e4df94db6e2c7469a419508790557d8623"
+    },
+    {
+      "symbol": "BATUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "23a4cf63f17216af86c9d4bd85d40e9b1f83abef817cd8c84cbb1352638b9efe"
+    },
+    {
+      "symbol": "BBUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0410cfd5100ed6226af8b5f8d2c872bc803bb9b997b6989515f00013c02165f7"
+    },
+    {
+      "symbol": "BBUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c9f5e944d1549163313ff257a28b94faa8851bb694673182a6d9e21d7f98d00c"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a25c7c2d3863df220ab44bc7e94f1a042fb7bd560cab6f42a2875f595e8c7a79"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b1b941427e52b5e3670f347651a6358fe2becd521c21cd6fc8e78535c4123b93"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "90c99734b2c4fd25dd77ff585664416fb84d5159aca79035be638c636ebe67c3"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "fc095dd530a70ef08c82a2561c5c098ff86cd9ee71985cd9e5631bc3997886d5"
+    },
+    {
+      "symbol": "BELUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "02da1a9befe051043ee2f05718bea007c803d5add8e4bfc2a4f4456404e0dc44"
+    },
+    {
+      "symbol": "BELUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0d6a0c9b2497126885d0006339df1f422e233bfd2e2458d988a312908eacdc50"
+    },
+    {
+      "symbol": "BICOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fb1b25eae2829521a0ac1b3929fcbb58bba74dd62cef0b194992c2c682abee65"
+    },
+    {
+      "symbol": "BICOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "79e5f47e8f33fc5a63999763daf9d92650361f7890d6f2f3cd5c67f6ba0e49f7"
+    },
+    {
+      "symbol": "BIOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a3a113650a02486eac69c6c0006e63818617f7f961b248ce51bc680c116da140"
+    },
+    {
+      "symbol": "BIOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e0f2ec3d1e682c4a838dd47d6b150d006c73cc47c1050c89577b04b0c5988c46"
+    },
+    {
+      "symbol": "BLUAIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "afaea53514c46788086a9d62a199cf67c384a25463591ef041d1ab79713d39a1"
+    },
+    {
+      "symbol": "BLUAIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "df8c151dd6ce0fea1dd59c6058d9d9c174c7e0683b5f00a3fb2880ed31a5e90f"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "c5eb046669211a8bc2605dd7bf772b386a151384ba1eec3eb4cef47b80d22ae1"
+    },
+    {
+      "symbol": "BLURUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0ca65e313832a5fb2dee410608922c730c8315a8a139122260c932802d64f74e"
+    },
+    {
+      "symbol": "BNTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a5ece66ba819dbfe22f77bbad2ad21f216daedae1bd60c3d6d1f975a027dabec"
+    },
+    {
+      "symbol": "BNTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "592a67dda3367398eba36d2a7eaf56ada90a0a0d5d2d91cd15e45aca5e0f0d6d"
+    },
+    {
+      "symbol": "BOBAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d44ba17cc4f396dd25cb198f9e09924a6e278061cb43e660c3cdfdbe18002027"
+    },
+    {
+      "symbol": "BOBAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d3cb6e49da0b901a4b0059f471df70174d9320da6d874574d844feb42874d64f"
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3a402ad9c0c5ec70b50f21643f9121ca7eff6a5e5561b17c1cb88bca7c39bce2"
+    },
+    {
+      "symbol": "BOMEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "77ce9c11f3c53a73ac02fcd016e9e119da457a8fdae764b3cdae9962e76fefd6"
+    },
+    {
+      "symbol": "BRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "80789baec72da37507e5c3af042a68e30460fb3751123b88e1cebf73760b4014"
+    },
+    {
+      "symbol": "BRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4ddded028bdd7c79820c860fc3c1e1cbe07c0de6c718276729b95350549d7464"
+    },
+    {
+      "symbol": "BUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "83874b2ad851b44946ff54d46aae50e4393e9607ba38d660ecd4576abe44af56"
+    },
+    {
+      "symbol": "BUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "275f74d40f492351d7c1e967ed7200df8ef2fa8dac4ee93741c4b316ccb2ef79"
+    },
+    {
+      "symbol": "C98USDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "92aa54dda728fe5d9933080b10a4f3eb3ccdb1981ff6639cbf162479bca21c41"
+    },
+    {
+      "symbol": "C98USDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8a51e439f042bead4ad94526753761678d999fe1558dd352fa38b99feef5d0fa"
+    },
+    {
+      "symbol": "CETUSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9e65cc83f48ee9cd3f5602690eef8dc98855b1430c550733620b18c8fe40a822"
+    },
+    {
+      "symbol": "CETUSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "6d2663090bf865f8919fa77d8ccb5839a01ea08faa34493ba09c25fd4860cebf"
+    },
+    {
+      "symbol": "CFXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "febfa4e27cc9079fe8c0122699689cdca86f9eaf84bbf3f00ac5c186b81f2451"
+    },
+    {
+      "symbol": "CFXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f8861975215ecb5a9cd8c862c771a16d0960f1e4a73a72f57a1ef8e3323cbc44"
+    },
+    {
+      "symbol": "CGPTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "527d31efe1d688b378b0515f56abeddafd329cc7f9a9c68ab32ae68e3f7e3ff3"
+    },
+    {
+      "symbol": "CGPTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "58115bf727cd0a441b6d59f9490837aa9572489c8a6081b88a1cf9176ab4e52a"
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "7d71300f25af9cb64d4f576ece8eba8652279969cdb8ca77adf4922576085f14"
+    },
+    {
+      "symbol": "CHILLGUYUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "01eaf76a1c64447e8781aa369b2eb9cb043e6eddcdc120d07a141f6812240992"
+    },
+    {
+      "symbol": "CHRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bf4a610e66ce9437dd3f735bc0ed3e979878d9ca2f12bbdc4b9479a50c84671e"
+    },
+    {
+      "symbol": "CHRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "63a8a59450b4954031cab1d26d0931f923a3cc1ac3b93961e899e57e199af751"
+    },
+    {
+      "symbol": "CKBUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "04806ae2e93f78eadd77be3d2ce7727b8a5aeded7a05ee1fa7f82466607e46c2"
+    },
+    {
+      "symbol": "CKBUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7b039e323269ea18e8c5970a607914ac562df941975b99044ae5aea95e61daf9"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "aced751f72bf9140a8457854f6c1fb44d04314ea3134c03786b9c08c45f312e6"
+    },
+    {
+      "symbol": "CLANKERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4ab353ddb79db7f7e10ff3c93f7eaf7e7b4a620a0fc47904cfdb3fed1fd033e0"
+    },
+    {
+      "symbol": "CLUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "de97a9215f310332c86dd30d1da050fe4bdba5aa8cea4978211d28b152c37ecf"
+    },
+    {
+      "symbol": "CLUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b599cff215dd4e74ca3559c0666601165bf59758ff158e69ee40369ca9768bde"
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "882ab78240e3958626a8cb415d7488c52b185286ecfd724f8807e86ef15418d2"
+    },
+    {
+      "symbol": "COOKIEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "51e94bae1a0e6916d15fd0eb25f16e97733753c53dbbf46b71d977492685bb24"
+    },
+    {
+      "symbol": "COREUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b123fb73fb8b4a761065590b7bb34624a373b713e9bcd78c27eed5d569955c56"
+    },
+    {
+      "symbol": "COREUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c59eb78ebeaf3c78bdd238d9ee57b17a2abb03ca0df7dc4cb29829a993b8a274"
+    },
+    {
+      "symbol": "COTIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a6cd4482bac03d0c4197daab322bff3969ed77a6c3e1fcae9d3763ca57d1d01b"
+    },
+    {
+      "symbol": "COTIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "50cbea9c480c38e4bbabec840e26a957c9eb90dad2820d3b671cf2231f35e41e"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e14bd301fb75762caf7921fc8991bbad8f9c2e9f1437102e7473bc5e0dadde61"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d46fc930a1937a27b44f31c2edaf69569220385519057fa7e50abae46600175e"
+    },
+    {
+      "symbol": "CUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "102f588bb49474f456cbeba12bf5548dae4cb411c1a415503679957d95f2ac34"
+    },
+    {
+      "symbol": "CUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "51b958aca8c433705bd36db39dced51d3b407c175f45acafc9cf3ffd043d0243"
+    },
+    {
+      "symbol": "CVCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "85790991c22a4a547d446572fcd6e26e512f26b5fa377d7872ce47674e7f025a"
+    },
+    {
+      "symbol": "CVCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cadb3c8e32e82827a4aa946490220921ec4495e6013c1586c5e8dc3094efefb4"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "867f012c104a03e8f06ccf05834ad4b0ab56b17b430434f6ec9ecfffb8aec74a"
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "5a07271b4dc0acb5a1ebc7292a4d1ccd86218168d9139e3b614597f8e105abd6"
+    },
+    {
+      "symbol": "DBRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3a55a394e7381d0cce2f2c10f2018d89aa9cc34af2eea2d70b1553d1fab726cb"
+    },
+    {
+      "symbol": "DBRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "88ad0d0d9b135db8617978e670bb0f70317fc989edcd06db9244a1eab9d3bf39"
+    },
+    {
+      "symbol": "DIAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9319c2eebedf9afa40c248f20fc3303b345bd8b56210c3d253ab377342d97c85"
+    },
+    {
+      "symbol": "DIAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cd5b84177de3e82ed2c4b40da418f3553b508408bf70a7edcccdb6908783ba97"
+    },
+    {
+      "symbol": "DOLOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9ddbc8da64bd03cd3dbb451f986bffe86f4cd91097b22a0d5cea755a774c74bb"
+    },
+    {
+      "symbol": "DOLOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3ec3fcac44d696b5cfd2210afdfe42dda87c08a94455bff1492e5be9272a9f88"
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "4bec151b7ad2f2fe34bcb944b3a45700b277a4673306fdb092d2b0dba5aeeabb"
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "135bd42cb714b96e7f59a6fde6a29e61f4bcdb2e92acf7750cf07fcbf49c411d"
+    },
+    {
+      "symbol": "DUSKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ea758a64fd8fb8ca00e50aaa8fe141ec50a3e350a885498b0182ea6995dc8de5"
+    },
+    {
+      "symbol": "DUSKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3103d3486ae47baeb30a9220032ee62dcd4aa7f953da703cc525fe486336505a"
+    },
+    {
+      "symbol": "DYDXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "63635c5f3c4e5156e67ca54b42c6777c39d95e94f8081a3124f58ae642db2d6b"
+    },
+    {
+      "symbol": "DYDXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4db1c8da38249eb3baf69a6b33745038f7daef7dd049774c90ca22d501a70231"
+    },
+    {
+      "symbol": "EDENUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "41239f7c63d7b8aca1e0be3adfdef60792b478b96df8ed81f170979e1cda9af4"
+    },
+    {
+      "symbol": "EDENUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d990b58bb49507294baf31329228276fe65ed1e542dac421b0e81680f93d54dd"
+    },
+    {
+      "symbol": "EDGEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e6c40ea0e8049ed39c1dfe4d3c0bfe3333cb4b4d495ea88dafd725dcb3393203"
+    },
+    {
+      "symbol": "EDGEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4e2391e4057567ba0cd23222b4c3410a20a6f8e5517761c2007cf042039b0719"
+    },
+    {
+      "symbol": "EDUUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cb436940dbe15c7cc3f2ed7c19cc96839e92a22b64527d44482e75427ec82f94"
+    },
+    {
+      "symbol": "EDUUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a42ed7b670c0fbb672e1b8260e7b869837d8f576212c78a61a35c3db2676db02"
+    },
+    {
+      "symbol": "EGLDUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3155114cf047b6f1066a50e88d9873c788c45554c4ee8a46fe272a68c641daae"
+    },
+    {
+      "symbol": "EGLDUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cd8e0f58b578b369d8233dd842abe6a7a41e302b4b7f11cfa59d6f0438bc0b1c"
+    },
+    {
+      "symbol": "EIGENUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d3415b9d14cd23a737c5284f0a85d43c02c7300d6a617d81c7ca1e031aa3eb6d"
+    },
+    {
+      "symbol": "EIGENUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "457f31c39f5122c937869c9c37e7612c53d0260b3997e66f48e21473dad9fa5c"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0a0d76d7856f5aaf159b642efbdd958f6b8097f6abbf5980b192fc910c42669a"
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "fb307d10fb612715ee5fde8e082c47bd9f0ab08567280d31e75f18aa0242dbfb"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cffeca95e533ca37b268ede3369816f4825c48323b3a4b0f93f5e7d47d2cb5e8"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d74f36d229132aabdf76f735e7a3134063000d12f50fe3378d45c0034c7432ad"
+    },
+    {
+      "symbol": "ENSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "c578d5af74231dbca11167379021333d3bab9e730c40171e65d2523a91df539c"
+    },
+    {
+      "symbol": "ENSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f8ba88ec09178438ef32b3fa573663575528c42cd0762b05a59bc5e1f6594595"
+    },
+    {
+      "symbol": "ERAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "220626cfced7b848bc185c44658c915e061191fa1fc3435146e97c8828ca92f5"
+    },
+    {
+      "symbol": "ERAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e8fbb6a7051ef037d02f7e082bcee4e87835f07661fbac08068600d6fbaa0333"
+    },
+    {
+      "symbol": "ESPUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "619a9241ab58a445d438b688bfdb5082906c9b062cd7e466a6e41b169365af88"
+    },
+    {
+      "symbol": "ESPUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "56d39e3febf3ba6b099de4e7eee140c24cf523695d4d46b100c906dc510a5d8e"
+    },
+    {
+      "symbol": "ETCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "59f138834cf1c2d9dd60e2992641acfb7fd6471c19a3ebff13cf973c4c4b7a20"
+    },
+    {
+      "symbol": "ETCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "6200f99c21b03a46282ca0c515130888e28fa77e18795bc862516102edcf2519"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3f09e229a4a51ad6a1bc4323bcba23f7034a23f8ab0bf382b28aa06c5ac97f40"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "29955f516f8755977a2ad67a7ffb7ec6f7a96729923b3b1e376adcd5a602b4d0"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "75ebc526db8619b2e18ad123dfc2a10663155c755b17ccc6cadcd4862dddf806"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "40dcdc14008fb3e701060c2cc5c037e5290a20b4790fd85c2e4d1688dd9d8cbc"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "7576e90a9e89d35d61d51d8196f13aa44745533eb4c7ef1761f6673b7cbc1adf"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9be41bdeeca2c2c8b006db0cb465d57516b57e0fdb516214ba52d4adef9cad36"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ea934f7c84eb0fa31e12de8e8d425a95d4187d17594b5b23370f83d3d949a83f"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "1f84828e72304c3c3f8a640a162fdf39b501c0834b6fa32315866c798f194018"
+    },
+    {
+      "symbol": "FILUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3c32da57b10bfd7932aa52c581a5a07c36aa50206b89d5ac943016fe46a547b8"
+    },
+    {
+      "symbol": "FILUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "faa4b8b7d48d7d7f2c9b702f97593f3bd6288e9383dd106c38639f1706215e8f"
+    },
+    {
+      "symbol": "FLOCKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e3fcb94855662b33ae6f286d3dfef098341c90e2fc07713893bca8bbda7840f8"
+    },
+    {
+      "symbol": "FLOCKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "711f128e9d36b6bacda73cbf3ca355798760eda391b8a7787c7827a0db7735b1"
+    },
+    {
+      "symbol": "FLRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "95a855911c26f771b2bbfbd4f93884f7d65ba9e96a8e32223cc8a2ff49e9c50f"
+    },
+    {
+      "symbol": "FLRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "ad28e64b5ac524d9dc98abf2d5e8ba1332335a29ca522dfbfb2db19e53e3dbf3"
+    },
+    {
+      "symbol": "FOGOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "24d614e15f10e126992bfc333e5621bd36be8ebc7e942e23a7ab84843cc318b1"
+    },
+    {
+      "symbol": "FOGOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7571c01c654ed731372df921b4f9ab4bb556729b490648bf9eb459a167512eaa"
+    },
+    {
+      "symbol": "FORMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b5ce972cfdc7b1c3fb323a09ba9358fa38ec2c6e746b24383f0baee190c34fad"
+    },
+    {
+      "symbol": "FORMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a43fec7acc03199b007d5088ed2e2f109897354ff88d5f848f3082bdd524fe78"
+    },
+    {
+      "symbol": "FUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "81c40f6e36a040b4669f22660209d7f2eed2d36b673c491427bf813c9b284343"
+    },
+    {
+      "symbol": "FUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c4b20c9f7202cf88c5beaff93d0cfaeec3db9e7099b6e5432a7e2fbdf5f7f0be"
+    },
+    {
+      "symbol": "GIGGLEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bf7198291506834aa5ddab9d022689f30f450fd704f891a4a034dbf67e0d7b4c"
+    },
+    {
+      "symbol": "GIGGLEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7d46a90b0fc4f2005d2995eb3a5103a220d98c6d54b853bdaa0f71fca3359add"
+    },
+    {
+      "symbol": "GMTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d7652d53bded4f3c3cfb83a3627a0fb3c142d2b855182d852b4baa5320fd48aa"
+    },
+    {
+      "symbol": "GMTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f83be1360b52d3529a1d5e67ce88e5bc3b28ea98cfbce1d193c14b301ca93e8a"
+    },
+    {
+      "symbol": "GMXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e61ecff7680f4fbb5ba372b665d744a5efad93f706364abe8b43aa9c870f04cc"
+    },
+    {
+      "symbol": "GMXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0c65c2a388e4e8c5fd9c63d30195fad31599ec74664df7b98b39081c0dd4f147"
+    },
+    {
+      "symbol": "GOATUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ebf5b243e1ac4b6411e4bdf311df521947c4a8272ed5dc28edcc364a1bda021a"
+    },
+    {
+      "symbol": "GOATUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "60614b014e12b6203a818172fdf804b8eae7dbdc7572803b60562c2e513d39fb"
+    },
+    {
+      "symbol": "GPSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "65db9a1185e856bd17f7ab1fc1ae4d65d5995b1ce9b5227e94d2c3d80009eb35"
+    },
+    {
+      "symbol": "GPSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "790f306cf7bc2e5a9b21a8c729f0fd863e8fd74300333209696dcfe2d2b483d1"
+    },
+    {
+      "symbol": "GRIFFAINUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "817b45cf3f18766cfd4720538d0f6f09da7100c67c67abb85dcf951a687e7bc8"
+    },
+    {
+      "symbol": "GRIFFAINUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "5f9238c15bdbe20b199806fed61b6d62c22855bab20d73abad0c9f36fa467ed3"
+    },
+    {
+      "symbol": "GRTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b000a4c3c9571a9b9e4572fba18c9a1e8c0fd39ccf20b9c04c220b33a5a4db07"
+    },
+    {
+      "symbol": "GRTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f0603f665537ff7bed6b1f8cfce364217ec5cbd743334de3584879291ae3ced3"
+    },
+    {
+      "symbol": "GUNUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d002c71d8335206f00128c28507cc80602965a09002bd05675c3ac72ebfde101"
+    },
+    {
+      "symbol": "GUNUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0e847bff81c58c3679495186fcc555d683d01410ac732f17fc6a798242ceccc9"
+    },
+    {
+      "symbol": "HANAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bcf17e31f2763339100c669389364c601b8da5405ca27ca6eb9056f5603001e2"
+    },
+    {
+      "symbol": "HANAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "2d297319d5cfa5996dedf4d6a3f7c5ffb02b2111839913951b59ec0786f3c555"
+    },
+    {
+      "symbol": "HOLOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0d9cd2e5d46e2a3bb38b0ffd16200b2fd5b58baf4d9d5b3cbdb23cce65573911"
+    },
+    {
+      "symbol": "HOLOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "63ecedf7d867ba3913b1e695a4b75356ccbbf9d832461a7bcb4c661c3d29e396"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cffa4180b1030e467fde043fb6a1b6739bd54577c235a9f53936803ccc7a8324"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c52264d8ba503eddf2c086191300a6d01c39e8bbe5ddbaf34656301abeedb4f8"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "4d695e57d746ee1b014df6e9df7e41936f9be3f39ca52d30fd87583df831943d"
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "25526d4214fc85bcca83f99826e63daab2656c3f29f017e0299e216145b8e7a9"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a8b33bcb4fb275d3298fee82da77ee769a8b72a9a60062d987e1227f595f11f3"
+    },
+    {
+      "symbol": "HYPERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8b9df1e96c4001f2e6b29594d490f7e91a766191b0b2f031ac5abc4c0bca27c8"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "07dfaa6de052edde6a24eeabb81b9dc206079e866627ed54d3b3513686bb3cf4"
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "78a91cbce0b247b603477fb26f8f3f8ef3fb175baef61c5bb06e61c7e85c598d"
+    },
+    {
+      "symbol": "IMXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "4fdd70bfa8a3890daebef23c3156959300d17bb79ecc49e0bc4642dd08de848a"
+    },
+    {
+      "symbol": "IMXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3a0d460bf486c645c9eb0839bfc1b77f4458f0bd803ab023b7d65b2fae901e23"
+    },
+    {
+      "symbol": "INITUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b4c7e83464e01738ff5679ee276aac5ed8233adf4680e3729b34403bb4ac8e90"
+    },
+    {
+      "symbol": "INITUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3e2466cd6fac4199bf2225eec9cce7272d40fc74ed4c49d97253bf4bff125404"
+    },
+    {
+      "symbol": "INUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2712dd477ff896f842f18aa1ad2391242490b176429f1fd92e5c826bf70c89c1"
+    },
+    {
+      "symbol": "INUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "307c26591a9ca75878566c251382581f73ed1e2ef7a617f441a5185a2e59b739"
+    },
+    {
+      "symbol": "IOTXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "328076bb6b4cfb40dda09b29d6513a08c4417aa9b7c9ec2ef4495941c0a56f55"
+    },
+    {
+      "symbol": "IOTXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "263824d05ce77338705a17e22962df341fad6c4f4c81f0d8714877fc8bd63fff"
+    },
+    {
+      "symbol": "IOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "87090a1d1fe49c1ae018f4d8e3c5f05333b0f4f1b378408eec65e2178bfc9258"
+    },
+    {
+      "symbol": "IOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3fc36d2eecbf681699cd61789e3f01ac2784c70a19e997eb243ae669309c40f3"
+    },
+    {
+      "symbol": "JASMYUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "74afa9f6ee49750aeb49ef16d3487bbb2979a1bb1f872057fd81e610d08d733f"
+    },
+    {
+      "symbol": "JASMYUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "eac145f3b21e240381b80da142b7dda4e7e0c47166b82c4b217c4e57fc401c53"
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "60d944ee193797321d6ce050993de3ee7630f4cf94759ea3de1256f086ecaef6"
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "6305400f5606a9cc9d123b79a7f2d8b6502080a130d7bfe9e7b3ea473a4e4df0"
+    },
+    {
+      "symbol": "KAIAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bb3a498b77ca013b23a1aaf7d7a63ffb6e98fe211435e56ea5daf67227ecc5c6"
+    },
+    {
+      "symbol": "KAIAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "47f1add40f8c617ad26108572ff270976094f0e21d5269e8b5af8cafdd41badb"
+    },
+    {
+      "symbol": "KASUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "bc9a2b4757d70966af957a7f077c7b7fafcd7ebb7d54d3f463a25a2705a8241a"
+    },
+    {
+      "symbol": "KASUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7fe91266fd39dceeb0ae5318bd330c9b899c91a3f66e52cd13901ec60f7dc9e7"
+    },
+    {
+      "symbol": "KATUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e047d4361348347d548049447ca85a6171011893f3072dd6e02575ceeb524b1d"
+    },
+    {
+      "symbol": "KATUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "abd4ae7071fd6bb83619f3347786d9b9879a44dca5cbf4022954193b181680cf"
+    },
+    {
+      "symbol": "KERNELUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b73164db8dfab9dd1991b8bd79834022ebde7f0caaf73f3f39ad99dd3bb924bf"
+    },
+    {
+      "symbol": "KERNELUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "052f3da60bf16110163d7164dbe7128669179bc9a7371012bc01fc89beb164e4"
+    },
+    {
+      "symbol": "KGENUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "312e89a5e3b07632fb78bf2317fe92d488ab35e993ca5a690510897872746c98"
+    },
+    {
+      "symbol": "KGENUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "94c29d8da9dcb68260e091ee2fe6e4fc7299e92993d979327949f72531e37295"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1696f960e7356958be4dd2ec22fb04a9a7ba9fb980a00234da84b4c30f957a46"
+    },
+    {
+      "symbol": "KITEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "fed5935a5e6f2692719af2019dbb53b7090b2cdcb344b36ac7b9aeefefda0b9d"
+    },
+    {
+      "symbol": "KNCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cd4b49f2d4726b568fc2b950c8ae506d26fe559d8e3175b6842608c56e67f8f7"
+    },
+    {
+      "symbol": "KNCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0dc002113a4352ee6c8c8da252ba11bac14168ece08fb95374755720ae7cd88a"
+    },
+    {
+      "symbol": "KSMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "35857997682038850e11ae4f075316defdd7277f65ffd4b4a86fa75221c378ba"
+    },
+    {
+      "symbol": "KSMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "2f55e755eb110df3452ec7259e0123d46f09791bbed610b3cba510189a5ce3fd"
+    },
+    {
+      "symbol": "LIGHTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3b6a39e0d9899f9dfe14301135433a9e30714cb15a71defa978a9a66a939d2fd"
+    },
+    {
+      "symbol": "LIGHTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d8e33d28864dbb4cfa46e8ce6f647aa80dbf5a5cccb0ebddc107ea8837fd7b73"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ad2738f21b3758f024874fc0a341793b1ad5e44242d57b6b4b847f58f42bb566"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "15f9c3cb3518d2b1ecdf7d54a33609e05b917779805ee23bc85f587004776eb6"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "97498f4bda5e03e2555fa0243ca3371792d735e87863ee1b03d6dd02226678da"
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d819cd7fa2ff7d32ae634aa636a8c2111c9cc4424b143d7f4b8dd32e17ea86ac"
+    },
+    {
+      "symbol": "MANAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d41c7df064d45546009f67e7f086bda619fb8c5cc6228e4dd976adbf9100c169"
+    },
+    {
+      "symbol": "MANAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "285aafeabcaaa337ecde076a6865e402f62b4b30d3d9f17461194035266bc51c"
+    },
+    {
+      "symbol": "MANTAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d4826361b5274211c350de4f3aec7687a69796e50f9e73b4d7487f80dce6646a"
+    },
+    {
+      "symbol": "MANTAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "70db37414fd1fc73597d2dd35520212dfbb43326079009e31e275002e25546cb"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b9bae655f022431bf0fc3ec00803f7977cc9192b689d0b77e2baf0934f1e9eb0"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e537069c2f6e2b187f5c19c60a4a7d58c2c1c6423fabaa9017faf0d6b1701d22"
+    },
+    {
+      "symbol": "MAVIAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "46cd218fba61163feb2273771fcb6da7bad4ea276b85ab34eb5ee929977f8463"
+    },
+    {
+      "symbol": "MAVIAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "ae41fc35835ed17404c1353e920e4c9d05255ea1dc9de50016aeab5580ec2dcc"
+    },
+    {
+      "symbol": "MAVUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6aeda782c7ff27a9baddbc394f01c4c78d0acdb5659e7ca88636a92253915ff4"
+    },
+    {
+      "symbol": "MAVUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "108bfa1ac45059cf6ad5b5d45a7c8ee8da066add2f2c5b6706d11ff735868ea6"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "cb73f25dcd077856cade1fbad7322f8cce232b50405917dc3c66660a1df5426d"
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f3981423391979f8445d570058ec10f1665e9f5a9e4105f0f66ed57c47aaf17a"
+    },
+    {
+      "symbol": "METISUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1ce6380cc332838a347a1a928814d5d0be135d6d59ffbac1bef2f48d141118c2"
+    },
+    {
+      "symbol": "METISUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c74e1d34d571f7cb3698ed626034c7f56b1b3beec0a54a6642f93de745da4f1d"
+    },
+    {
+      "symbol": "MEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3db7328e2982b4700a19ea563c7a70b48b5398aae3e69a8d04b9d616c36be1b0"
+    },
+    {
+      "symbol": "MEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f0dcedbe5b88ec0a9f377ec200f4b62dd1f68a4d9d2bf94496541f673ca8ad73"
+    },
+    {
+      "symbol": "MEWUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8d8c0672ecce05af12b2efac5d0e73607d15b8a52c24b21c2c810c2015f5e402"
+    },
+    {
+      "symbol": "MEWUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "517d6949dc8600476306314af26579d7b7a69b271f102fd51b5240fe493be3b7"
+    },
+    {
+      "symbol": "MINAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d6efee95e9f8c74e785c832699e51d8e5de024cdfbd13a9ea982abd2d6c39a2c"
+    },
+    {
+      "symbol": "MINAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "670bae38bc158c9ce1224c583db3ca29136f76e3e2829e4c25eab590f3636d5d"
+    },
+    {
+      "symbol": "MITOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e5732b64c72691562d9a2630b48d380ee75a937b02e10ccf4e132c2edaf23def"
+    },
+    {
+      "symbol": "MITOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7ac2bfd16e0b1d721fdbf30723143aba6016768e43112f7435b7defad394383b"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1b194665788a82766fb8505245527e3c7a0d246e04354a3f69fbf3b10884b0c5"
+    },
+    {
+      "symbol": "MMTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0ec85ad75cf4f0a946d0e74934d73c9658682879181510c1b776a6867871b396"
+    },
+    {
+      "symbol": "MONUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "59b4843eaf85f7035daa8ce99a957245d7264d892f9d943238a0672ff3d4df9f"
+    },
+    {
+      "symbol": "MONUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d05dda68d2b4834df8abd82d6accf9765332080245f19c47bec60dd98b008fd9"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9027d2e8d403bf15f52fd297117bac04569e9c6a6d6b3b87c994d59d239fd26a"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a51b0ea3ecc90e9c5c0dca0aefff985ecde2517fd16d5fbb4521fcf2c9e280e5"
+    },
+    {
+      "symbol": "MORPHOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2548d3e26e8e9959865bbe12b47c63390c9de84d54fb06a770b8650c7a9a431e"
+    },
+    {
+      "symbol": "MORPHOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9d615641ec292c556fc58f34d05a1b688fd4f1ad4f9d642eadbceb20e54673fa"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ed8d7798b4a006669d13ac23e931795406a3556c670fabea7cc4700e52f9863e"
+    },
+    {
+      "symbol": "NAORISUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b5cce1022ef6d2c3ed79594655b082a7e383648db81ee518fb3bccee5075cff5"
+    },
+    {
+      "symbol": "NEWTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "727d8ffe91c5a1dd07b179c7356635434671b6832d2ba21deb50d9c38f3950e1"
+    },
+    {
+      "symbol": "NEWTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e4c6a5a9b1f60a629e4113ebad01f718a9cdff01351cabd3dc66137f31d26586"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fdce1a6c1a084088aeb056d2a4d0e84de01c0705324045eb2c366e5b35571de0"
+    },
+    {
+      "symbol": "NIGHTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "1ec277338df27425a491398fa1b172950bebfcfa8aff58ad3e61ea3394511d18"
+    },
+    {
+      "symbol": "NILUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5f949bf369672d0b2213bf0c513267913e5cbf1d1458d3d6ca0a12e52c604946"
+    },
+    {
+      "symbol": "NILUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "44be66094e4fc76d8fc0be24cb949acb63b5508e69d024909477ddf93e1852b8"
+    },
+    {
+      "symbol": "NOTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "96f3ed4a063483808e499ac5fab72523bbdf8ac8cdd4ca48258794720f27b148"
+    },
+    {
+      "symbol": "NOTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "da546e01268c53b463f30fe0923c01f11888c4a31e0e29fadc5a58160b643237"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6d2b675d692badeebd01ca3badf21c0d4c08d3b82891f5e957c2c64d71dcec85"
+    },
+    {
+      "symbol": "NXPCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "226870422d404d570b501ebc4a2b7c88f62db418a6c5a735e263b746bd7554bc"
+    },
+    {
+      "symbol": "OGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a78cd38cd8f5de4e2f6a38111233b3d191cd86885f98272071ccee1b308a63ac"
+    },
+    {
+      "symbol": "OGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e3d69bb90ee401986a560f3ed1d3b91dd21f8a6ad8a625040159ef4b661329b0"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "da6bee25487a1f507a55a8d096256202282590b436a27496997be1394eb70846"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "87f5a41d90401950aefc14f61effbec1d6b78cb8172a95dddd7c9a94481bdb24"
+    },
+    {
+      "symbol": "ORCAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1d688fc476e875261ffd8ddca1223c798ba01a784996d6b422a4167986360805"
+    },
+    {
+      "symbol": "ORCAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "55afe7cc145e69b9618ce553390f9deddbf8678d16622c26b334418d33a0a9e8"
+    },
+    {
+      "symbol": "ORDERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "edf9c7aa76ced32106358fe661952db1ceda1d748d04e8160498400a3e73f9a3"
+    },
+    {
+      "symbol": "ORDERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9f7bc1ca498fa3e25f6bbeb598416cadc27cd30e3b87a7d3900beb0672134ee1"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6514181f6a1c6acce2b73694cb5c0cc948614153e678fb4a3acbd7bb1f47701f"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a8d512045f82b6da3ef5b7ba30c56023777e367c665f0145ee64e67fe2368083"
+    },
+    {
+      "symbol": "PEOPLEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6530757fa66b7d4e42be1804666811b2c85854f14ff2454fd45ed33580daaca2"
+    },
+    {
+      "symbol": "PEOPLEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "214d38d1d3878e253892bc9f3049c4016bf2c467166a74191a8f69f7b8ad4257"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a0dc13cfffff5b7ed4a093e4bd3726daf8b3abd2d9a6efebd7211e6f28bfcd60"
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e7eacd0bade27209459be4b2625f68b4f954ae71563c98dc598013d923cf5aa4"
+    },
+    {
+      "symbol": "PIXELUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "acf48ab2ad4ad95782c84767fd68c8dba7902ec54f8c601b4644cfe9a9e7b25f"
+    },
+    {
+      "symbol": "PIXELUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "411bb7656e02282d30cc292db7757fef8a94200ecf1ae0caca1ef78d8c0e5eab"
+    },
+    {
+      "symbol": "PLUMEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8c8ea658d03a7c42f1c76cdbe8111a980249c4c025196ef605cdcd8edcaab3be"
+    },
+    {
+      "symbol": "PLUMEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4639e6b4b11548a047561005865a3c07e4177ef72031cc932fcb1c88edb29685"
+    },
+    {
+      "symbol": "POLUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "86ff9e43c8ce90598d811cb3f6fb43067e3d79d316f2ecea8395f11b91c37208"
+    },
+    {
+      "symbol": "POLUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a8cdc0ba36814b9b04378b26aa7b1838e1a9422e5e06401702b674a0bb50b5d4"
+    },
+    {
+      "symbol": "PROVEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "21f1da82871fc50b2afe49bb16b5807f8e3a1911aa7a389a15f50ab499c93d4a"
+    },
+    {
+      "symbol": "PROVEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "358ad8c0701b1e4f13d1baf7c152cbfa11fc12159506f6ec47e2391dda79fa4d"
+    },
+    {
+      "symbol": "PUNDIXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e1822f82a8c81bbdc5ac10aa63e53affa43ae8f001b07378dd53ed89d3f790f9"
+    },
+    {
+      "symbol": "PUNDIXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "43f637958c73d358337461ac7caca74e1217fdd7f4ce370b0555f83c58cf546f"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "322faa247856a42a0beb9c89b0d5c79101417e0d1e5a0a1c5d2f2eaeeb9f10c4"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "1e9cb90611b7ec93974e410ce3c92a1596091d59143989960298b5fe278d20bc"
+    },
+    {
+      "symbol": "QTUMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "698be1c5c1e7a2526dd6982912516fc169125eeac48ed53f726bad0e6f409fc9"
+    },
+    {
+      "symbol": "QTUMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "36b8591ebf15d2da7386ddce119e547c1d8dde89c67cdec5865c9b95d4f66ffd"
+    },
+    {
+      "symbol": "QUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "96a2ce4199958ecb6ded57cad2d8a32ad643fe743894b941eb294c4880271e09"
+    },
+    {
+      "symbol": "QUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a69c8ed1552fbe92935ad437c17be05ce55f29411eac00fb33415dce49dafeb5"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "33ccf84305271421ee1146fcb96b5d5447175984d6d27f20a01730e51103b6c2"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3aa4a379c1b8b77c64e1a953defe2723eaa4b845e7733677de400abe343cc043"
+    },
+    {
+      "symbol": "RAYDIUMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1f6f883a7826dc183af3726ec1a76d5456224016d9cc7dc9b0c04fd71aa2a3a6"
+    },
+    {
+      "symbol": "RAYDIUMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "53151bbeb61138b11b47c8da8ca83862a276ade5d9dec3d392881e6d7880fce9"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "57b737bee00202e113319bb7d1f932ef9bd8a14f128f5da83047fcc3b49f1ff0"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "1cc5f206b32840a1b687c91437e7b2adac772ae12fa58db29a004e15b21f1d9e"
+    },
+    {
+      "symbol": "REZUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "41b2786ee581834d35869036dfde0abc61482b5618b769e927c085fa7687cb31"
+    },
+    {
+      "symbol": "REZUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "78f261fdb3c7a82c8b96e61564e8262e0ee28e78f0f6827e97f391d10a9c914b"
+    },
+    {
+      "symbol": "RLCUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "076b21a07dfae61659af3c1c4dc55c365e4dd62c57f8f7b0314958e35550cc44"
+    },
+    {
+      "symbol": "RLCUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "873c6b4470507651a529e7f64f71336eba4eb6491734c125b8d9ba70d3608dc8"
+    },
+    {
+      "symbol": "RONINUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b1b2b3df316b20220b98875f32bab05de82c667c74075f01e63003bd526be410"
+    },
+    {
+      "symbol": "RONINUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c50be82f30b1fe8c9f963bda069f3aa4a385f14d8c22d80831308ed94cb7056b"
+    },
+    {
+      "symbol": "ROSEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5dbbd7b42542bad74e8da0325eef22346e48d69f66f0538402612f2f6d8f45ae"
+    },
+    {
+      "symbol": "ROSEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e7f2aad8417248a9589aa1c056585a62930130741e98fc68af7195c0f6c3dc73"
+    },
+    {
+      "symbol": "RPLUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "dbedcd82ddc6f0b403be8029b816d26a2239f3ee942ed8a2669253370b186a94"
+    },
+    {
+      "symbol": "RPLUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e9a6c195253e244e19b18711b0103fbda65e55d422615298cc725ae716739fd7"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9eeb91b22e677865bac0b4ef49ea874e5eded3ef392e713e49e56ab857a09e57"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "2594f7f963c68484c25c4421032e783e0df01fb9695e267e282c5f1fadbee3bf"
+    },
+    {
+      "symbol": "SAFEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b70eb8b3f003d43c91256f966e3ee78fe97946c67bc2890bf3caa6a8e6bed87c"
+    },
+    {
+      "symbol": "SAFEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "94177cf9fd10febe8763908066d7d8a5a92ceea9479cee91d1a45e7505468ab9"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "f8a6835d1c812c320292cd6a51dcf91949dc781924c404dac24f468481288623"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "dbe14c00666d0be21ab24ace1e1d1ea6df8228844ab52bcdc231335eea725e0e"
+    },
+    {
+      "symbol": "SAPIENUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2c68537e8e8f8b080eb4ddae580345f154c3db3551bdf5d904ba27eaea558a7d"
+    },
+    {
+      "symbol": "SAPIENUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7d4f409c42ddeb6c2158ee3ec63b41b67ab01eaa6f86b0e4d7143ae7b00100f2"
+    },
+    {
+      "symbol": "SENTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2730627a687a032a95bc532eeaa646751123bd7a76b0ac7081191369ceb43b7d"
+    },
+    {
+      "symbol": "SENTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "2dd343e0adb962ac04daf91053b622656ed72c9c35f3deec80b4861a162e531f"
+    },
+    {
+      "symbol": "SHELLUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d5abdbf0e6aac6391927d7ae307b0e40593308a16875c6b8911ee69b66ed8b78"
+    },
+    {
+      "symbol": "SHELLUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c4c5a58a371731827400b6b3c66069ed5d48c42bb92f3c75d96ab72696b6b328"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "adebd3bf9d7692ad03b8f7131436cfe95c0b58f97317f07b2c2b4dfae29412d5"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "ad8080998861f593887b7a7bc3b6fec4ae1b85988f89f50d44edf902fded1a62"
+    },
+    {
+      "symbol": "SKRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "28d15c55ea4ad821c33a2cfb5df7e3752ad6fc8191c7b2287e81d53da1882f74"
+    },
+    {
+      "symbol": "SKRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c4df36cfcc9ee4ab499b76ad03b7edf1b3193b53105e53f647115ec9fdd4f032"
+    },
+    {
+      "symbol": "SKYUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "42d140f4d7da6c5ef085d0110a47c275020fab3d81fb3389dc30bbd93074d9a1"
+    },
+    {
+      "symbol": "SKYUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "05c9e09b804087934dde2a1ce65a76f81608a2aea24793ce6f34989d67e95c67"
+    },
+    {
+      "symbol": "SNTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "45bc00f03829212f9a7fe56c9ce428988efad123a9abae1257e1a87dde7c1be3"
+    },
+    {
+      "symbol": "SNTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d62c43b45925644109c6cba3b9475cb6e834029e5493cc5a82f91200c270225b"
+    },
+    {
+      "symbol": "SOLAYERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "631c1af169e4036d43b9c16854d09d5f3df122289943762fd28b06b447e5327d"
+    },
+    {
+      "symbol": "SOLAYERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9745c3946502f4be6a4c6516e4ecd3fc6fc4e061f853d12a17e66120b35efc3b"
+    },
+    {
+      "symbol": "SOMIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "52dc0fee01e71a1d027087d35ec2ef0ebc9afb6796ca040dbfe335ce32133c8a"
+    },
+    {
+      "symbol": "SOMIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "255805da40066d71195d530bcebc92fdb872975a53bafb190dab7a7497f58a2d"
+    },
+    {
+      "symbol": "SONICUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b2e0acf0ee3d4abb2660764e3b21c360eeaea53434c6ccf7bac0813646ab9e88"
+    },
+    {
+      "symbol": "SONICUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e20be04030a58f89af1f60aa0cc51b67369825b3be2953b99ba33f6521f39816"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "65b8efaa005a2058b723d62d51c7e24498e8b40217b4944cf0d697853ed253fc"
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4dc5e973e822e5fd77731b33a1b575ff9acb53e685fab3b1ab58f249628bdb91"
+    },
+    {
+      "symbol": "SOSOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "60c309f5f214fd981dae2e611c66cd5eee6c4ad77ee1308a5bde4a9aba01bcb8"
+    },
+    {
+      "symbol": "SOSOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3532ff16235fcba70c2b3539b9b6c41e0bdaad9d34bd9584aa07acd18df05164"
+    },
+    {
+      "symbol": "SPKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2a67af81d162c7b98ed155f642c7e5701423c98af706973f083098c9e699e673"
+    },
+    {
+      "symbol": "SPKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "3fbd3a16be0c3f010a254b26c6d13050b5ed1f8028db8c707324267359c10f9f"
+    },
+    {
+      "symbol": "SPORTFUNUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "004d821eb6694af7a8cee305488903e09b3337abdbe48d72e0ec8d969dfc91f5"
+    },
+    {
+      "symbol": "SPORTFUNUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "cd8a300ec5a4c6fb5b476fe00d042925375a30b9e701c06d2f6cd2d5ea7ff5b4"
+    },
+    {
+      "symbol": "SPXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a6e55081c36c4743a86e94379ed681d38b7c7a0017e3ef14b2ecf89dffdbc4f8"
+    },
+    {
+      "symbol": "SPXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9b65fb0c08d2a684fb4bce7971c1ac740367d80f0b4787e97148f861358fe60f"
+    },
+    {
+      "symbol": "SQDUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "1f61c1a86d724c206719942b2def28aadaa3e09d8f13b35a871900e89b9ed574"
+    },
+    {
+      "symbol": "SQDUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4ce98eead8b0e9ec96d81d9647e86a5b8686c63d68ec54bb11a23ea746f97225"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8513a3dfa3c5044f26f89bfb217f23bbb8188b9863afedc2911752c8c325514e"
+    },
+    {
+      "symbol": "SSVUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "89689a4ccf5198e63a662f1e9201671135c774f2b7e70996b7a8481770ea5d88"
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a02482686b296140c5605e09baeff100ca35781d04a04b1e7eb9bbabddca0afe"
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7d282624563a2b0204bb36811e3f426d20e735e4bf1b742a05e2e6528ee74ee7"
+    },
+    {
+      "symbol": "STEEMUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5b1eaf190dd16621b7545b89edfaaef196a9e14a3c39cceb23d350228fe0c27e"
+    },
+    {
+      "symbol": "STEEMUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0b28cd3b217d7dc260673c286f703538001f73b75937e357e8e77035426cb393"
+    },
+    {
+      "symbol": "STGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "48f0ebf0fae3c6152310349e13f2818ae0a1e35af177c2699a1b87030691e8c4"
+    },
+    {
+      "symbol": "STGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "56e3b3848486f58190b5e01f3ba61d37deb029d16b9697c46301ae4d591c9f38"
+    },
+    {
+      "symbol": "STORJUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "c9206ec8f9553b38ff3a8845af67138e756da84081d7375cd75332dd07542f80"
+    },
+    {
+      "symbol": "STORJUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "58ba2ba5984fe320d8447e3713e59ea693333213a8756edf4cfbde3646d83c2f"
+    },
+    {
+      "symbol": "STXUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "10241ccfe0f6234bec59fae6978fd2f90444a8f9c45b40a534698726d6263bcf"
+    },
+    {
+      "symbol": "STXUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "460592bffbe62133d6ef2f4f9f36be986746bdc98b6c3407cd4ab9ae005f3801"
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fbe12737f06b98be4bb948f7ed0f1d370a251c76119537c68b2d178ce8c9c8f8"
+    },
+    {
+      "symbol": "SUPERUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e54304c9f2c5cebf82decaa2d7b7ceb3a122b3460cb084a79877d48b61352672"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "7f39c7d7f2686318e9c662ff3995cb05bf6af319d0a59f5df5300e99f75a71f9"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a4ceafb371b96bf2d36b5f8db22a377e9f3b2d3c484d81ab2b6b7baafcbebba0"
+    },
+    {
+      "symbol": "TAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2f6b580a137700d31dbf56f489d50f4aaef071ae32c5a2937e5f0030da927e07"
+    },
+    {
+      "symbol": "TAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b3195df29ef476951bf8f4b856fc9e31f2c61a500e699737fb7c1cc8cc6e8d5b"
+    },
+    {
+      "symbol": "TNSRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "b1049f384467ab9b2c5236da884e30c6e4a6981e0e7fb78bbbef00e5e3d0492e"
+    },
+    {
+      "symbol": "TNSRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f863a89c51886ac344d64fdf163f3748aef335450d361603b3adfa99e2e4e8cc"
+    },
+    {
+      "symbol": "TOWNSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "449d67aa15385f0afc0923fb179fa99644da108055e3cdc92275d1c1d546827c"
+    },
+    {
+      "symbol": "TOWNSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f81d2f95742de141fddf6bf4811b0c184a1ba80b8e81376f511025c4e71a9108"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "edfcea1c8035861d4acf02085f6f2f6eea81f48c3fec360a2e6bc7d5daa3adc3"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "db3696f7e835e6151831633583c236ac9578917cb3b1b734d13fa5f023fe7148"
+    },
+    {
+      "symbol": "TRUSTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "f44bffc00ab799bad109a34d0bed6d8d20051c5e7e4a6ef1c951bdc40dfb3c55"
+    },
+    {
+      "symbol": "TRUSTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "1d34b8bd4ae993b98af9c814e8885a554e63ea0622f3746e56122e10efca2d3c"
+    },
+    {
+      "symbol": "TRUTHUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ff4abee90c710601d73dd76b20efcd4d7bc9dffafeaae73f2666a167919332e8"
+    },
+    {
+      "symbol": "TRUTHUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "89f8e790fffd3c3611e371534163a405a2238d0838c6d82fc69c5d4c600c2f31"
+    },
+    {
+      "symbol": "TUTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5b27995a46fcb6d61445b82bb036225560ebf206030e9a92c89a23153fcccc69"
+    },
+    {
+      "symbol": "TUTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "9c90454644b0ea959cf55d843cda1c14d4cb0e61e9bd1d4c7c31941a913caadc"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "8d1dc7bbfdd74c5ddc1625b2b57eb33689bc4f841dcb052ab9865eaa64276e62"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b4f5d736c65c3a4a56b248a9a35dc1b60e5cfcd63217c9ca19a2a16747668cd1"
+    },
+    {
+      "symbol": "USUALUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "dc03d0b17aebd76a2a9d5dcf5b4ccc159213f7e3d1f873fd2726f7b547264a04"
+    },
+    {
+      "symbol": "USUALUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f189fde9c068a839b87565b0e5f6f92c49dde27e04712ce154f819be9be61ab3"
+    },
+    {
+      "symbol": "VANAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "fba9c06bfbb190d160c1b4879b9ee44232e3a89e4a8d30479266f9fad8531a13"
+    },
+    {
+      "symbol": "VANAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7a99b588d64c40915505f75dfd4745a131723a24b0f7364575450cb1159e385c"
+    },
+    {
+      "symbol": "VETUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "5c175b4282e8b0b63d21dcfbe8a9f610494c068e385b74d66c3d3ad4486aa5fd"
+    },
+    {
+      "symbol": "VETUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0264f2df049dd7091a18283f3321758c76d9a4ae362f2c09e272a1ec9625adc2"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "67675d4f55af791bbe61abac45c95560662b728415c866bd9e1277b547bf3d6b"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "4b837f3969f516034dbcd04653bed1959e77d6a5b9a85dc755cfa3bd95435065"
+    },
+    {
+      "symbol": "VVVUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "e1672f7ed1c89c062c9929e9fdac91367e3a299a39d31c5036dd256459a1099d"
+    },
+    {
+      "symbol": "VVVUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b073f4a53f1a32ac2a3a27cabfe08aeec8a3dcf262400e514185d90c8a039507"
+    },
+    {
+      "symbol": "WALUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0d969d57e8c46599dab44d304a0d50489b9927881861ef37c5a2ccf308f12232"
+    },
+    {
+      "symbol": "WALUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "e3659063ec42ada8da7817f0655fb88baafdff630d2f2401f150c633ff58350b"
+    },
+    {
+      "symbol": "WAVESUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "94e80a023f405aeb3861924138b6c5f104e66e71af42d4376fc98978d1378450"
+    },
+    {
+      "symbol": "WAVESUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "eb09a0ab4983ea2646569515139f2f068ad667b85cb79a634f3db1afff254f1d"
+    },
+    {
+      "symbol": "WAXPUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "facc616c1e5b382a3156d3a7b41bd76d6773e23e0450b4d4c273f0007ec0e0cb"
+    },
+    {
+      "symbol": "WAXPUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "79ff78581fea77ca9b6c46026f18073be97603044597889d1604ba08513850cc"
+    },
+    {
+      "symbol": "WCTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "3d1095a1fb49c715276b6925a19059fc74677054ba186a2d2a0a65b1b5e7f35a"
+    },
+    {
+      "symbol": "WCTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "372a60c6332571ac9f7949d836a3c60763a393a43209db95f6489b425e1d4bc1"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "a9af86b85a66e46526964b6a33ce77674651918b9973ddc5dbdc2f92a6097c17"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "8ebc3c35fa8837ce0790c305b7c41c30effdf0bbce61b1e097eda65dfa4ce435"
+    },
+    {
+      "symbol": "WOOUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0e2c57fc25b0b70d3d0bcf0539ef50c65057cacb39a77cfef674c4ae1ebda6f2"
+    },
+    {
+      "symbol": "WOOUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d71d892014df23ecd0a6ab9ba5b9128e9ff2d0ecaf960ef0d5f434bd497a607b"
+    },
+    {
+      "symbol": "WUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "4fd73715d9584c70c22ed9210d6cc8ffe4d1400375f9f4c75f3f825dd2cd065a"
+    },
+    {
+      "symbol": "WUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "74635f8b89668519a32cfa841e91075447f5a45b584287a1c43f186192ead7d8"
+    },
+    {
+      "symbol": "XAIUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "ef76295376b5b1c4cec3a154ec78f1a02af9729b3598de405d89867a5e492575"
+    },
+    {
+      "symbol": "XAIUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "b5b72ccd8f47c545dacafb5d081d48a58572368945d2c8704209312e9818a70d"
+    },
+    {
+      "symbol": "XANUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "2a974b5ddc3cbc3db5c9c1b4b2e366d6f30fcf65341f31982409c8c268ef0886"
+    },
+    {
+      "symbol": "XANUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "f2721c28be753e369666411de78d9b271b2e97d4fc0fc17587156cafee535ca9"
+    },
+    {
+      "symbol": "XMRUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "14705810cfaad0238056430e13461c25b939605cb0ab003974bd5e77f74a06ad"
+    },
+    {
+      "symbol": "XMRUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "0a684c338248e113fb8921a83a53a220f0c8697468a864f929bb46c51f06c2e3"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "dc34cf38eaa43d669ebeaded23a8f77cb74f9abc27511c88a273cfffca1f03e5"
+    },
+    {
+      "symbol": "XTZUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "04add4a57960acff6573421fe3047015d6f80389276be1941d14eff476df25fd"
+    },
+    {
+      "symbol": "XVSUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "06c98579fca419419fe4368810bc09e14c8d8c16d9ce46055b1cfe0539f424de"
+    },
+    {
+      "symbol": "XVSUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "d41712af78746d4eaf226f0bd243872b1c365000d90457f52aa6059cb8c9077d"
+    },
+    {
+      "symbol": "YGGUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "d721022ed4c3aa1e1aa4c258d2ac181208cf80510653463bb2c912600ca5aff5"
+    },
+    {
+      "symbol": "YGGUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "39ad529879b1a118d02ac06366b8d550e8cb227ca6016a775b622136f3dfe6f8"
+    },
+    {
+      "symbol": "ZBCNUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "0c0e64ee7ddc8f425bbfb148e377bb1ae3bdaf62df8b51f26891c99fcc65e49a"
+    },
+    {
+      "symbol": "ZBCNUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "492934d21a61f3021c4aff99f8b47f3a3ecc717b2b070b72d3d6f700eb20518d"
+    },
+    {
+      "symbol": "ZBTUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "098e8d42f3528fb6007614e9c29132f06984f0c5f26992385cc8073b7de65363"
+    },
+    {
+      "symbol": "ZBTUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "74b197e7eaa198b12f1f318e0300c1b46b2760bbcd1862fe124b7447730ab969"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "9267f0c25c2a3a57b387651fef230d5cd1679ef947966e68ce982ed7b66247a4"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "c6e28da33c8580afefc6f39128aba19fce907692a12dc893923d5ea62474f8d4"
+    },
+    {
+      "symbol": "ZETAUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "502546b512a627064e17d9814eecec6602db0dceecc6ffa10175e5330eafb354"
+    },
+    {
+      "symbol": "ZETAUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7f22528ff5bfa470018fe806b2e10922c5074357ffa6b0681b3066aaa12530a8"
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "71b37ae2a57c945cd3da130c06723373976693a5a15c02bec140e588d7597da4"
+    },
+    {
+      "symbol": "ZKPUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "da3b138c8170f4c0e2642dd6a8d464a432108e28433597010f39459bdd06d7c7"
+    },
+    {
+      "symbol": "ZKUSDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "33cba6e16dc6d4a9853e163d85936069dad2c547a6ddd3e88fee6b03e92c2147"
+    },
+    {
+      "symbol": "ZKUSDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "a35c7d453cd6ce482aa4833d8aefc00229cbcab88495f1fc00c507f16fc7bc1f"
+    },
+    {
+      "symbol": "B2USDT",
+      "interval": "15",
+      "bars": 11040,
+      "sha256": "6ecaea9e8b53ee5b5d7f6f501db393016000675208bdd9c4a57b4c68d4e7f82e"
+    },
+    {
+      "symbol": "B2USDT",
+      "interval": "60",
+      "bars": 3000,
+      "sha256": "7eb14ad9628ff9f7db33eb4296d82f8f9ae16364ea80b4024e7d15e7f0b321e2"
+    }
+  ],
+  "symbols_requested": 234,
+  "symbols_completed": 232,
+  "arms": {
+    "early": {
+      "trades": 345,
+      "net_pnl": -990.5765615806724,
+      "return_pct": -0.9905765615806724,
+      "profit_factor": 0.5666160862977566,
+      "win_rate": 0.2811594202898551,
+      "mean_R": -0.2924845086114966,
+      "mean_stop_pct": 0.013994817635213928,
+      "mean_cost_R": 0.10327746063574006,
+      "realized_max_drawdown": -0.9910802463117149,
+      "ending_equity": 9.423438419327567,
+      "candidates": 6254,
+      "portfolio_rejected": 5909,
+      "reject_reasons": {
+        "insufficient_remaining_equity": 3958,
+        "maximum_daily_loss": 1801,
+        "maximum_total_open_risk": 144,
+        "insufficient_remaining_equity|maximum_daily_loss": 3,
+        "existing_active_position|maximum_daily_loss": 1,
+        "existing_active_position": 1,
+        "existing_active_position|maximum_total_open_risk": 1
+      },
+      "all_candidate_diagnostic": {
+        "trades": 6254,
+        "net_pnl": -1107.5928294284847,
+        "profit_factor": 0.9684559664878891,
+        "win_rate": 0.4003837543971858,
+        "mean_R": -0.021567140742716658,
+        "mean_stop_pct": 0.0125864094479295,
+        "mean_cost_R": 0.11647930931530882
+      },
+      "first_entry": "2026-06-01 01:45:00+00:00",
+      "last_entry": "2026-07-07 14:00:00+00:00",
+      "top5_pnl": 245.6493150804563,
+      "by_month": {
+        "2026-06": {
+          "trades": 280,
+          "net_pnl": -773.4640187251509
+        },
+        "2026-07": {
+          "trades": 65,
+          "net_pnl": -217.1125428555214
+        }
+      },
+      "by_symbol": {
+        "1000000MOGUSDT": {
+          "trades": 1,
+          "net_pnl": -10.495530265545089,
+          "return_pct": -0.010495530265545089,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0495530265545088,
+          "mean_stop_pct": 0.02018040207695386,
+          "mean_cost_R": 0.049553026554510826,
+          "realized_max_drawdown": -0.010495530265545061
+        },
+        "1000NEIROCTOUSDT": {
+          "trades": 2,
+          "net_pnl": -8.474750643523155,
+          "return_pct": -0.008474750643523155,
+          "profit_factor": 0.2192774036809356,
+          "win_rate": 0.5,
+          "mean_R": -0.4237375321761577,
+          "mean_stop_pct": 0.010557501061652243,
+          "mean_cost_R": 0.09583341416755599,
+          "realized_max_drawdown": -0.010855008787346132
+        },
+        "1000PEPEUSDT": {
+          "trades": 5,
+          "net_pnl": -27.955337161103653,
+          "return_pct": -0.02795533716110365,
+          "profit_factor": 0.3631048449767377,
+          "win_rate": 0.2,
+          "mean_R": -0.5591067432220731,
+          "mean_stop_pct": 0.01080855146455436,
+          "mean_cost_R": 0.09431801082770883,
+          "realized_max_drawdown": -0.04320456757519431
+        },
+        "1000RATSUSDT": {
+          "trades": 5,
+          "net_pnl": -35.359390785652835,
+          "return_pct": -0.03535939078565283,
+          "profit_factor": 0.19182141007429027,
+          "win_rate": 0.2,
+          "mean_R": -0.7071878157130568,
+          "mean_stop_pct": 0.013285027630511297,
+          "mean_cost_R": 0.09167240657384566,
+          "realized_max_drawdown": -0.04375195189086012
+        },
+        "1000TAGUSDT": {
+          "trades": 3,
+          "net_pnl": -21.47791153920271,
+          "return_pct": -0.021477911539202713,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7159303846400903,
+          "mean_stop_pct": 0.015788794282879118,
+          "mean_cost_R": 0.06375004465487535,
+          "realized_max_drawdown": -0.021477911539202754
+        },
+        "1000TOSHIUSDT": {
+          "trades": 4,
+          "net_pnl": 6.428670303999715,
+          "return_pct": 0.006428670303999714,
+          "profit_factor": 1.2580454309571194,
+          "win_rate": 0.25,
+          "mean_R": 0.16071675759999282,
+          "mean_stop_pct": 0.009852296757235948,
+          "mean_cost_R": 0.10408621585527522,
+          "realized_max_drawdown": -0.024155856429954214
+        },
+        "1000TURBOUSDT": {
+          "trades": 3,
+          "net_pnl": -2.347796008357358,
+          "return_pct": -0.0023477960083573583,
+          "profit_factor": 0.8918270483690448,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.0782598669452453,
+          "mean_stop_pct": 0.012568658148946471,
+          "mean_cost_R": 0.08093455768413053,
+          "realized_max_drawdown": -0.02129196133730582
+        },
+        "1000XECUSDT": {
+          "trades": 3,
+          "net_pnl": -24.33487138161859,
+          "return_pct": -0.024334871381618592,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.8111623793872863,
+          "mean_stop_pct": 0.007215343202038604,
+          "mean_cost_R": 0.1444957127206193,
+          "realized_max_drawdown": -0.024334871381618495
+        },
+        "1INCHUSDT": {
+          "trades": 2,
+          "net_pnl": -22.56912469417552,
+          "return_pct": -0.022569124694175522,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1284562347087759,
+          "mean_stop_pct": 0.008100464544411157,
+          "mean_cost_R": 0.12845623470877676,
+          "realized_max_drawdown": -0.022569124694175602
+        },
+        "4USDT": {
+          "trades": 2,
+          "net_pnl": 4.461166542036121,
+          "return_pct": 0.004461166542036122,
+          "profit_factor": 1.3900638789335902,
+          "win_rate": 0.5,
+          "mean_R": 0.22305832710180606,
+          "mean_stop_pct": 0.009229898815996153,
+          "mean_cost_R": 0.11532551128203462,
+          "realized_max_drawdown": -0.011258033020274283
+        },
+        "ACHUSDT": {
+          "trades": 1,
+          "net_pnl": -10.813316831683121,
+          "return_pct": -0.010813316831683122,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.081331683168312,
+          "mean_stop_pct": 0.012295331426136757,
+          "mean_cost_R": 0.08133168316831652,
+          "realized_max_drawdown": -0.010813316831683073
+        },
+        "AEVOUSDT": {
+          "trades": 2,
+          "net_pnl": 6.041129640109011,
+          "return_pct": 0.006041129640109011,
+          "profit_factor": 1.5506850620718216,
+          "win_rate": 0.5,
+          "mean_R": 0.30205648200545054,
+          "mean_stop_pct": 0.008069365327804591,
+          "mean_cost_R": 0.13424925047860903,
+          "realized_max_drawdown": -0.010786711547991601
+        },
+        "AGIUSDT": {
+          "trades": 1,
+          "net_pnl": 5.2159513184584565,
+          "return_pct": 0.005215951318458457,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.5215951318458457,
+          "mean_stop_pct": 0.017326454297522952,
+          "mean_cost_R": 0.057715212981744535,
+          "realized_max_drawdown": 0.0
+        },
+        "AIOUSDT": {
+          "trades": 1,
+          "net_pnl": 3.7344188676197443,
+          "return_pct": 0.0037344188676197445,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.37344188676197443,
+          "mean_stop_pct": 0.040671318196152606,
+          "mean_cost_R": 0.0245873515871093,
+          "realized_max_drawdown": 0.0
+        },
+        "AIXBTUSDT": {
+          "trades": 1,
+          "net_pnl": 19.57212089493669,
+          "return_pct": 0.01957212089493669,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.9572120894936689,
+          "mean_stop_pct": 0.019850504378902217,
+          "mean_cost_R": 0.05037655370927671,
+          "realized_max_drawdown": 0.0
+        },
+        "ALCHUSDT": {
+          "trades": 1,
+          "net_pnl": -11.43205458680814,
+          "return_pct": -0.01143205458680814,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.143205458680814,
+          "mean_stop_pct": 0.00698297403752493,
+          "mean_cost_R": 0.14320545868081783,
+          "realized_max_drawdown": -0.011432054586808182
+        },
+        "ALGOUSDT": {
+          "trades": 2,
+          "net_pnl": -20.696582906442977,
+          "return_pct": -0.020696582906442978,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0348291453221488,
+          "mean_stop_pct": 0.01089536357685182,
+          "mean_cost_R": 0.1179556961906269,
+          "realized_max_drawdown": -0.02069658290644294
+        },
+        "ALICEUSDT": {
+          "trades": 2,
+          "net_pnl": 4.882101387751957,
+          "return_pct": 0.004882101387751957,
+          "profit_factor": 20.58126294791957,
+          "win_rate": 0.5,
+          "mean_R": 0.2441050693875979,
+          "mean_stop_pct": 0.014572984039544573,
+          "mean_cost_R": 0.07054361851658487,
+          "realized_max_drawdown": -0.0002493251533742802
+        },
+        "ANKRUSDT": {
+          "trades": 1,
+          "net_pnl": 10.777159420289633,
+          "return_pct": 0.010777159420289633,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0777159420289635,
+          "mean_stop_pct": 0.00715945878641987,
+          "mean_cost_R": 0.1396753623188403,
+          "realized_max_drawdown": 0.0
+        },
+        "APTUSDT": {
+          "trades": 3,
+          "net_pnl": -0.5913173136151944,
+          "return_pct": -0.0005913173136151943,
+          "profit_factor": 0.9727230692077811,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.019710577120506462,
+          "mean_stop_pct": 0.013684860590482031,
+          "mean_cost_R": 0.07784611203623289,
+          "realized_max_drawdown": -0.021230604328260738
+        },
+        "ARCUSDT": {
+          "trades": 3,
+          "net_pnl": -6.068599612329605,
+          "return_pct": -0.006068599612329605,
+          "profit_factor": 0.7346589155234132,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.20228665374432012,
+          "mean_stop_pct": 0.013838286116463499,
+          "mean_cost_R": 0.10846666706069823,
+          "realized_max_drawdown": -0.022493003389294608
+        },
+        "ARKUSDT": {
+          "trades": 3,
+          "net_pnl": -14.075033638050513,
+          "return_pct": -0.014075033638050512,
+          "profit_factor": 0.3586066372531184,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.4691677879350172,
+          "mean_stop_pct": 0.010827929212589923,
+          "mean_cost_R": 0.10735874270888751,
+          "realized_max_drawdown": -0.021944464123812568
+        },
+        "ASTRUSDT": {
+          "trades": 2,
+          "net_pnl": 2.0363608932898654,
+          "return_pct": 0.0020363608932898653,
+          "profit_factor": 1.1871248065645996,
+          "win_rate": 0.5,
+          "mean_R": 0.10181804466449329,
+          "mean_stop_pct": 0.016079827462653,
+          "mean_cost_R": 0.06812623589926015,
+          "realized_max_drawdown": -0.010882367392518133
+        },
+        "ATHUSDT": {
+          "trades": 2,
+          "net_pnl": -20.19246388659605,
+          "return_pct": -0.02019246388659605,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0096231943298029,
+          "mean_stop_pct": 0.011782724014610769,
+          "mean_cost_R": 0.08538077008738393,
+          "realized_max_drawdown": -0.020192463886596124
+        },
+        "ATOMUSDT": {
+          "trades": 2,
+          "net_pnl": -11.646295867665884,
+          "return_pct": -0.011646295867665885,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5823147933832942,
+          "mean_stop_pct": 0.012099973679688354,
+          "mean_cost_R": 0.09724016651762075,
+          "realized_max_drawdown": -0.011646295867665968
+        },
+        "AUCTIONUSDT": {
+          "trades": 2,
+          "net_pnl": -8.145968827029437,
+          "return_pct": -0.008145968827029436,
+          "profit_factor": 0.3112975261729825,
+          "win_rate": 0.5,
+          "mean_R": -0.4072984413514719,
+          "mean_stop_pct": 0.005384111912968366,
+          "mean_cost_R": 0.18577945400967794,
+          "realized_max_drawdown": -0.011827994143484677
+        },
+        "AUSDT": {
+          "trades": 1,
+          "net_pnl": -11.230893118594448,
+          "return_pct": -0.011230893118594447,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.123089311859445,
+          "mean_stop_pct": 0.008124182229094822,
+          "mean_cost_R": 0.12308931185944333,
+          "realized_max_drawdown": -0.011230893118594376
+        },
+        "AVAXUSDT": {
+          "trades": 2,
+          "net_pnl": -23.08959713020807,
+          "return_pct": -0.02308959713020807,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1544798565104037,
+          "mean_stop_pct": 0.007803448977245303,
+          "mean_cost_R": 0.1544798565103993,
+          "realized_max_drawdown": -0.023089597130208084
+        },
+        "AWEUSDT": {
+          "trades": 2,
+          "net_pnl": 19.45167800632875,
+          "return_pct": 0.01945167800632875,
+          "profit_factor": 2.6665873147942913,
+          "win_rate": 0.5,
+          "mean_R": 0.9725839003164375,
+          "mean_stop_pct": 0.006997406852306763,
+          "mean_cost_R": 0.14598150052742523,
+          "realized_max_drawdown": -0.011319270133285708
+        },
+        "AZTECUSDT": {
+          "trades": 1,
+          "net_pnl": 4.649372128637171,
+          "return_pct": 0.004649372128637171,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.46493721286371703,
+          "mean_stop_pct": 0.009364781918656946,
+          "mean_cost_R": 0.10678305257784533,
+          "realized_max_drawdown": 0.0
+        },
+        "B2USDT": {
+          "trades": 3,
+          "net_pnl": -4.479717001193606,
+          "return_pct": -0.004479717001193606,
+          "profit_factor": 0.8041009911551636,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.14932390003978688,
+          "mean_stop_pct": 0.010406206134318067,
+          "mean_cost_R": 0.11497636792348959,
+          "realized_max_drawdown": -0.022867481707075976
+        },
+        "BABYUSDT": {
+          "trades": 1,
+          "net_pnl": -11.672325141776852,
+          "return_pct": -0.011672325141776853,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1672325141776851,
+          "mean_stop_pct": 0.005979698415210343,
+          "mean_cost_R": 0.16723251417769433,
+          "realized_max_drawdown": -0.011672325141776851
+        },
+        "BANANAUSDT": {
+          "trades": 2,
+          "net_pnl": 10.332228066852313,
+          "return_pct": 0.010332228066852312,
+          "profit_factor": 4.159237697624029,
+          "win_rate": 0.5,
+          "mean_R": 0.5166114033426156,
+          "mean_stop_pct": 0.010522539186960167,
+          "mean_cost_R": 0.10489456837974258,
+          "realized_max_drawdown": -0.003270481380563073
+        },
+        "BANDUSDT": {
+          "trades": 3,
+          "net_pnl": 41.243737291279885,
+          "return_pct": 0.041243737291279885,
+          "profit_factor": 3.2107664481833265,
+          "win_rate": 0.3333333333333333,
+          "mean_R": 1.3747912430426628,
+          "mean_stop_pct": 0.008414530277571192,
+          "mean_cost_R": 0.12905538651824425,
+          "realized_max_drawdown": -0.010309382832848657
+        },
+        "BCHUSDT": {
+          "trades": 2,
+          "net_pnl": -2.9207714676103773,
+          "return_pct": -0.0029207714676103775,
+          "profit_factor": 0.7456612584327375,
+          "win_rate": 0.5,
+          "mean_R": -0.14603857338051884,
+          "mean_stop_pct": 0.00824292428514719,
+          "mean_cost_R": 0.12549062817503556,
+          "realized_max_drawdown": -0.011386284258161239
+        },
+        "BICOUSDT": {
+          "trades": 1,
+          "net_pnl": 3.8522580645161226,
+          "return_pct": 0.003852258064516123,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.3852258064516123,
+          "mean_stop_pct": 0.015063168124392658,
+          "mean_cost_R": 0.06638709677419335,
+          "realized_max_drawdown": 0.0
+        },
+        "BIOUSDT": {
+          "trades": 1,
+          "net_pnl": -0.8332038834951364,
+          "return_pct": -0.0008332038834951365,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.08332038834951364,
+          "mean_stop_pct": 0.02026761117670206,
+          "mean_cost_R": 0.049339805825242784,
+          "realized_max_drawdown": -0.0008332038834951705
+        },
+        "BLUAIUSDT": {
+          "trades": 3,
+          "net_pnl": -0.9696135738310705,
+          "return_pct": -0.0009696135738310705,
+          "profit_factor": 0.9533475851435183,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.03232045246103573,
+          "mean_stop_pct": 0.03209590037881962,
+          "mean_cost_R": 0.033547070062999056,
+          "realized_max_drawdown": -0.010360211416490572
+        },
+        "BLURUSDT": {
+          "trades": 2,
+          "net_pnl": -22.901614514983176,
+          "return_pct": -0.022901614514983175,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1450807257491589,
+          "mean_stop_pct": 0.007953065522613715,
+          "mean_cost_R": 0.14508072574915973,
+          "realized_max_drawdown": -0.022901614514983182
+        },
+        "BOBAUSDT": {
+          "trades": 3,
+          "net_pnl": -13.049392658899714,
+          "return_pct": -0.013049392658899714,
+          "profit_factor": 0.3879893101565968,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.43497975529665706,
+          "mean_stop_pct": 0.013269215707136342,
+          "mean_cost_R": 0.07942419974109953,
+          "realized_max_drawdown": -0.013049392658899706
+        },
+        "BUSDT": {
+          "trades": 1,
+          "net_pnl": 5.6693795761077155,
+          "return_pct": 0.005669379576107716,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.5669379576107716,
+          "mean_stop_pct": 0.00845838928799605,
+          "mean_cost_R": 0.11822581888246463,
+          "realized_max_drawdown": 0.0
+        },
+        "CETUSUSDT": {
+          "trades": 1,
+          "net_pnl": -10.964701207397267,
+          "return_pct": -0.010964701207397266,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0964701207397267,
+          "mean_stop_pct": 0.010365903891610352,
+          "mean_cost_R": 0.09647012073972154,
+          "realized_max_drawdown": -0.010964701207397343
+        },
+        "CGPTUSDT": {
+          "trades": 3,
+          "net_pnl": -32.34579748683979,
+          "return_pct": -0.03234579748683979,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0781932495613267,
+          "mean_stop_pct": 0.013605143095468826,
+          "mean_cost_R": 0.07819324956132705,
+          "realized_max_drawdown": -0.032345797486839856
+        },
+        "CHRUSDT": {
+          "trades": 6,
+          "net_pnl": 2.579380794728234,
+          "return_pct": 0.002579380794728234,
+          "profit_factor": 1.101393172606126,
+          "win_rate": 0.3333333333333333,
+          "mean_R": 0.042989679912137126,
+          "mean_stop_pct": 0.015758529299584708,
+          "mean_cost_R": 0.069382874560652,
+          "realized_max_drawdown": -0.019005981524112037
+        },
+        "CLANKERUSDT": {
+          "trades": 2,
+          "net_pnl": 12.583107347936373,
+          "return_pct": 0.012583107347936374,
+          "profit_factor": 2.1316723519973437,
+          "win_rate": 0.5,
+          "mean_R": 0.6291553673968185,
+          "mean_stop_pct": 0.009866146981341372,
+          "mean_cost_R": 0.10226514059941266,
+          "realized_max_drawdown": -0.01111903752506438
+        },
+        "CLUSDT": {
+          "trades": 4,
+          "net_pnl": -0.6536336028105314,
+          "return_pct": -0.0006536336028105315,
+          "profit_factor": 0.9341999484835396,
+          "win_rate": 0.25,
+          "mean_R": -0.1761124661213428,
+          "mean_stop_pct": 0.009942996238070712,
+          "mean_cost_R": 0.1936301547305628,
+          "realized_max_drawdown": -0.008025585088187848
+        },
+        "COOKIEUSDT": {
+          "trades": 1,
+          "net_pnl": 2.890654420206562,
+          "return_pct": 0.002890654420206562,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.2890654420206562,
+          "mean_stop_pct": 0.013776414019992494,
+          "mean_cost_R": 0.07258783008036694,
+          "realized_max_drawdown": 0.0
+        },
+        "COTIUSDT": {
+          "trades": 2,
+          "net_pnl": 1.1185142859739994,
+          "return_pct": 0.0011185142859739994,
+          "profit_factor": 1.102503021996997,
+          "win_rate": 0.5,
+          "mean_R": 0.05592571429869997,
+          "mean_stop_pct": 0.011486792818114473,
+          "mean_cost_R": 0.08723667886367527,
+          "realized_max_drawdown": -0.010912012779552671
+        },
+        "CRVUSDT": {
+          "trades": 1,
+          "net_pnl": -10.333951665578068,
+          "return_pct": -0.010333951665578068,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.033395166557807,
+          "mean_stop_pct": 0.029944453137224332,
+          "mean_cost_R": 0.033395166557805236,
+          "realized_max_drawdown": -0.010333951665578045
+        },
+        "CUSDT": {
+          "trades": 3,
+          "net_pnl": -25.970159562867064,
+          "return_pct": -0.025970159562867065,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.8656719854289022,
+          "mean_stop_pct": 0.018940502470427587,
+          "mean_cost_R": 0.05348560550058728,
+          "realized_max_drawdown": -0.02597015956286708
+        },
+        "CYBERUSDT": {
+          "trades": 2,
+          "net_pnl": -22.924938401907063,
+          "return_pct": -0.022924938401907062,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1462469200953533,
+          "mean_stop_pct": 0.006863654146262889,
+          "mean_cost_R": 0.14624692009535317,
+          "realized_max_drawdown": -0.022924938401907125
+        },
+        "DBRUSDT": {
+          "trades": 4,
+          "net_pnl": -19.725541319281902,
+          "return_pct": -0.019725541319281902,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5305368885959676,
+          "mean_stop_pct": 0.00799020558251246,
+          "mean_cost_R": 0.18491014667493058,
+          "realized_max_drawdown": -0.019725541319281836
+        },
+        "DOLOUSDT": {
+          "trades": 2,
+          "net_pnl": -21.803127625471525,
+          "return_pct": -0.021803127625471524,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0901563812735762,
+          "mean_stop_pct": 0.014271348687132906,
+          "mean_cost_R": 0.09015638127357406,
+          "realized_max_drawdown": -0.02180312762547154
+        },
+        "DRIFTUSDT": {
+          "trades": 2,
+          "net_pnl": -21.64850713190114,
+          "return_pct": -0.02164850713190114,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.082425356595057,
+          "mean_stop_pct": 0.012132196856433727,
+          "mean_cost_R": 0.08242535659505584,
+          "realized_max_drawdown": -0.02164850713190114
+        },
+        "DUSKUSDT": {
+          "trades": 4,
+          "net_pnl": -43.24991902355073,
+          "return_pct": -0.04324991902355073,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0812479755887683,
+          "mean_stop_pct": 0.012773268434441666,
+          "mean_cost_R": 0.08124797558876912,
+          "realized_max_drawdown": -0.0432499190235508
+        },
+        "DYDXUSDT": {
+          "trades": 2,
+          "net_pnl": 7.418496620325987,
+          "return_pct": 0.007418496620325987,
+          "profit_factor": 1.6841840853561953,
+          "win_rate": 0.5,
+          "mean_R": 0.37092483101629936,
+          "mean_stop_pct": 0.015020689159615316,
+          "mean_cost_R": 0.06964961599591517,
+          "realized_max_drawdown": -0.01084283715319656
+        },
+        "EDENUSDT": {
+          "trades": 1,
+          "net_pnl": -11.31885350318477,
+          "return_pct": -0.011318853503184768,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.131885350318477,
+          "mean_stop_pct": 0.007582343282140429,
+          "mean_cost_R": 0.13188535031847157,
+          "realized_max_drawdown": -0.011318853503184734
+        },
+        "EDGEUSDT": {
+          "trades": 2,
+          "net_pnl": -9.448709252216378,
+          "return_pct": -0.00944870925221638,
+          "profit_factor": 0.06036560597445724,
+          "win_rate": 0.5,
+          "mean_R": -0.47243546261081887,
+          "mean_stop_pct": 0.10778156057816846,
+          "mean_cost_R": 0.016627381802737495,
+          "realized_max_drawdown": -0.010055729454236606
+        },
+        "ELSAUSDT": {
+          "trades": 1,
+          "net_pnl": 21.85239539114614,
+          "return_pct": 0.02185239539114614,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 2.185239539114614,
+          "mean_stop_pct": 0.013680106188817041,
+          "mean_cost_R": 0.07309884778653702,
+          "realized_max_drawdown": 0.0
+        },
+        "ENSUSDT": {
+          "trades": 1,
+          "net_pnl": -10.941044427123906,
+          "return_pct": -0.010941044427123906,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0941044427123907,
+          "mean_stop_pct": 0.010626490856082613,
+          "mean_cost_R": 0.09410444271239353,
+          "realized_max_drawdown": -0.010941044427123847
+        },
+        "ETCUSDT": {
+          "trades": 1,
+          "net_pnl": -10.557464212678905,
+          "return_pct": -0.010557464212678905,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0557464212678904,
+          "mean_stop_pct": 0.017938371239911988,
+          "mean_cost_R": 0.05574642126789357,
+          "realized_max_drawdown": -0.010557464212679002
+        },
+        "EVAAUSDT": {
+          "trades": 1,
+          "net_pnl": -3.9634709879769994,
+          "return_pct": -0.003963470987976999,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.39634709879769997,
+          "mean_stop_pct": 0.03286264000549721,
+          "mean_cost_R": 0.030429691583899576,
+          "realized_max_drawdown": -0.0039634709879770025
+        },
+        "FHEUSDT": {
+          "trades": 4,
+          "net_pnl": -40.248994664772006,
+          "return_pct": -0.040248994664772005,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0062248666193,
+          "mean_stop_pct": 0.019969573307042913,
+          "mean_cost_R": 0.05513047537442888,
+          "realized_max_drawdown": -0.04024899466477205
+        },
+        "FLOCKUSDT": {
+          "trades": 2,
+          "net_pnl": 4.863660656737116,
+          "return_pct": 0.004863660656737116,
+          "profit_factor": 6.4171424801802806,
+          "win_rate": 0.5,
+          "mean_R": 0.24318303283685577,
+          "mean_stop_pct": 0.015023803747331612,
+          "mean_cost_R": 0.06741708910373681,
+          "realized_max_drawdown": -0.0008978277153557368
+        },
+        "FLRUSDT": {
+          "trades": 4,
+          "net_pnl": -24.815442721100137,
+          "return_pct": -0.024815442721100138,
+          "profit_factor": 0.0854905264320477,
+          "win_rate": 0.25,
+          "mean_R": -0.6203860680275036,
+          "mean_stop_pct": 0.006967870913774611,
+          "mean_cost_R": 0.15076999886910059,
+          "realized_max_drawdown": -0.024815442721100145
+        },
+        "FOGOUSDT": {
+          "trades": 2,
+          "net_pnl": -22.574076740072,
+          "return_pct": -0.022574076740072002,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1287038370036,
+          "mean_stop_pct": 0.008356389189054953,
+          "mean_cost_R": 0.1287038370035986,
+          "realized_max_drawdown": -0.022574076740071947
+        },
+        "FORMUSDT": {
+          "trades": 3,
+          "net_pnl": -31.492009468502474,
+          "return_pct": -0.031492009468502474,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0497336489500826,
+          "mean_stop_pct": 0.008996693332045745,
+          "mean_cost_R": 0.11344636253247585,
+          "realized_max_drawdown": -0.0314920094685025
+        },
+        "FUSDT": {
+          "trades": 2,
+          "net_pnl": -23.239887498228775,
+          "return_pct": -0.023239887498228775,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1619943749114388,
+          "mean_stop_pct": 0.006192689087923831,
+          "mean_cost_R": 0.1619943749114425,
+          "realized_max_drawdown": -0.023239887498228806
+        },
+        "GIGGLEUSDT": {
+          "trades": 1,
+          "net_pnl": -12.194278970439896,
+          "return_pct": -0.012194278970439896,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.2578840579710104,
+          "mean_stop_pct": 0.003877711588175936,
+          "mean_cost_R": 0.2578840579710048,
+          "realized_max_drawdown": -0.012194278970439898
+        },
+        "GMTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.459371474617242,
+          "return_pct": -0.010459371474617242,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0459371474617243,
+          "mean_stop_pct": 0.021768874543923733,
+          "mean_cost_R": 0.04593714746172426,
+          "realized_max_drawdown": -0.010459371474617174
+        },
+        "GOATUSDT": {
+          "trades": 1,
+          "net_pnl": -10.530073206442172,
+          "return_pct": -0.010530073206442172,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0530073206442172,
+          "mean_stop_pct": 0.018865318749309513,
+          "mean_cost_R": 0.053007320644216566,
+          "realized_max_drawdown": -0.01053007320644217
+        },
+        "GPSUSDT": {
+          "trades": 1,
+          "net_pnl": 29.783697478991563,
+          "return_pct": 0.029783697478991563,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 2.978369747899156,
+          "mean_stop_pct": 0.006771366791851659,
+          "mean_cost_R": 0.14768067226890627,
+          "realized_max_drawdown": 0.0
+        },
+        "GRIFFAINUSDT": {
+          "trades": 1,
+          "net_pnl": -10.864741379310336,
+          "return_pct": -0.010864741379310337,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0864741379310336,
+          "mean_stop_pct": 0.011564151131492352,
+          "mean_cost_R": 0.08647413793103464,
+          "realized_max_drawdown": -0.010864741379310372
+        },
+        "GRTUSDT": {
+          "trades": 2,
+          "net_pnl": 21.812986466956,
+          "return_pct": 0.021812986466956,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0906493233478,
+          "mean_stop_pct": 0.006340674841240542,
+          "mean_cost_R": 0.16385074234660493,
+          "realized_max_drawdown": 0.0
+        },
+        "GUNUSDT": {
+          "trades": 2,
+          "net_pnl": -16.572699552025718,
+          "return_pct": -0.016572699552025717,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.828634977601286,
+          "mean_stop_pct": 0.013783486577187441,
+          "mean_cost_R": 0.07435371138436536,
+          "realized_max_drawdown": -0.01657269955202567
+        },
+        "HANAUSDT": {
+          "trades": 2,
+          "net_pnl": -4.304272049325624,
+          "return_pct": -0.004304272049325624,
+          "profit_factor": 0.30079008857642836,
+          "win_rate": 0.5,
+          "mean_R": -0.21521360246628116,
+          "mean_stop_pct": 0.01471537880815939,
+          "mean_cost_R": 0.07214489508809953,
+          "realized_max_drawdown": -0.0061559082315670866
+        },
+        "HOLOUSDT": {
+          "trades": 1,
+          "net_pnl": -5.61086757990855,
+          "return_pct": -0.00561086757990855,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5610867579908551,
+          "mean_stop_pct": 0.004773529796416578,
+          "mean_cost_R": 0.20948858447488608,
+          "realized_max_drawdown": -0.005610867579908585
+        },
+        "HOMEUSDT": {
+          "trades": 6,
+          "net_pnl": 18.95846349555576,
+          "return_pct": 0.018958463495555758,
+          "profit_factor": 1.42194400026029,
+          "win_rate": 0.16666666666666666,
+          "mean_R": 0.31597439159259605,
+          "mean_stop_pct": 0.023375007927116994,
+          "mean_cost_R": 0.08411889459213791,
+          "realized_max_drawdown": -0.03205269514640208
+        },
+        "HUMAUSDT": {
+          "trades": 2,
+          "net_pnl": -4.598764916202488,
+          "return_pct": -0.004598764916202488,
+          "profit_factor": 0.6279373207364852,
+          "win_rate": 0.5,
+          "mean_R": -0.2299382458101245,
+          "mean_stop_pct": 0.011950948669133734,
+          "mean_cost_R": 0.14343538482055565,
+          "realized_max_drawdown": -0.01226499485671062
+        },
+        "HYPERUSDT": {
+          "trades": 1,
+          "net_pnl": -11.214038734057679,
+          "return_pct": -0.011214038734057678,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1214038734057679,
+          "mean_stop_pct": 0.008236969480024245,
+          "mean_cost_R": 0.12140387340576338,
+          "realized_max_drawdown": -0.011214038734057685
+        },
+        "ICNTUSDT": {
+          "trades": 4,
+          "net_pnl": 12.045790674976876,
+          "return_pct": 0.012045790674976877,
+          "profit_factor": 23.832808099630217,
+          "win_rate": 0.75,
+          "mean_R": 0.301144766874422,
+          "mean_stop_pct": 0.018168398777900132,
+          "mean_cost_R": 0.0742457165197363,
+          "realized_max_drawdown": -0.0005210141160220116
+        },
+        "INITUSDT": {
+          "trades": 1,
+          "net_pnl": -3.7169218500797014,
+          "return_pct": -0.0037169218500797013,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.37169218500797013,
+          "mean_stop_pct": 0.016922620172194928,
+          "mean_cost_R": 0.05909250398724137,
+          "realized_max_drawdown": -0.0037169218500797685
+        },
+        "INUSDT": {
+          "trades": 2,
+          "net_pnl": -10.975476285740806,
+          "return_pct": -0.010975476285740806,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5487738142870403,
+          "mean_stop_pct": 0.09001749616818808,
+          "mean_cost_R": 0.028950392664519244,
+          "realized_max_drawdown": -0.010975476285740804
+        },
+        "IOTXUSDT": {
+          "trades": 5,
+          "net_pnl": -36.872474955005266,
+          "return_pct": -0.036872474955005265,
+          "profit_factor": 0.18257336048307493,
+          "win_rate": 0.2,
+          "mean_R": -0.7374494991001053,
+          "mean_stop_pct": 0.00826653035933061,
+          "mean_cost_R": 0.12760230045833867,
+          "realized_max_drawdown": -0.03687247495500523
+        },
+        "IOUSDT": {
+          "trades": 1,
+          "net_pnl": -10.973129171574353,
+          "return_pct": -0.010973129171574354,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0973129171574354,
+          "mean_stop_pct": 0.01027612807436578,
+          "mean_cost_R": 0.09731291715743995,
+          "realized_max_drawdown": -0.010973129171574336
+        },
+        "JASMYUSDT": {
+          "trades": 2,
+          "net_pnl": -0.9884612777189096,
+          "return_pct": -0.0009884612777189097,
+          "profit_factor": 0.10741143914082865,
+          "win_rate": 0.5,
+          "mean_R": -0.04942306388594547,
+          "mean_stop_pct": 0.010337251429924584,
+          "mean_cost_R": 0.10529705140217736,
+          "realized_max_drawdown": -0.0011072780439730368
+        },
+        "JELLYJELLYUSDT": {
+          "trades": 2,
+          "net_pnl": -13.755877958774374,
+          "return_pct": -0.013755877958774374,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.6877938979387187,
+          "mean_stop_pct": 0.007461504017112142,
+          "mean_cost_R": 0.1405604296526204,
+          "realized_max_drawdown": -0.01375587795877431
+        },
+        "KAIAUSDT": {
+          "trades": 4,
+          "net_pnl": -44.956349492891064,
+          "return_pct": -0.04495634949289106,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1239087373222767,
+          "mean_stop_pct": 0.008077701764177294,
+          "mean_cost_R": 0.12390873732227627,
+          "realized_max_drawdown": -0.04495634949289107
+        },
+        "KATUSDT": {
+          "trades": 3,
+          "net_pnl": -8.029824746898518,
+          "return_pct": -0.008029824746898518,
+          "profit_factor": 0.6306616878655755,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.2676608248966172,
+          "mean_stop_pct": 0.010302926865847781,
+          "mean_cost_R": 0.10006305953347654,
+          "realized_max_drawdown": -0.021447043143942524
+        },
+        "KERNELUSDT": {
+          "trades": 1,
+          "net_pnl": -11.468067940551924,
+          "return_pct": -0.011468067940551925,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1468067940551923,
+          "mean_stop_pct": 0.006811673849535894,
+          "mean_cost_R": 0.14680679405519892,
+          "realized_max_drawdown": -0.011468067940551885
+        },
+        "KGENUSDT": {
+          "trades": 3,
+          "net_pnl": 14.561624839421471,
+          "return_pct": 0.01456162483942147,
+          "profit_factor": 1.6664866084865204,
+          "win_rate": 0.3333333333333333,
+          "mean_R": 0.48538749464738234,
+          "mean_stop_pct": 0.010837102763923365,
+          "mean_cost_R": 0.09287422030497479,
+          "realized_max_drawdown": -0.021080787522270494
+        },
+        "KITEUSDT": {
+          "trades": 3,
+          "net_pnl": -16.232338684883228,
+          "return_pct": -0.01623233868488323,
+          "profit_factor": 0.24968367875317588,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.5410779561627742,
+          "mean_stop_pct": 0.010223893367199382,
+          "mean_cost_R": 0.13648025501333727,
+          "realized_max_drawdown": -0.016232338684883163
+        },
+        "KNCUSDT": {
+          "trades": 1,
+          "net_pnl": -10.921092150170617,
+          "return_pct": -0.010921092150170618,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0921092150170617,
+          "mean_stop_pct": 0.010856677041648095,
+          "mean_cost_R": 0.09210921501706523,
+          "realized_max_drawdown": -0.010921092150170564
+        },
+        "KSMUSDT": {
+          "trades": 1,
+          "net_pnl": -10.971898148148135,
+          "return_pct": -0.010971898148148135,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0971898148148136,
+          "mean_stop_pct": 0.010289144000381173,
+          "mean_cost_R": 0.09718981481481394,
+          "realized_max_drawdown": -0.01097189814814814
+        },
+        "LIGHTUSDT": {
+          "trades": 2,
+          "net_pnl": -21.570032838632535,
+          "return_pct": -0.021570032838632534,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0785016419316267,
+          "mean_stop_pct": 0.013690592728640223,
+          "mean_cost_R": 0.07850164193162358,
+          "realized_max_drawdown": -0.02157003283863257
+        },
+        "MAGMAUSDT": {
+          "trades": 1,
+          "net_pnl": 37.52300689989093,
+          "return_pct": 0.03752300689989093,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 3.7523006899890934,
+          "mean_stop_pct": 0.039292441163600526,
+          "mean_cost_R": 0.0254501876286163,
+          "realized_max_drawdown": 0.0
+        },
+        "MANAUSDT": {
+          "trades": 1,
+          "net_pnl": -12.037764192139807,
+          "return_pct": -0.012037764192139807,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.2037764192139806,
+          "mean_stop_pct": 0.004907339150708916,
+          "mean_cost_R": 0.20377641921397255,
+          "realized_max_drawdown": -0.012037764192139755
+        },
+        "MANTAUSDT": {
+          "trades": 1,
+          "net_pnl": 12.858779188857008,
+          "return_pct": 0.012858779188857009,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.2858779188857008,
+          "mean_stop_pct": 0.014778533891943054,
+          "mean_cost_R": 0.06766571077427234,
+          "realized_max_drawdown": 0.0
+        },
+        "MASKUSDT": {
+          "trades": 1,
+          "net_pnl": -11.144668192219639,
+          "return_pct": -0.01114466819221964,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.114466819221964,
+          "mean_stop_pct": 0.008736156091319766,
+          "mean_cost_R": 0.11446681922196866,
+          "realized_max_drawdown": -0.011144668192219709
+        },
+        "MAVIAUSDT": {
+          "trades": 4,
+          "net_pnl": -30.205408212923714,
+          "return_pct": -0.030205408212923713,
+          "profit_factor": 0.08086686417359437,
+          "win_rate": 0.25,
+          "mean_R": -0.7551352053230928,
+          "mean_stop_pct": 0.012822359911912131,
+          "mean_cost_R": 0.09031219647353346,
+          "realized_max_drawdown": -0.030205408212923612
+        },
+        "MAVUSDT": {
+          "trades": 3,
+          "net_pnl": -34.02001073963845,
+          "return_pct": -0.03402001073963845,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1340003579879483,
+          "mean_stop_pct": 0.007760848133314384,
+          "mean_cost_R": 0.13400035798794815,
+          "realized_max_drawdown": -0.03402001073963845
+        },
+        "MEGAUSDT": {
+          "trades": 1,
+          "net_pnl": 7.02079478827365,
+          "return_pct": 0.007020794788273651,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.702079478827365,
+          "mean_stop_pct": 0.012152832758020036,
+          "mean_cost_R": 0.08228534201954425,
+          "realized_max_drawdown": 0.0
+        },
+        "METISUSDT": {
+          "trades": 1,
+          "net_pnl": -11.632900733108684,
+          "return_pct": -0.011632900733108685,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.273735593220352,
+          "mean_stop_pct": 0.003653160293243444,
+          "mean_cost_R": 0.273735593220344,
+          "realized_max_drawdown": -0.011632900733108742
+        },
+        "MEUSDT": {
+          "trades": 1,
+          "net_pnl": 16.09082726671072,
+          "return_pct": 0.016090827266710718,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.6090827266710717,
+          "mean_stop_pct": 0.008750492251384086,
+          "mean_cost_R": 0.114279285241562,
+          "realized_max_drawdown": 0.0
+        },
+        "MINAUSDT": {
+          "trades": 4,
+          "net_pnl": 11.843620153269589,
+          "return_pct": 0.011843620153269589,
+          "profit_factor": 1.5415207916262912,
+          "win_rate": 0.5,
+          "mean_R": 0.22715266939526507,
+          "mean_stop_pct": 0.006197173494612992,
+          "mean_cost_R": 0.19062224084799229,
+          "realized_max_drawdown": -0.011369078742350935
+        },
+        "MITOUSDT": {
+          "trades": 6,
+          "net_pnl": -0.21340150355413456,
+          "return_pct": -0.00021340150355413456,
+          "profit_factor": 0.9924108349362882,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.003556691725902265,
+          "mean_stop_pct": 0.015082008036083686,
+          "mean_cost_R": 0.07620186268154161,
+          "realized_max_drawdown": -0.01306302614079069
+        },
+        "MMTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.883277467411487,
+          "return_pct": -0.010883277467411486,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0883277467411487,
+          "mean_stop_pct": 0.011321470737055304,
+          "mean_cost_R": 0.08832774674115339,
+          "realized_max_drawdown": -0.010883277467411467
+        },
+        "MORPHOUSDT": {
+          "trades": 1,
+          "net_pnl": -10.718002236302645,
+          "return_pct": -0.010718002236302645,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0718002236302646,
+          "mean_stop_pct": 0.01392753322259133,
+          "mean_cost_R": 0.0718002236302648,
+          "realized_max_drawdown": -0.010718002236302593
+        },
+        "NAORISUSDT": {
+          "trades": 1,
+          "net_pnl": 2.6987538304391894,
+          "return_pct": 0.0026987538304391896,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.2698753830439189,
+          "mean_stop_pct": 0.022355681402995996,
+          "mean_cost_R": 0.04473135852911131,
+          "realized_max_drawdown": 0.0
+        },
+        "NEWTUSDT": {
+          "trades": 2,
+          "net_pnl": 27.114867988252335,
+          "return_pct": 0.027114867988252335,
+          "profit_factor": 16.22538497945234,
+          "win_rate": 0.5,
+          "mean_R": 1.355743399412617,
+          "mean_stop_pct": 0.008035494479559277,
+          "mean_cost_R": 0.12458699706314291,
+          "realized_max_drawdown": -0.001730883473438416
+        },
+        "NILUSDT": {
+          "trades": 1,
+          "net_pnl": -10.951421188630503,
+          "return_pct": -0.010951421188630503,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0951421188630504,
+          "mean_stop_pct": 0.010510592069527414,
+          "mean_cost_R": 0.09514211886304924,
+          "realized_max_drawdown": -0.010951421188630572
+        },
+        "NOTUSDT": {
+          "trades": 1,
+          "net_pnl": -11.449276944065451,
+          "return_pct": -0.01144927694406545,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1449276944065452,
+          "mean_stop_pct": 0.006899992469312417,
+          "mean_cost_R": 0.1449276944065491,
+          "realized_max_drawdown": -0.0114492769440655
+        },
+        "NXPCUSDT": {
+          "trades": 4,
+          "net_pnl": 16.008171240348272,
+          "return_pct": 0.01600817124034827,
+          "profit_factor": 3.159195234796256,
+          "win_rate": 0.25,
+          "mean_R": 0.40020428100870686,
+          "mean_stop_pct": 0.018428312648413443,
+          "mean_cost_R": 0.08434478810844422,
+          "realized_max_drawdown": -0.006555258894385352
+        },
+        "OGUSDT": {
+          "trades": 5,
+          "net_pnl": -4.90013093718774,
+          "return_pct": -0.00490013093718774,
+          "profit_factor": 0.7861487844672221,
+          "win_rate": 0.6,
+          "mean_R": -0.11893032047582035,
+          "mean_stop_pct": 0.008479529641077085,
+          "mean_cost_R": 0.14086292804513367,
+          "realized_max_drawdown": -0.021157907998642256
+        },
+        "ORCAUSDT": {
+          "trades": 2,
+          "net_pnl": -22.028125032955227,
+          "return_pct": -0.022028125032955228,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1014062516477614,
+          "mean_stop_pct": 0.010491746436451552,
+          "mean_cost_R": 0.10140625164776526,
+          "realized_max_drawdown": -0.02202812503295526
+        },
+        "ORDERUSDT": {
+          "trades": 1,
+          "net_pnl": -0.1835708435708476,
+          "return_pct": -0.0001835708435708476,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.01835708435708476,
+          "mean_stop_pct": 0.02421946284762166,
+          "mean_cost_R": 0.04128910728910734,
+          "realized_max_drawdown": -0.00018357084357079057
+        },
+        "ORDIUSDT": {
+          "trades": 1,
+          "net_pnl": 10.263149078727093,
+          "return_pct": 0.010263149078727093,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0263149078727092,
+          "mean_stop_pct": 0.013181717818502931,
+          "mean_cost_R": 0.07586264656616444,
+          "realized_max_drawdown": 0.0
+        },
+        "PIEVERSEUSDT": {
+          "trades": 2,
+          "net_pnl": 4.960220427002701,
+          "return_pct": 0.004960220427002701,
+          "profit_factor": 3.6054203472871795,
+          "win_rate": 0.5,
+          "mean_R": 0.24801102135013497,
+          "mean_stop_pct": 0.01656614822417672,
+          "mean_cost_R": 0.06940063080529654,
+          "realized_max_drawdown": -0.0018908294181918528
+        },
+        "PIXELUSDT": {
+          "trades": 1,
+          "net_pnl": -11.77771573604055,
+          "return_pct": -0.01177771573604055,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.177771573604055,
+          "mean_stop_pct": 0.005625196310784887,
+          "mean_cost_R": 0.17777157360406315,
+          "realized_max_drawdown": -0.011777715736040584
+        },
+        "PLUMEUSDT": {
+          "trades": 3,
+          "net_pnl": 51.11254553801239,
+          "return_pct": 0.051112545538012394,
+          "profit_factor": 14.309627078595096,
+          "win_rate": 0.6666666666666666,
+          "mean_R": 1.7037515179337461,
+          "mean_stop_pct": 0.01105880630176761,
+          "mean_cost_R": 0.10015723748928472,
+          "realized_max_drawdown": -0.0038402687946240688
+        },
+        "POLUSDT": {
+          "trades": 3,
+          "net_pnl": -30.771788308265457,
+          "return_pct": -0.030771788308265456,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.025726276942182,
+          "mean_stop_pct": 0.014684836160669783,
+          "mean_cost_R": 0.08880979952608321,
+          "realized_max_drawdown": -0.030771788308265546
+        },
+        "PROVEUSDT": {
+          "trades": 2,
+          "net_pnl": 11.906514056225069,
+          "return_pct": 0.011906514056225068,
+          "profit_factor": 2.0729811405429572,
+          "win_rate": 0.5,
+          "mean_R": 0.5953257028112534,
+          "mean_stop_pct": 0.00844736825318864,
+          "mean_cost_R": 0.11913212851405608,
+          "realized_max_drawdown": -0.011096666666666644
+        },
+        "PUNDIXUSDT": {
+          "trades": 2,
+          "net_pnl": -14.581256909111747,
+          "return_pct": -0.014581256909111747,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7290628454555873,
+          "mean_stop_pct": 0.012986677048131617,
+          "mean_cost_R": 0.12219261644795562,
+          "realized_max_drawdown": -0.014581256909111717
+        },
+        "QTUMUSDT": {
+          "trades": 3,
+          "net_pnl": -7.059808907581212,
+          "return_pct": -0.007059808907581212,
+          "profit_factor": 0.6880451407352763,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.23532696358604044,
+          "mean_stop_pct": 0.007177679029487458,
+          "mean_cost_R": 0.14203913650980213,
+          "realized_max_drawdown": -0.011413240367407651
+        },
+        "QUSDT": {
+          "trades": 1,
+          "net_pnl": -11.692369077306873,
+          "return_pct": -0.011692369077306874,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1692369077306874,
+          "mean_stop_pct": 0.005908876576682553,
+          "mean_cost_R": 0.16923690773067976,
+          "realized_max_drawdown": -0.011692369077306974
+        },
+        "RAREUSDT": {
+          "trades": 1,
+          "net_pnl": 4.705895627644569,
+          "return_pct": 0.004705895627644569,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.4705895627644569,
+          "mean_stop_pct": 0.0062001539107318674,
+          "mean_cost_R": 0.16128631875881286,
+          "realized_max_drawdown": 0.0
+        },
+        "RAYDIUMUSDT": {
+          "trades": 1,
+          "net_pnl": -3.9909414929388043,
+          "return_pct": -0.003990941492938804,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.39909414929388043,
+          "mean_stop_pct": 0.03675870763602201,
+          "mean_cost_R": 0.02720443846671153,
+          "realized_max_drawdown": -0.003990941492938771
+        },
+        "REZUSDT": {
+          "trades": 2,
+          "net_pnl": -12.958998292593323,
+          "return_pct": -0.012958998292593324,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.6479499146296663,
+          "mean_stop_pct": 0.007191298304310787,
+          "mean_cost_R": 0.14794991462966564,
+          "realized_max_drawdown": -0.012958998292593393
+        },
+        "RLCUSDT": {
+          "trades": 2,
+          "net_pnl": -22.857999957884967,
+          "return_pct": -0.022857999957884966,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1428999978942485,
+          "mean_stop_pct": 0.007229900474858832,
+          "mean_cost_R": 0.1428999978942488,
+          "realized_max_drawdown": -0.022857999957884956
+        },
+        "RONINUSDT": {
+          "trades": 2,
+          "net_pnl": -18.763451153943628,
+          "return_pct": -0.01876345115394363,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.9381725576971813,
+          "mean_stop_pct": 0.009302784891662473,
+          "mean_cost_R": 0.11177788658976723,
+          "realized_max_drawdown": -0.018763451153943622
+        },
+        "RUNEUSDT": {
+          "trades": 1,
+          "net_pnl": 3.018279569892228,
+          "return_pct": 0.0030182795698922276,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.30182795698922277,
+          "mean_stop_pct": 0.005000896217960313,
+          "mean_cost_R": 0.19996415770608897,
+          "realized_max_drawdown": 0.0
+        },
+        "SAHARAUSDT": {
+          "trades": 6,
+          "net_pnl": -30.685969092604036,
+          "return_pct": -0.030685969092604036,
+          "profit_factor": 0.2897540629671629,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.5114328182100673,
+          "mean_stop_pct": 0.015926209621202874,
+          "mean_cost_R": 0.07054432294805753,
+          "realized_max_drawdown": -0.030685969092604015
+        },
+        "SENTUSDT": {
+          "trades": 3,
+          "net_pnl": 5.180447920792732,
+          "return_pct": 0.0051804479207927315,
+          "profit_factor": 1.3852574163757925,
+          "win_rate": 0.3333333333333333,
+          "mean_R": 0.17268159735975774,
+          "mean_stop_pct": 0.007397810064086764,
+          "mean_cost_R": 0.15355609310880056,
+          "realized_max_drawdown": -0.01320082427463476
+        },
+        "SIRENUSDT": {
+          "trades": 5,
+          "net_pnl": 1.336117929048033,
+          "return_pct": 0.001336117929048033,
+          "profit_factor": 1.0541167746301356,
+          "win_rate": 0.4,
+          "mean_R": 0.02672235858096079,
+          "mean_stop_pct": 0.038016725688002066,
+          "mean_cost_R": 0.03784404238775893,
+          "realized_max_drawdown": -0.014256316942788727
+        },
+        "SKRUSDT": {
+          "trades": 3,
+          "net_pnl": -16.919141172010853,
+          "return_pct": -0.016919141172010852,
+          "profit_factor": 0.21547561157350176,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.563971372400362,
+          "mean_stop_pct": 0.01222905959060775,
+          "mean_cost_R": 0.09074166601003181,
+          "realized_max_drawdown": -0.021566112439085683
+        },
+        "SNTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.896372549019626,
+          "return_pct": -0.010896372549019626,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0896372549019626,
+          "mean_stop_pct": 0.011156075686317364,
+          "mean_cost_R": 0.08963725490196109,
+          "realized_max_drawdown": -0.01089637254901954
+        },
+        "SONICUSDT": {
+          "trades": 1,
+          "net_pnl": -11.204579780755141,
+          "return_pct": -0.011204579780755142,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1204579780755142,
+          "mean_stop_pct": 0.008301650218411059,
+          "mean_cost_R": 0.12045797807552058,
+          "realized_max_drawdown": -0.011204579780755175
+        },
+        "SOSOUSDT": {
+          "trades": 3,
+          "net_pnl": 31.389303147167126,
+          "return_pct": 0.031389303147167126,
+          "profit_factor": 19.755800665708072,
+          "win_rate": 0.6666666666666666,
+          "mean_R": 1.0463101049055707,
+          "mean_stop_pct": 0.020201168201927574,
+          "mean_cost_R": 0.07002254878270693,
+          "realized_max_drawdown": -0.0016289428349198776
+        },
+        "SPORTFUNUSDT": {
+          "trades": 3,
+          "net_pnl": -5.72026874398448,
+          "return_pct": -0.0057202687439844805,
+          "profit_factor": 0.4466100923496141,
+          "win_rate": 0.6666666666666666,
+          "mean_R": -0.19067562479948272,
+          "mean_stop_pct": 0.02092751408523677,
+          "mean_cost_R": 0.05172538979135958,
+          "realized_max_drawdown": -0.010336778218945075
+        },
+        "SQDUSDT": {
+          "trades": 2,
+          "net_pnl": -15.24882834589531,
+          "return_pct": -0.01524882834589531,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7624414172947656,
+          "mean_stop_pct": 0.025354669572351055,
+          "mean_cost_R": 0.05753112456577555,
+          "realized_max_drawdown": -0.015248828345895249
+        },
+        "SSVUSDT": {
+          "trades": 1,
+          "net_pnl": -3.36399049881212,
+          "return_pct": -0.00336399049881212,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.33639904988121194,
+          "mean_stop_pct": 0.0073059836179369606,
+          "mean_cost_R": 0.13687410926365814,
+          "realized_max_drawdown": -0.003363990498812086
+        },
+        "STABLEUSDT": {
+          "trades": 6,
+          "net_pnl": 51.353650624734655,
+          "return_pct": 0.051353650624734654,
+          "profit_factor": 3.379349585133342,
+          "win_rate": 0.5,
+          "mean_R": 0.8558941770789108,
+          "mean_stop_pct": 0.019199039652116823,
+          "mean_cost_R": 0.05794221147250269,
+          "realized_max_drawdown": -0.0106040825034045
+        },
+        "STEEMUSDT": {
+          "trades": 2,
+          "net_pnl": -13.340951099489377,
+          "return_pct": -0.013340951099489377,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.8097427989939475,
+          "mean_stop_pct": 0.004013397314300129,
+          "mean_cost_R": 0.2617153547400915,
+          "realized_max_drawdown": -0.013340951099489406
+        },
+        "STGUSDT": {
+          "trades": 2,
+          "net_pnl": 13.418493782416279,
+          "return_pct": 0.01341849378241628,
+          "profit_factor": 2.254555309207757,
+          "win_rate": 0.5,
+          "mean_R": 0.6709246891208138,
+          "mean_stop_pct": 0.013359158385576528,
+          "mean_cost_R": 0.07528743209129235,
+          "realized_max_drawdown": -0.01044396774156442
+        },
+        "STORJUSDT": {
+          "trades": 1,
+          "net_pnl": -6.003110348770753,
+          "return_pct": -0.0060031103487707535,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.6003110348770754,
+          "mean_stop_pct": 0.008330792973364434,
+          "mean_cost_R": 0.12003659233847756,
+          "realized_max_drawdown": -0.006003110348770768
+        },
+        "STXUSDT": {
+          "trades": 1,
+          "net_pnl": -12.188326180257606,
+          "return_pct": -0.012188326180257607,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.2188326180257607,
+          "mean_stop_pct": 0.004569702675139289,
+          "mean_cost_R": 0.21883261802574913,
+          "realized_max_drawdown": -0.012188326180257558
+        },
+        "TAOUSDT": {
+          "trades": 1,
+          "net_pnl": -11.047794871794872,
+          "return_pct": -0.011047794871794872,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1047794871794874,
+          "mean_stop_pct": 0.00954385277995296,
+          "mean_cost_R": 0.10477948717948778,
+          "realized_max_drawdown": -0.011047794871794858
+        },
+        "TAUSDT": {
+          "trades": 2,
+          "net_pnl": -7.25323727248524,
+          "return_pct": -0.00725323727248524,
+          "profit_factor": 0.3373142397112953,
+          "win_rate": 0.5,
+          "mean_R": -0.36266186362426206,
+          "mean_stop_pct": 0.016077281789461835,
+          "mean_cost_R": 0.07043571521437363,
+          "realized_max_drawdown": -0.010945213715359281
+        },
+        "TOWNSUSDT": {
+          "trades": 1,
+          "net_pnl": -11.47902676399018,
+          "return_pct": -0.01147902676399018,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.147902676399018,
+          "mean_stop_pct": 0.006761202868987441,
+          "mean_cost_R": 0.14790267639902369,
+          "realized_max_drawdown": -0.011479026763990152
+        },
+        "TRUTHUSDT": {
+          "trades": 4,
+          "net_pnl": -13.920513098379,
+          "return_pct": -0.013920513098379,
+          "profit_factor": 0.0952941518420238,
+          "win_rate": 0.25,
+          "mean_R": -0.348012827459475,
+          "mean_stop_pct": 0.018390753583027386,
+          "mean_cost_R": 0.07450955140463124,
+          "realized_max_drawdown": -0.015364255435808105
+        },
+        "TUTUSDT": {
+          "trades": 1,
+          "net_pnl": -7.1682525366404555,
+          "return_pct": -0.007168252536640455,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7168252536640456,
+          "mean_stop_pct": 0.006082675005486058,
+          "mean_cost_R": 0.1644013528748593,
+          "realized_max_drawdown": -0.00716825253664044
+        },
+        "USUALUSDT": {
+          "trades": 2,
+          "net_pnl": -22.205483548405823,
+          "return_pct": -0.022205483548405822,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1102741774202909,
+          "mean_stop_pct": 0.009649484645447216,
+          "mean_cost_R": 0.11027417742028785,
+          "realized_max_drawdown": -0.02220548354840579
+        },
+        "VANAUSDT": {
+          "trades": 1,
+          "net_pnl": 14.388618693134909,
+          "return_pct": 0.01438861869313491,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.438861869313491,
+          "mean_stop_pct": 0.008037708754387847,
+          "mean_cost_R": 0.12441356492969373,
+          "realized_max_drawdown": 0.0
+        },
+        "WALUSDT": {
+          "trades": 1,
+          "net_pnl": -10.650310130944199,
+          "return_pct": -0.0106503101309442,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.06503101309442,
+          "mean_stop_pct": 0.015377278507842389,
+          "mean_cost_R": 0.06503101309441729,
+          "realized_max_drawdown": -0.010650310130944196
+        },
+        "WAXPUSDT": {
+          "trades": 1,
+          "net_pnl": -11.283703703703646,
+          "return_pct": -0.011283703703703645,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1283703703703647,
+          "mean_stop_pct": 0.0077899596076168,
+          "mean_cost_R": 0.1283703703703712,
+          "realized_max_drawdown": -0.011283703703703574
+        },
+        "WCTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.887518248175171,
+          "return_pct": -0.010887518248175172,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.088751824817517,
+          "mean_stop_pct": 0.011267373961674449,
+          "mean_cost_R": 0.08875182481751849,
+          "realized_max_drawdown": -0.010887518248175132
+        },
+        "WOOUSDT": {
+          "trades": 2,
+          "net_pnl": -21.074286931439747,
+          "return_pct": -0.021074286931439746,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.1767830320506971,
+          "mean_stop_pct": 0.012585174024625953,
+          "mean_cost_R": 0.1767830320507019,
+          "realized_max_drawdown": -0.021074286931439756
+        },
+        "WUSDT": {
+          "trades": 2,
+          "net_pnl": -11.098491997906184,
+          "return_pct": -0.011098491997906183,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5549245998953092,
+          "mean_stop_pct": 0.02134555835950746,
+          "mean_cost_R": 0.05492459989530886,
+          "realized_max_drawdown": -0.011098491997906246
+        },
+        "XMRUSDT": {
+          "trades": 3,
+          "net_pnl": -3.5213889114461487,
+          "return_pct": -0.003521388911446149,
+          "profit_factor": 0.6842108283469449,
+          "win_rate": 0.6666666666666666,
+          "mean_R": -0.11737963038153831,
+          "mean_stop_pct": 0.012760109840113748,
+          "mean_cost_R": 0.08551656593101194,
+          "realized_max_drawdown": -0.01115107555149153
+        },
+        "XTZUSDT": {
+          "trades": 2,
+          "net_pnl": 6.005915448570478,
+          "return_pct": 0.006005915448570478,
+          "profit_factor": 1.5238202470123132,
+          "win_rate": 0.5,
+          "mean_R": 0.3002957724285238,
+          "mean_stop_pct": 0.012433059772872852,
+          "mean_cost_R": 0.10099178121954852,
+          "realized_max_drawdown": -0.011268722167744327
+        },
+        "ZBCNUSDT": {
+          "trades": 3,
+          "net_pnl": -18.67235086860436,
+          "return_pct": -0.018672350868604363,
+          "profit_factor": 0.16383833769860565,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.6224116956201454,
+          "mean_stop_pct": 0.010352087437958296,
+          "mean_cost_R": 0.1020671538678889,
+          "realized_max_drawdown": -0.02233102964468847
+        },
+        "ZBTUSDT": {
+          "trades": 1,
+          "net_pnl": 3.849567675075864,
+          "return_pct": 0.003849567675075864,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.3849567675075864,
+          "mean_stop_pct": 0.029258088622637117,
+          "mean_cost_R": 0.03417858264419554,
+          "realized_max_drawdown": 0.0
+        },
+        "ZETAUSDT": {
+          "trades": 1,
+          "net_pnl": -8.959664268585222,
+          "return_pct": -0.008959664268585221,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.8959664268585221,
+          "mean_stop_pct": 0.00807857724049746,
+          "mean_cost_R": 0.12378417266187113,
+          "realized_max_drawdown": -0.008959664268585188
+        }
+      }
+    },
+    "confirmed": {
+      "trades": 134,
+      "net_pnl": 164.36252310413522,
+      "return_pct": 0.1643625231041352,
+      "profit_factor": 1.382795924473501,
+      "win_rate": 0.5074626865671642,
+      "mean_R": 0.12265859933144423,
+      "mean_stop_pct": 0.029310138013308885,
+      "mean_cost_R": 0.042529605639507105,
+      "realized_max_drawdown": -0.08931539358029128,
+      "ending_equity": 1164.362523104135,
+      "candidates": 191,
+      "portfolio_rejected": 57,
+      "reject_reasons": {
+        "maximum_total_open_risk": 55,
+        "existing_active_position": 1,
+        "maximum_daily_loss": 1
+      },
+      "all_candidate_diagnostic": {
+        "trades": 191,
+        "net_pnl": 632.0653547721612,
+        "profit_factor": 2.440734983566993,
+        "win_rate": 0.6335078534031413,
+        "mean_R": 0.3309242695142205,
+        "mean_stop_pct": 0.02944118536916345,
+        "mean_cost_R": 0.04047381801767289
+      },
+      "first_entry": "2026-06-02 02:30:00+00:00",
+      "last_entry": "2026-09-08 03:00:00+00:00",
+      "top5_pnl": 217.29276311224555,
+      "by_month": {
+        "2026-06": {
+          "trades": 47,
+          "net_pnl": 105.45225901100821
+        },
+        "2026-07": {
+          "trades": 52,
+          "net_pnl": -34.6128245144668
+        },
+        "2026-08": {
+          "trades": 29,
+          "net_pnl": 21.46154736061895
+        },
+        "2026-09": {
+          "trades": 6,
+          "net_pnl": 72.06154124697485
+        }
+      },
+      "by_symbol": {
+        "10000SATSUSDT": {
+          "trades": 2,
+          "net_pnl": 2.981133333856585,
+          "return_pct": 0.0029811333338565847,
+          "profit_factor": 2.6078698301681573,
+          "win_rate": 0.5,
+          "mean_R": 0.14905666669282921,
+          "mean_stop_pct": 0.02443394562621063,
+          "mean_cost_R": 0.04662866680709473,
+          "realized_max_drawdown": -0.0018451669396135628
+        },
+        "1000NEIROCTOUSDT": {
+          "trades": 1,
+          "net_pnl": 2.322946357085821,
+          "return_pct": 0.0023229463570858208,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.23229463570858208,
+          "mean_stop_pct": 0.014215150687425881,
+          "mean_cost_R": 0.07034747798238661,
+          "realized_max_drawdown": 0.0
+        },
+        "1000PEPEUSDT": {
+          "trades": 1,
+          "net_pnl": 8.722261484098995,
+          "return_pct": 0.008722261484098996,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.8722261484098995,
+          "mean_stop_pct": 0.03089519650655025,
+          "mean_cost_R": 0.032367491166077705,
+          "realized_max_drawdown": 0.0
+        },
+        "1000RATSUSDT": {
+          "trades": 2,
+          "net_pnl": -14.733239449257812,
+          "return_pct": -0.014733239449257812,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7366619724628907,
+          "mean_stop_pct": 0.03173283626079472,
+          "mean_cost_R": 0.03558477318102322,
+          "realized_max_drawdown": -0.014733239449257751
+        },
+        "1000TAGUSDT": {
+          "trades": 3,
+          "net_pnl": -2.997919027267967,
+          "return_pct": -0.002997919027267967,
+          "profit_factor": 0.711524512965875,
+          "win_rate": 0.6666666666666666,
+          "mean_R": -0.09993063424226556,
+          "mean_stop_pct": 0.02913511569992412,
+          "mean_cost_R": 0.035729412672468534,
+          "realized_max_drawdown": -0.010371596577534836
+        },
+        "1000TOSHIUSDT": {
+          "trades": 1,
+          "net_pnl": 0.4436825755436845,
+          "return_pct": 0.00044368257554368453,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.044368257554368455,
+          "mean_stop_pct": 0.01217290265803112,
+          "mean_cost_R": 0.0821496752329853,
+          "realized_max_drawdown": 0.0
+        },
+        "1000TURBOUSDT": {
+          "trades": 2,
+          "net_pnl": 20.99411163457321,
+          "return_pct": 0.02099411163457321,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0497055817286605,
+          "mean_stop_pct": 0.017517279932956938,
+          "mean_cost_R": 0.06078448973297798,
+          "realized_max_drawdown": 0.0
+        },
+        "1000XECUSDT": {
+          "trades": 2,
+          "net_pnl": 37.939398258669605,
+          "return_pct": 0.037939398258669606,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.8969699129334803,
+          "mean_stop_pct": 0.036102743457992505,
+          "mean_cost_R": 0.03350200032310978,
+          "realized_max_drawdown": 0.0
+        },
+        "ACEUSDT": {
+          "trades": 1,
+          "net_pnl": 0.4946685397016512,
+          "return_pct": 0.0004946685397016512,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.04946685397016512,
+          "mean_stop_pct": 0.05041481181707804,
+          "mean_cost_R": 0.01983544049769218,
+          "realized_max_drawdown": 0.0
+        },
+        "AIOUSDT": {
+          "trades": 1,
+          "net_pnl": 15.515232495991528,
+          "return_pct": 0.015515232495991528,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.5515232495991527,
+          "mean_stop_pct": 0.03661448140900178,
+          "mean_cost_R": 0.027311598075895376,
+          "realized_max_drawdown": 0.0
+        },
+        "AIXBTUSDT": {
+          "trades": 1,
+          "net_pnl": 2.3134124816138013,
+          "return_pct": 0.0023134124816138013,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.23134124816138013,
+          "mean_stop_pct": 0.0363152151518157,
+          "mean_cost_R": 0.027536667367093978,
+          "realized_max_drawdown": 0.0
+        },
+        "ALCHUSDT": {
+          "trades": 2,
+          "net_pnl": -3.9258843311036644,
+          "return_pct": -0.003925884331103665,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.1962942165551832,
+          "mean_stop_pct": 0.034799311509428284,
+          "mean_cost_R": 0.030066281654846115,
+          "realized_max_drawdown": -0.003925884331103746
+        },
+        "ALGOUSDT": {
+          "trades": 1,
+          "net_pnl": 7.155971119133484,
+          "return_pct": 0.007155971119133484,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.7155971119133483,
+          "mean_stop_pct": 0.023515229719175666,
+          "mean_cost_R": 0.04252563176895281,
+          "realized_max_drawdown": 0.0
+        },
+        "ALTUSDT": {
+          "trades": 1,
+          "net_pnl": 4.294913023037169,
+          "return_pct": 0.0042949130230371686,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.4294913023037169,
+          "mean_stop_pct": 0.02643155383238885,
+          "mean_cost_R": 0.037833568406206004,
+          "realized_max_drawdown": 0.0
+        },
+        "ANKRUSDT": {
+          "trades": 1,
+          "net_pnl": 10.426620689655207,
+          "return_pct": 0.010426620689655207,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0426620689655208,
+          "mean_stop_pct": 0.02127971822717936,
+          "mean_cost_R": 0.04699310344827581,
+          "realized_max_drawdown": 0.0
+        },
+        "ARBUSDT": {
+          "trades": 1,
+          "net_pnl": 14.04060404174993,
+          "return_pct": 0.01404060404174993,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.404060404174993,
+          "mean_stop_pct": 0.022345620198892347,
+          "mean_cost_R": 0.04475149900066632,
+          "realized_max_drawdown": 0.0
+        },
+        "ATHUSDT": {
+          "trades": 1,
+          "net_pnl": 1.2700043840421078,
+          "return_pct": 0.0012700043840421077,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.12700043840421077,
+          "mean_stop_pct": 0.03782000265287159,
+          "mean_cost_R": 0.02644103463393259,
+          "realized_max_drawdown": 0.0
+        },
+        "ATOMUSDT": {
+          "trades": 1,
+          "net_pnl": 9.899188528596838,
+          "return_pct": 0.009899188528596838,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.9899188528596837,
+          "mean_stop_pct": 0.014581769105752991,
+          "mean_cost_R": 0.06857878442235564,
+          "realized_max_drawdown": 0.0
+        },
+        "AUSDT": {
+          "trades": 1,
+          "net_pnl": 18.89072919350687,
+          "return_pct": 0.018890729193506872,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.8890729193506874,
+          "mean_stop_pct": 0.01935583617611271,
+          "mean_cost_R": 0.05166400412264871,
+          "realized_max_drawdown": 0.0
+        },
+        "AVAAIUSDT": {
+          "trades": 2,
+          "net_pnl": 82.8822584336628,
+          "return_pct": 0.0828822584336628,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 4.144112921683139,
+          "mean_stop_pct": 0.025312539086766735,
+          "mean_cost_R": 0.03957822124999584,
+          "realized_max_drawdown": 0.0
+        },
+        "AVAXUSDT": {
+          "trades": 1,
+          "net_pnl": 6.181499423298695,
+          "return_pct": 0.006181499423298696,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.6181499423298694,
+          "mean_stop_pct": 0.03602892287234046,
+          "mean_cost_R": 0.02775547866205303,
+          "realized_max_drawdown": 0.0
+        },
+        "AWEUSDT": {
+          "trades": 2,
+          "net_pnl": -8.370257006811833,
+          "return_pct": -0.008370257006811833,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.41851285034059166,
+          "mean_stop_pct": 0.034913713421011947,
+          "mean_cost_R": 0.028943213067991858,
+          "realized_max_drawdown": -0.008370257006811821
+        },
+        "B2USDT": {
+          "trades": 1,
+          "net_pnl": 1.4665629860030622,
+          "return_pct": 0.0014665629860030622,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.1466562986003062,
+          "mean_stop_pct": 0.03632768361581922,
+          "mean_cost_R": 0.027527216174183505,
+          "realized_max_drawdown": 0.0
+        },
+        "BCHUSDT": {
+          "trades": 1,
+          "net_pnl": -6.088640454760781,
+          "return_pct": -0.0060886404547607804,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.6088640454760781,
+          "mean_stop_pct": 0.025961727666272916,
+          "mean_cost_R": 0.03851823780198988,
+          "realized_max_drawdown": -0.006088640454760874
+        },
+        "BIOUSDT": {
+          "trades": 1,
+          "net_pnl": 3.09835828600931,
+          "return_pct": 0.0030983582860093103,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.309835828600931,
+          "mean_stop_pct": 0.026959692684556284,
+          "mean_cost_R": 0.03709241094475994,
+          "realized_max_drawdown": 0.0
+        },
+        "BLUAIUSDT": {
+          "trades": 3,
+          "net_pnl": -4.6844069891800295,
+          "return_pct": -0.00468440698918003,
+          "profit_factor": 0.5555589747031604,
+          "win_rate": 0.6666666666666666,
+          "mean_R": -0.15614689963933434,
+          "mean_stop_pct": 0.05522715653201001,
+          "mean_cost_R": 0.031614013885430205,
+          "realized_max_drawdown": -0.010478638203508028
+        },
+        "BRUSDT": {
+          "trades": 2,
+          "net_pnl": 4.783059619378454,
+          "return_pct": 0.004783059619378454,
+          "profit_factor": 1.4509602567238624,
+          "win_rate": 0.5,
+          "mean_R": 0.23915298096892257,
+          "mean_stop_pct": 0.020045911608743083,
+          "mean_cost_R": 0.051505193128739774,
+          "realized_max_drawdown": -0.010445635794920971
+        },
+        "C98USDT": {
+          "trades": 1,
+          "net_pnl": 7.778917617502358,
+          "return_pct": 0.007778917617502358,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.7778917617502359,
+          "mean_stop_pct": 0.027077664399093027,
+          "mean_cost_R": 0.03693080707631103,
+          "realized_max_drawdown": 0.0
+        },
+        "CFXUSDT": {
+          "trades": 1,
+          "net_pnl": 8.33689822294031,
+          "return_pct": 0.00833689822294031,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.833689822294031,
+          "mean_stop_pct": 0.020670540305883882,
+          "mean_cost_R": 0.048378029079160036,
+          "realized_max_drawdown": 0.0
+        },
+        "CHILLGUYUSDT": {
+          "trades": 1,
+          "net_pnl": -3.7818106769399513,
+          "return_pct": -0.003781810676939951,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.3781810676939951,
+          "mean_stop_pct": 0.028322032577351716,
+          "mean_cost_R": 0.03530820033021465,
+          "realized_max_drawdown": -0.003781810676939945
+        },
+        "CHRUSDT": {
+          "trades": 1,
+          "net_pnl": 0.22205607476644693,
+          "return_pct": 0.00022205607476644693,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.02220560747664469,
+          "mean_stop_pct": 0.019025604551920244,
+          "mean_cost_R": 0.05256074766355167,
+          "realized_max_drawdown": 0.0
+        },
+        "CLANKERUSDT": {
+          "trades": 3,
+          "net_pnl": 8.840541716611337,
+          "return_pct": 0.008840541716611337,
+          "profit_factor": 1.8554843922361755,
+          "win_rate": 0.6666666666666666,
+          "mean_R": 0.29468472388704453,
+          "mean_stop_pct": 0.018139241773144847,
+          "mean_cost_R": 0.06594112896664388,
+          "realized_max_drawdown": -0.010333960264900743
+        },
+        "COREUSDT": {
+          "trades": 1,
+          "net_pnl": -10.315,
+          "return_pct": -0.010315,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0314999999999999,
+          "mean_stop_pct": 0.031746031746031855,
+          "mean_cost_R": 0.03149999999999989,
+          "realized_max_drawdown": -0.010315000000000074
+        },
+        "COTIUSDT": {
+          "trades": 2,
+          "net_pnl": 2.1852061532209053,
+          "return_pct": 0.0021852061532209054,
+          "profit_factor": 1.353848671801776,
+          "win_rate": 0.5,
+          "mean_R": 0.10926030766104528,
+          "mean_stop_pct": 0.0831519544219302,
+          "mean_cost_R": 0.01907611109034971,
+          "realized_max_drawdown": -0.006124334662754638
+        },
+        "CRVUSDT": {
+          "trades": 1,
+          "net_pnl": 10.079552715654915,
+          "return_pct": 0.010079552715654914,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0079552715654914,
+          "mean_stop_pct": 0.023168023686158397,
+          "mean_cost_R": 0.04316293929712461,
+          "realized_max_drawdown": 0.0
+        },
+        "CUSDT": {
+          "trades": 1,
+          "net_pnl": -3.2121852731591343,
+          "return_pct": -0.0032121852731591344,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.32121852731591344,
+          "mean_stop_pct": 0.022675451982980148,
+          "mean_cost_R": 0.04410055423594577,
+          "realized_max_drawdown": -0.0032121852731591405
+        },
+        "CVCUSDT": {
+          "trades": 2,
+          "net_pnl": -3.6609508124726213,
+          "return_pct": -0.0036609508124726214,
+          "profit_factor": 0.3615060854645758,
+          "win_rate": 0.5,
+          "mean_R": -0.18304754062363107,
+          "mean_stop_pct": 0.019619117193710837,
+          "mean_cost_R": 0.05700450153711005,
+          "realized_max_drawdown": -0.0057218684285242905
+        },
+        "DUSKUSDT": {
+          "trades": 1,
+          "net_pnl": -10.504601226993875,
+          "return_pct": -0.010504601226993876,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0504601226993875,
+          "mean_stop_pct": 0.019817629179331258,
+          "mean_cost_R": 0.05046012269938663,
+          "realized_max_drawdown": -0.010504601226993815
+        },
+        "DYDXUSDT": {
+          "trades": 1,
+          "net_pnl": -10.413726074498586,
+          "return_pct": -0.010413726074498586,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0413726074498586,
+          "mean_stop_pct": 0.024170581977749194,
+          "mean_cost_R": 0.04137260744985677,
+          "realized_max_drawdown": -0.010413726074498642
+        },
+        "EDGEUSDT": {
+          "trades": 2,
+          "net_pnl": -5.726592350454789,
+          "return_pct": -0.005726592350454789,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.28632961752273944,
+          "mean_stop_pct": 0.03994237905217534,
+          "mean_cost_R": 0.030036092221207587,
+          "realized_max_drawdown": -0.005726592350454807
+        },
+        "EGLDUSDT": {
+          "trades": 1,
+          "net_pnl": 0.04671219512182485,
+          "return_pct": 4.671219512182485e-05,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.004671219512182485,
+          "mean_stop_pct": 0.012939958592132575,
+          "mean_cost_R": 0.07727999999999959,
+          "realized_max_drawdown": 0.0
+        },
+        "ELSAUSDT": {
+          "trades": 1,
+          "net_pnl": -10.646103896103881,
+          "return_pct": -0.01064610389610388,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.064610389610388,
+          "mean_stop_pct": 0.015477386934673503,
+          "mean_cost_R": 0.06461038961038905,
+          "realized_max_drawdown": -0.010646103896103876
+        },
+        "ESPUSDT": {
+          "trades": 1,
+          "net_pnl": -10.444022346368733,
+          "return_pct": -0.010444022346368733,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0444022346368733,
+          "mean_stop_pct": 0.022521389028686462,
+          "mean_cost_R": 0.044402234636871506,
+          "realized_max_drawdown": -0.010444022346368653
+        },
+        "EVAAUSDT": {
+          "trades": 2,
+          "net_pnl": -1.959461316991225,
+          "return_pct": -0.001959461316991225,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.09797306584956125,
+          "mean_stop_pct": 0.04505588348600271,
+          "mean_cost_R": 0.02599761483723984,
+          "realized_max_drawdown": -0.0019594613169912067
+        },
+        "FARTCOINUSDT": {
+          "trades": 1,
+          "net_pnl": -5.622991902258847,
+          "return_pct": -0.005622991902258847,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5622991902258847,
+          "mean_stop_pct": 0.018819647937030764,
+          "mean_cost_R": 0.05313595681204721,
+          "realized_max_drawdown": -0.005622991902258789
+        },
+        "FLRUSDT": {
+          "trades": 1,
+          "net_pnl": -10.607608562691103,
+          "return_pct": -0.010607608562691103,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0607608562691102,
+          "mean_stop_pct": 0.016457964245450145,
+          "mean_cost_R": 0.06076085626911318,
+          "realized_max_drawdown": -0.010607608562691051
+        },
+        "FOGOUSDT": {
+          "trades": 2,
+          "net_pnl": 6.6074442173947405,
+          "return_pct": 0.006607444217394741,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.330372210869737,
+          "mean_stop_pct": 0.023044468197291924,
+          "mean_cost_R": 0.0444405850870966,
+          "realized_max_drawdown": 0.0
+        },
+        "FORMUSDT": {
+          "trades": 1,
+          "net_pnl": 61.87783015821765,
+          "return_pct": 0.06187783015821765,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 6.187783015821765,
+          "mean_stop_pct": 0.042754983709757576,
+          "mean_cost_R": 0.02338908621246368,
+          "realized_max_drawdown": 0.0
+        },
+        "GIGGLEUSDT": {
+          "trades": 1,
+          "net_pnl": -0.8464122137404835,
+          "return_pct": -0.0008464122137404835,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.08464122137404835,
+          "mean_stop_pct": 0.025746855345911993,
+          "mean_cost_R": 0.03883969465648848,
+          "realized_max_drawdown": -0.0008464122137404884
+        },
+        "GMTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.343097910550854,
+          "return_pct": -0.010343097910550854,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0343097910550854,
+          "mean_stop_pct": 0.02914619906587213,
+          "mean_cost_R": 0.03430979105508547,
+          "realized_max_drawdown": -0.01034309791055088
+        },
+        "GPSUSDT": {
+          "trades": 1,
+          "net_pnl": -0.46470468085109307,
+          "return_pct": -0.0004647046808510931,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.04647046808510931,
+          "mean_stop_pct": 0.0441682830378758,
+          "mean_cost_R": 0.022640680851063785,
+          "realized_max_drawdown": -0.0004647046808511357
+        },
+        "GUNUSDT": {
+          "trades": 1,
+          "net_pnl": 7.402496565260045,
+          "return_pct": 0.007402496565260045,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.7402496565260045,
+          "mean_stop_pct": 0.055123988401783015,
+          "mean_cost_R": 0.018140922473012758,
+          "realized_max_drawdown": 0.0
+        },
+        "HANAUSDT": {
+          "trades": 1,
+          "net_pnl": -2.8311294360182564,
+          "return_pct": -0.0028311294360182566,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.28311294360182565,
+          "mean_stop_pct": 0.02274127653874483,
+          "mean_cost_R": 0.043972905315859345,
+          "realized_max_drawdown": -0.002831129436018265
+        },
+        "HOLOUSDT": {
+          "trades": 1,
+          "net_pnl": -7.797701028209883,
+          "return_pct": -0.007797701028209883,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.7797701028209884,
+          "mean_stop_pct": 0.02042893767369697,
+          "mean_cost_R": 0.048950171368310445,
+          "realized_max_drawdown": -0.007797701028209869
+        },
+        "HOMEUSDT": {
+          "trades": 2,
+          "net_pnl": -0.08956532024287615,
+          "return_pct": -8.956532024287615e-05,
+          "profit_factor": 0.4749440735006238,
+          "win_rate": 0.5,
+          "mean_R": -0.0044782660121438075,
+          "mean_stop_pct": 0.04144346662080592,
+          "mean_cost_R": 0.02486098664858915,
+          "realized_max_drawdown": -0.00017058243840817333
+        },
+        "HUMAUSDT": {
+          "trades": 1,
+          "net_pnl": -4.4069291338582675,
+          "return_pct": -0.004406929133858268,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.4406929133858268,
+          "mean_stop_pct": 0.01593875502008024,
+          "mean_cost_R": 0.06274015748031529,
+          "realized_max_drawdown": -0.004406929133858317
+        },
+        "HYPERUSDT": {
+          "trades": 1,
+          "net_pnl": -10.233836907526294,
+          "return_pct": -0.010233836907526295,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0233836907526295,
+          "mean_stop_pct": 0.04276484882471143,
+          "mean_cost_R": 0.023383690752629423,
+          "realized_max_drawdown": -0.010233836907526328
+        },
+        "ICNTUSDT": {
+          "trades": 1,
+          "net_pnl": 3.5860206185565957,
+          "return_pct": 0.003586020618556596,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.35860206185565957,
+          "mean_stop_pct": 0.02196756952622527,
+          "mean_cost_R": 0.045521649484535937,
+          "realized_max_drawdown": 0.0
+        },
+        "INITUSDT": {
+          "trades": 1,
+          "net_pnl": 8.363474882042743,
+          "return_pct": 0.008363474882042744,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.8363474882042742,
+          "mean_stop_pct": 0.023917950079660084,
+          "mean_cost_R": 0.041809603108520735,
+          "realized_max_drawdown": 0.0
+        },
+        "INUSDT": {
+          "trades": 1,
+          "net_pnl": -10.38503411971145,
+          "return_pct": -0.01038503411971145,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0385034119711452,
+          "mean_stop_pct": 0.02597172429158821,
+          "mean_cost_R": 0.03850341197114443,
+          "realized_max_drawdown": -0.010385034119711478
+        },
+        "JELLYJELLYUSDT": {
+          "trades": 1,
+          "net_pnl": -6.1176733175516125,
+          "return_pct": -0.006117673317551612,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.6117673317551612,
+          "mean_stop_pct": 0.018834874773879563,
+          "mean_cost_R": 0.05309299966181949,
+          "realized_max_drawdown": -0.006117673317551642
+        },
+        "KATUSDT": {
+          "trades": 1,
+          "net_pnl": -1.194945533769058,
+          "return_pct": -0.001194945533769058,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.11949455337690579,
+          "mean_stop_pct": 0.02008928571428576,
+          "mean_cost_R": 0.049777777777777664,
+          "realized_max_drawdown": -0.0011949455337690873
+        },
+        "KGENUSDT": {
+          "trades": 1,
+          "net_pnl": -10.503021582733801,
+          "return_pct": -0.010503021582733802,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0503021582733802,
+          "mean_stop_pct": 0.019879862700229026,
+          "mean_cost_R": 0.05030215827338081,
+          "realized_max_drawdown": -0.010503021582733862
+        },
+        "KITEUSDT": {
+          "trades": 2,
+          "net_pnl": 14.94325929515224,
+          "return_pct": 0.01494325929515224,
+          "profit_factor": 5.358548380449806,
+          "win_rate": 0.5,
+          "mean_R": 0.7471629647576119,
+          "mean_stop_pct": 0.026244930863849013,
+          "mean_cost_R": 0.03974626700645357,
+          "realized_max_drawdown": -0.003366643389638879
+        },
+        "LIGHTUSDT": {
+          "trades": 1,
+          "net_pnl": 4.906850078356237,
+          "return_pct": 0.004906850078356237,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.4906850078356237,
+          "mean_stop_pct": 0.036044837945722594,
+          "mean_cost_R": 0.02774322363456954,
+          "realized_max_drawdown": 0.0
+        },
+        "MAVIAUSDT": {
+          "trades": 1,
+          "net_pnl": -10.399264864864882,
+          "return_pct": -0.010399264864864883,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.039926486486488,
+          "mean_stop_pct": 0.02504603054261885,
+          "mean_cost_R": 0.039926486486486515,
+          "realized_max_drawdown": -0.010399264864864866
+        },
+        "MEGAUSDT": {
+          "trades": 1,
+          "net_pnl": -10.3049115913556,
+          "return_pct": -0.0103049115913556,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0304911591355599,
+          "mean_stop_pct": 0.03279639175257721,
+          "mean_cost_R": 0.030491159135560025,
+          "realized_max_drawdown": -0.010304911591355603
+        },
+        "MEWUSDT": {
+          "trades": 1,
+          "net_pnl": 1.428717948717961,
+          "return_pct": 0.001428717948717961,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.14287179487179613,
+          "mean_stop_pct": 0.02137892515824744,
+          "mean_cost_R": 0.04677503628447035,
+          "realized_max_drawdown": 0.0
+        },
+        "MINAUSDT": {
+          "trades": 1,
+          "net_pnl": -10.95195164075994,
+          "return_pct": -0.01095195164075994,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.095195164075994,
+          "mean_stop_pct": 0.010504735295184907,
+          "mean_cost_R": 0.09519516407599281,
+          "realized_max_drawdown": -0.010951951640759905
+        },
+        "MITOUSDT": {
+          "trades": 1,
+          "net_pnl": -4.031763046544414,
+          "return_pct": -0.004031763046544414,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.4031763046544414,
+          "mean_stop_pct": 0.02094410965378705,
+          "mean_cost_R": 0.047746121297602306,
+          "realized_max_drawdown": -0.004031763046544401
+        },
+        "NAORISUSDT": {
+          "trades": 2,
+          "net_pnl": 7.447308822586669,
+          "return_pct": 0.007447308822586669,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.37236544112933345,
+          "mean_stop_pct": 0.045106685160787106,
+          "mean_cost_R": 0.024128063327453663,
+          "realized_max_drawdown": 0.0
+        },
+        "NXPCUSDT": {
+          "trades": 1,
+          "net_pnl": 10.205594405594386,
+          "return_pct": 0.010205594405594386,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 1.0205594405594387,
+          "mean_stop_pct": 0.014214711729622246,
+          "mean_cost_R": 0.07034965034965045,
+          "realized_max_drawdown": 0.0
+        },
+        "PIEVERSEUSDT": {
+          "trades": 1,
+          "net_pnl": -2.1706388526727634,
+          "return_pct": -0.0021706388526727635,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.21706388526727635,
+          "mean_stop_pct": 0.048795168930822516,
+          "mean_cost_R": 0.02049383211312808,
+          "realized_max_drawdown": -0.002170638852672657
+        },
+        "PYTHUSDT": {
+          "trades": 1,
+          "net_pnl": -10.499890985324944,
+          "return_pct": -0.010499890985324944,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0499890985324944,
+          "mean_stop_pct": 0.020004361537945388,
+          "mean_cost_R": 0.04998909853249474,
+          "realized_max_drawdown": -0.010499890985324889
+        },
+        "RAYDIUMUSDT": {
+          "trades": 1,
+          "net_pnl": 3.434849225753715,
+          "return_pct": 0.003434849225753715,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.3434849225753715,
+          "mean_stop_pct": 0.014864799379724864,
+          "mean_cost_R": 0.06727302363488133,
+          "realized_max_drawdown": 0.0
+        },
+        "RLCUSDT": {
+          "trades": 1,
+          "net_pnl": 2.344454828660398,
+          "return_pct": 0.002344454828660398,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.23444548286603978,
+          "mean_stop_pct": 0.014114232950798103,
+          "mean_cost_R": 0.07085046728971935,
+          "realized_max_drawdown": 0.0
+        },
+        "ROSEUSDT": {
+          "trades": 1,
+          "net_pnl": -10.380028790786955,
+          "return_pct": -0.010380028790786954,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0380028790786957,
+          "mean_stop_pct": 0.02631379580292424,
+          "mean_cost_R": 0.03800287907869493,
+          "realized_max_drawdown": -0.010380028790786922
+        },
+        "SAPIENUSDT": {
+          "trades": 3,
+          "net_pnl": 17.15393919531237,
+          "return_pct": 0.017153939195312367,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.571797973177079,
+          "mean_stop_pct": 0.021064168148181146,
+          "mean_cost_R": 0.0484254197660978,
+          "realized_max_drawdown": 0.0
+        },
+        "SHELLUSDT": {
+          "trades": 1,
+          "net_pnl": -4.423999999999982,
+          "return_pct": -0.004423999999999982,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.44239999999999813,
+          "mean_stop_pct": 0.020818672296504876,
+          "mean_cost_R": 0.048033802816901255,
+          "realized_max_drawdown": -0.0044239999999999835
+        },
+        "SOLAYERUSDT": {
+          "trades": 1,
+          "net_pnl": -10.720300276570512,
+          "return_pct": -0.010720300276570512,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0720300276570511,
+          "mean_stop_pct": 0.013883098931478566,
+          "mean_cost_R": 0.07203002765705271,
+          "realized_max_drawdown": -0.01072030027657045
+        },
+        "SOMIUSDT": {
+          "trades": 2,
+          "net_pnl": 13.827313289596994,
+          "return_pct": 0.013827313289596993,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.6913656644798498,
+          "mean_stop_pct": 0.018092813191476487,
+          "mean_cost_R": 0.05529837402765768,
+          "realized_max_drawdown": 0.0
+        },
+        "SONICUSDT": {
+          "trades": 1,
+          "net_pnl": -5.701429718875503,
+          "return_pct": -0.0057014297188755034,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.5701429718875504,
+          "mean_stop_pct": 0.01891292459135937,
+          "mean_cost_R": 0.052873895582329127,
+          "realized_max_drawdown": -0.005701429718875439
+        },
+        "SOSOUSDT": {
+          "trades": 2,
+          "net_pnl": -3.1163301301639956,
+          "return_pct": -0.0031163301301639955,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.15581650650819978,
+          "mean_stop_pct": 0.06350794134319594,
+          "mean_cost_R": 0.017964527141583912,
+          "realized_max_drawdown": -0.003116330130163991
+        },
+        "SPORTFUNUSDT": {
+          "trades": 1,
+          "net_pnl": 3.3952882635552384,
+          "return_pct": 0.003395288263555238,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.33952882635552384,
+          "mean_stop_pct": 0.07356170953979764,
+          "mean_cost_R": 0.013594028826355508,
+          "realized_max_drawdown": 0.0
+        },
+        "SPXUSDT": {
+          "trades": 3,
+          "net_pnl": 15.600966185984444,
+          "return_pct": 0.015600966185984444,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.5200322061994814,
+          "mean_stop_pct": 0.03696583726631888,
+          "mean_cost_R": 0.03455532644127047,
+          "realized_max_drawdown": 0.0
+        },
+        "STABLEUSDT": {
+          "trades": 2,
+          "net_pnl": 34.66260091517798,
+          "return_pct": 0.034662600915177984,
+          "profit_factor": 12.490575114713021,
+          "win_rate": 0.5,
+          "mean_R": 1.7331300457588994,
+          "mean_stop_pct": 0.028961090067376342,
+          "mean_cost_R": 0.03582920854044111,
+          "realized_max_drawdown": -0.002907075186352359
+        },
+        "STORJUSDT": {
+          "trades": 1,
+          "net_pnl": -3.7730429266229635,
+          "return_pct": -0.0037730429266229636,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.37730429266229637,
+          "mean_stop_pct": 0.021865983576237407,
+          "mean_cost_R": 0.04573313596954943,
+          "realized_max_drawdown": -0.0037730429266230603
+        },
+        "STXUSDT": {
+          "trades": 2,
+          "net_pnl": -5.464077630221075,
+          "return_pct": -0.005464077630221075,
+          "profit_factor": 0.47383905259983516,
+          "win_rate": 0.5,
+          "mean_R": -0.2732038815110538,
+          "mean_stop_pct": 0.021647718898243434,
+          "mean_cost_R": 0.048128352810144624,
+          "realized_max_drawdown": -0.010333952168186444
+        },
+        "SUPERUSDT": {
+          "trades": 3,
+          "net_pnl": -8.69821491161278,
+          "return_pct": -0.00869821491161278,
+          "profit_factor": 0.4321889714396694,
+          "win_rate": 0.3333333333333333,
+          "mean_R": -0.28994049705375935,
+          "mean_stop_pct": 0.01913721839843854,
+          "mean_cost_R": 0.052585942281946664,
+          "realized_max_drawdown": -0.015218101595943945
+        },
+        "TAUSDT": {
+          "trades": 1,
+          "net_pnl": -2.6209880095923337,
+          "return_pct": -0.0026209880095923337,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.2620988009592334,
+          "mean_stop_pct": 0.02117267151387149,
+          "mean_cost_R": 0.04723069544364488,
+          "realized_max_drawdown": -0.0026209880095923177
+        },
+        "TNSRUSDT": {
+          "trades": 1,
+          "net_pnl": -10.760484848484888,
+          "return_pct": -0.010760484848484887,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0760484848484886,
+          "mean_stop_pct": 0.013149505897354148,
+          "mean_cost_R": 0.07604848484848492,
+          "realized_max_drawdown": -0.010760484848484908
+        },
+        "TOWNSUSDT": {
+          "trades": 1,
+          "net_pnl": -10.305469199769721,
+          "return_pct": -0.010305469199769721,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.030546919976972,
+          "mean_stop_pct": 0.032736524689031314,
+          "mean_cost_R": 0.030546919976971763,
+          "realized_max_drawdown": -0.010305469199769712
+        },
+        "TRUSTUSDT": {
+          "trades": 1,
+          "net_pnl": -10.473612117220952,
+          "return_pct": -0.010473612117220952,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0473612117220952,
+          "mean_stop_pct": 0.021114324647515153,
+          "mean_cost_R": 0.047361211722094336,
+          "realized_max_drawdown": -0.010473612117220865
+        },
+        "VETUSDT": {
+          "trades": 1,
+          "net_pnl": -10.481038961038974,
+          "return_pct": -0.010481038961038974,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0481038961038975,
+          "mean_stop_pct": 0.020788336933045354,
+          "mean_cost_R": 0.048103896103896114,
+          "realized_max_drawdown": -0.010481038961038913
+        },
+        "VVVUSDT": {
+          "trades": 2,
+          "net_pnl": -17.401447366610828,
+          "return_pct": -0.01740144736661083,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.8700723683305415,
+          "mean_stop_pct": 0.02278392515892123,
+          "mean_cost_R": 0.04680416229146332,
+          "realized_max_drawdown": -0.017401447366610756
+        },
+        "WAVESUSDT": {
+          "trades": 1,
+          "net_pnl": -10.97289437585737,
+          "return_pct": -0.01097289437585737,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -1.0972894375857372,
+          "mean_stop_pct": 0.010278608087530307,
+          "mean_cost_R": 0.09728943758573395,
+          "realized_max_drawdown": -0.010972894375857356
+        },
+        "WCTUSDT": {
+          "trades": 1,
+          "net_pnl": 0.7431627906977232,
+          "return_pct": 0.0007431627906977231,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.07431627906977233,
+          "mean_stop_pct": 0.026801296434804278,
+          "mean_cost_R": 0.03731162790697676,
+          "realized_max_drawdown": 0.0
+        },
+        "XANUSDT": {
+          "trades": 1,
+          "net_pnl": 9.637824609109408,
+          "return_pct": 0.009637824609109408,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.9637824609109409,
+          "mean_stop_pct": 0.03843139304002515,
+          "mean_cost_R": 0.026020394289598864,
+          "realized_max_drawdown": 0.0
+        },
+        "ZBCNUSDT": {
+          "trades": 2,
+          "net_pnl": 10.200182702608954,
+          "return_pct": 0.010200182702608954,
+          "profit_factor": null,
+          "win_rate": 1.0,
+          "mean_R": 0.5100091351304478,
+          "mean_stop_pct": 0.040517428653134256,
+          "mean_cost_R": 0.02613561859136013,
+          "realized_max_drawdown": 0.0
+        },
+        "ZBTUSDT": {
+          "trades": 1,
+          "net_pnl": -0.452324352198012,
+          "return_pct": -0.000452324352198012,
+          "profit_factor": 0.0,
+          "win_rate": 0.0,
+          "mean_R": -0.0452324352198012,
+          "mean_stop_pct": 0.0784581462151556,
+          "mean_cost_R": 0.012745649091143478,
+          "realized_max_drawdown": -0.00045232435219799694
+        }
+      }
+    }
+  },
+  "raw_event_counts": {
+    "raw_below_58": 9445,
+    "complete": 6254,
+    "right_censored": 1
+  },
+  "confirmation_diagnostics": {
+    "raw_pass": 6254,
+    "next_pass": 217,
+    "combined_pass": 1997,
+    "confirmation_pass": 191
+  },
+  "posthoc_confirmed_subset_NOT_TRADABLE_FILTER": {
+    "pairs": 191,
+    "early_mean_R": 1.609641323132351,
+    "confirmed_mean_R": 0.3309242695142205
+  },
+  "provenance": {
+    "source_commit": "0fa5da378a142d520a4ff12237dc2fdccedbd9e3",
+    "deployments": [
+      "43f7d3c6-0b56-4535-943b-38ced1f9dfb1",
+      "d8f07492-e23f-4f0d-b587-4a97c3b3fdc8"
+    ],
+    "method": "Merge candidate events then rerun portfolio; never add separate portfolio PnLs."
+  }
+}
