@@ -1,0 +1,40 @@
+# Tide 原始信号入场对照实验 v1
+
+研究分支：research/tide-early-entry-v1。基于审计后的 219f509，独立运行，不修改线上引擎、变量、Telegram 或持仓。
+
+## 运行
+
+安装仓库 requirements.txt 中依赖，然后运行：
+
+```bash
+python backtest_tide_early_entry.py --symbols BTCUSDT,ETHUSDT,SOLUSDT --days 100 --end 2026-09-09T00:00:00Z --out reports/tide_early_entry
+```
+
+Railway 独立研究服务选择此分支，Start Command 使用上述命令（输出目录可设 `/data/tide_early_entry`）。不要把生产监控服务的启动命令替换为回测。程序运行一次后退出，不会发送 Telegram。行情访问需要运行地区被数据提供方允许；403 不会被绕过。
+
+离线运行增加 `--data-dir /path/to/data`，目录含 `BTCUSDT_15.csv`、`BTCUSDT_60.csv` 等。列为 open_time（UTC开盘时间）,open,high,low,close,volume；15分钟需窗口前15天、1小时需前25天。程序验证连续性、预热和截止覆盖，将实际输入及哈希保存到输出目录。失败标的写入 summary.json，退出码2，不能把失败解释为零收益。
+
+## 固定设计
+
+- 所有原始信号：1H MA50<MA200、15分钟扫过此前24根低点后收回、下影线比例>0.35、量比>1.5。沿用固定形态参数，未运行参数搜索。
+- early：原始K线收盘后，下一根开盘价入场。包括随后确认失败的信号。
+- confirmed：下一根收盘时 Raw>=58、Next>=95、Combined>=70、确认>=2/3 后，再下一根开盘价入场。
+- 两组均不使用历史得分、Signal、等级、Rescue、市场分档，目的是比较确认过滤及等待成本；不是完整线上策略复刻。
+- 相同结构止损=原始低点−0.5×原始ATR14，止损后不继续持有；否则各自入场后16根收盘退出。无移动止损、无止盈目标。提前组获得的额外15分钟暴露是策略差异的一部分。
+- 单笔计划风险10U、名义本金上限2500U，触顶后实际风险下降；合计成本0.10%（按名义本金），可用 --cost 显式指定敏感性实验。风险可用 --risk 指定。止损跳空按更差开盘成交；入场时已低于止损则放弃。
+- 组合1000U；最多12仓、60U开放风险、800U保证金参考上限、悉尼日累计已实现亏损40U停止新增。保证金统一按50倍计算，仅用于对照，不模拟爆仓。按退出时间结算，相同时间退出先于入场。
+- 每一组独立重新运行组合，保存拒绝原因。同币持仓不重叠。原始候选本身不应用事后冷却或确认筛选。
+- 截止日前不足以观察两组完整最长持仓的事件，两组共同标为右删失；不按未来盈亏选择候选。
+
+## 输出
+
+summary.json：配置、输入覆盖/哈希、代码哈希、净收益、胜率、PF、平均R、止损距离、成本R、已实现权益最大回撤。
+raw_events.csv：所有窗口内原始信号、确认通过/失败、右删失与数据问题。
+candidates.csv：两组候选交易；confirmation_eventually_passed 仅用于事后诊断，提前组不以它筛选。
+early_accepted.csv / confirmed_accepted.csv：完整组合成交记录；对应 rejected.csv 为组合拒绝原因。
+
+summary 中 diagnostics 为全部候选的事后分组，不能解释为可交易筛选效果；与组合收益不直接相加。MFE/MAE 为整根K线极值边界，止损K线内的先后顺序未知，不能用来优化退出。
+
+本轮是回顾性研究，不是OOS。固定用户选择的标的仍有选择偏差。资金费率、真实订单簿滑点和盘中浮亏回撤未模拟。PF无亏损样本时为null，零交易不代表有效。
+
+验证：`python -m unittest discover -s tests -p 'test_tide_early_entry.py' -v`
