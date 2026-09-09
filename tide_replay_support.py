@@ -37,7 +37,7 @@ def simulate_live_exit(engine, frame, entry_index, risk):
 
 
 def chronological_portfolio(candidates, *, capital=1000.0, max_positions=12,
-                            max_open_risk=60.0, max_margin=800.0, max_daily_loss=40.0):
+                            max_open_risk=60.0, max_margin=800.0, max_daily_loss=40.0, respect_equity=False):
     """Settle on exit, then admit entries. B+ is zero-capital shadow tracking.
 
     Equal-time exits precede entries, with a deterministic symbol order. Actual
@@ -79,6 +79,11 @@ def chronological_portfolio(candidates, *, capital=1000.0, max_positions=12,
             reasons.append('existing_active_position')
         day = t.tz_convert('Australia/Sydney').date().isoformat()
         if not shadow:
+            if respect_equity:
+                required_margin=sum(a['margin'] for a in core)+row['margin']
+                required_risk=sum(a['actual_risk_usdt'] for a in core)+row['actual_risk_usdt']
+                if equity <= 0 or required_margin > equity or required_risk > equity:
+                    reasons.append('insufficient_remaining_equity')
             if len(core) >= max_positions: reasons.append('maximum_position_count')
             if sum(a['actual_risk_usdt'] for a in core) + row['actual_risk_usdt'] > max_open_risk + 1e-9: reasons.append('maximum_total_open_risk')
             if sum(a['margin'] for a in core) + row['margin'] > max_margin + 1e-9: reasons.append('maximum_margin_utilisation')
