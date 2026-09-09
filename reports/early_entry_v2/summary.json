@@ -1,0 +1,229 @@
+{
+  "arms": {
+    "confirmed": {
+      "by_symbol": {},
+      "mean_R": null,
+      "net_pnl": 0,
+      "portfolio_rejected": 0,
+      "profit_factor": null,
+      "realized_max_drawdown": null,
+      "trades": 0,
+      "win_rate": null
+    },
+    "delayed": {
+      "by_symbol": {
+        "BTCUSDT": {
+          "mean_R": -0.6306101113582718,
+          "mean_cost_R": 0.5001852024212804,
+          "mean_stop_pct": 0.008388446654833069,
+          "net_pnl": -63.93803133819803,
+          "profit_factor": 0.5536307510316729,
+          "realized_max_drawdown": -0.07705131400885445,
+          "return_pct": -0.06393803133819803,
+          "trades": 24,
+          "win_rate": 0.25
+        },
+        "ETHUSDT": {
+          "mean_R": -0.3462446765043465,
+          "mean_cost_R": 0.20547620839801298,
+          "mean_stop_pct": 0.010613478484541763,
+          "net_pnl": -65.28908318881045,
+          "profit_factor": 0.5773206530213832,
+          "realized_max_drawdown": -0.06903749336135845,
+          "return_pct": -0.06528908318881045,
+          "trades": 31,
+          "win_rate": 0.3225806451612903
+        },
+        "SOLUSDT": {
+          "mean_R": -0.30788941215648863,
+          "mean_cost_R": 0.19593270074605781,
+          "mean_stop_pct": 0.008206621299354054,
+          "net_pnl": -84.40169587516012,
+          "profit_factor": 0.5442099715931589,
+          "realized_max_drawdown": -0.09938462269322823,
+          "return_pct": -0.08440169587516011,
+          "trades": 29,
+          "win_rate": 0.3448275862068966
+        }
+      },
+      "mean_R": -0.4142502451996599,
+      "mean_cost_R": 0.2863839957152954,
+      "mean_stop_pct": 0.009146816314500664,
+      "net_pnl": -213.62881040216868,
+      "portfolio_rejected": 1,
+      "profit_factor": 0.5575960018712263,
+      "realized_max_drawdown": -0.21539340000358642,
+      "return_pct": -0.2136288104021687,
+      "trades": 84,
+      "win_rate": 0.30952380952380953
+    },
+    "early": {
+      "by_symbol": {
+        "BTCUSDT": {
+          "mean_R": -0.3354325792727531,
+          "mean_cost_R": 0.18911610130818982,
+          "mean_stop_pct": 0.008045127520294444,
+          "net_pnl": -70.70461863903606,
+          "profit_factor": 0.5075385369395294,
+          "realized_max_drawdown": -0.07605552523408499,
+          "return_pct": -0.07070461863903606,
+          "trades": 24,
+          "win_rate": 0.2916666666666667
+        },
+        "ETHUSDT": {
+          "mean_R": -0.1611423388891149,
+          "mean_cost_R": 0.12655900216010776,
+          "mean_stop_pct": 0.010105169187649733,
+          "net_pnl": -48.44825717541692,
+          "profit_factor": 0.7031634249686661,
+          "realized_max_drawdown": -0.06560161418586263,
+          "return_pct": -0.04844825717541692,
+          "trades": 31,
+          "win_rate": 0.3548387096774194
+        },
+        "SOLUSDT": {
+          "mean_R": -0.32345090593443004,
+          "mean_cost_R": 0.17997861241397284,
+          "mean_stop_pct": 0.00794672116514909,
+          "net_pnl": -101.79449795149065,
+          "profit_factor": 0.4675054335761226,
+          "realized_max_drawdown": -0.12863553796650307,
+          "return_pct": -0.10179449795149066,
+          "trades": 29,
+          "win_rate": 0.3448275862068966
+        }
+      },
+      "mean_R": -0.2669746509548465,
+      "mean_cost_R": 0.16287494355196558,
+      "mean_stop_pct": 0.008771407370161096,
+      "net_pnl": -220.94737376594364,
+      "portfolio_rejected": 3,
+      "profit_factor": 0.5562900291585199,
+      "realized_max_drawdown": -0.23751626689706162,
+      "return_pct": -0.22094737376594364,
+      "trades": 84,
+      "win_rate": 0.3333333333333333
+    }
+  },
+  "confirmation_diagnostics": {
+    "combined_pass": 29,
+    "confirmation_pass": 0,
+    "next_pass": 0,
+    "raw_pass": 87
+  },
+  "coverage": [
+    {
+      "bars": 11040,
+      "interval": "15",
+      "sha256": "d16e0b16faf98ca84235b7ca0b5f4596aa400045c6a6eff52d0cf903e208ed52",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bars": 3000,
+      "interval": "60",
+      "sha256": "117132eaec8044f924821b13faeeb02be8c98e95b3faf87931a55c8f0a006cf2",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "bars": 11040,
+      "interval": "15",
+      "sha256": "c3d96ef058d96ae240e7125ec4fe1890d359be1d5399f2c2a81c1557ed515845",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bars": 3000,
+      "interval": "60",
+      "sha256": "94bff82b2b4f872b4730626406c592634b12d118020463bb9c3dc39eca91969a",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "bars": 11040,
+      "interval": "15",
+      "sha256": "22ad8705e0eb54188594e8be62dd33f9d99ab3f7c5dd55c4bc6966dcff27f89e",
+      "symbol": "SOLUSDT"
+    },
+    {
+      "bars": 3000,
+      "interval": "60",
+      "sha256": "fecc72122c604c7f6d4568da90bc693b1e40356511ec830faddf8c6c12180a8c",
+      "symbol": "SOLUSDT"
+    }
+  ],
+  "diagnostics": {
+    "delayed": {
+      "False": {
+        "mean_R": -0.3643196507563,
+        "mean_cost_R": 0.28448479549983463,
+        "mean_stop_pct": 0.00913336052994819,
+        "net_pnl": -175.3303075773093,
+        "profit_factor": 0.6369083883427279,
+        "realized_max_drawdown": -0.19044505393013145,
+        "return_pct": -0.1753303075773093,
+        "trades": 85,
+        "win_rate": 0.3176470588235294
+      }
+    },
+    "early": {
+      "False": {
+        "mean_R": -0.2621349665796939,
+        "mean_cost_R": 0.1606100112954753,
+        "mean_stop_pct": 0.008839426195724972,
+        "net_pnl": -224.74608788820626,
+        "profit_factor": 0.5677621077917122,
+        "realized_max_drawdown": -0.24131498101932425,
+        "return_pct": -0.22474608788820627,
+        "trades": 87,
+        "win_rate": 0.3333333333333333
+      }
+    }
+  },
+  "end": "2026-09-09 00:00:00+00:00",
+  "errors": [],
+  "limitations": [
+    "Retrospective, not OOS; user-selected universe.",
+    "All arms require original Raw>=58 computed at raw close; delayed enters without confirmation filter.",
+    "Confirmation arm additionally requires Next95/Combined70/2of3; not full live scoring or Rescue.",
+    "Both arms use fixed original low minus 0.5 raw ATR stop and 16 bars, no live trailing stop.",
+    "Next-open fills; round-trip costs fixed, funding excluded; no intrabar price path.",
+    "Stop exits timestamped at bar close; drawdown uses realized equity, not floating P/L.",
+    "50x margin convention; no exchange liquidation simulation; not an execution recommendation."
+  ],
+  "paired_candidates": {
+    "mean_delayed_minus_early_R": -0.12284534299230805,
+    "n": 85
+  },
+  "params": {
+    "cooldown_bars": 24,
+    "lookback_bars": 24,
+    "lower_wick_threshold": 0.35,
+    "volume_lookback": 24,
+    "volume_multiplier": 1.5
+  },
+  "raw_event_counts": {
+    "complete": 87,
+    "raw_below_58": 153
+  },
+  "settings": {
+    "cost": 0.001,
+    "data_dir": null,
+    "days": 100,
+    "end": "2026-09-09T00:00:00Z",
+    "max_notional": 2500,
+    "out": "/data/tide_early_entry",
+    "risk": 10,
+    "symbols": "BTCUSDT,ETHUSDT,SOLUSDT"
+  },
+  "source_sha256": {
+    "backtest_tide_early_entry.py": "75d92554f1175157d598a4b220f4ad7dcbfb3ebd8998c3bf5bdcaf9b71e1888c",
+    "crypto_tide_engine_v10_9_dynamic_risk.py": "f8df07bb2aefd707bcda31e36e39413a09fb9e4cf5106884651a2cf083396951",
+    "tide_replay_support.py": "0f227aad0d48276e7f8a6ac365a23a76fbbcc3c0e23162ccb3ccac34c8ed2eb6"
+  },
+  "start": "2026-06-01 00:00:00+00:00",
+  "status": "COMPLETE",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "version": 2
+}
