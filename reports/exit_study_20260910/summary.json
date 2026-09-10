@@ -1,0 +1,2751 @@
+{
+  "status": "COMPLETE",
+  "errors": [],
+  "coverage": [
+    {
+      "event_id": "10000SATSUSDT:2026-08-08T05:30:00+00:00",
+      "bars": 33,
+      "sha256": "960937b6383b3b204d08cfb4a0fda6730c407d4bcaf9da02b8b801deed698d9a"
+    },
+    {
+      "event_id": "10000SATSUSDT:2026-09-01T13:00:00+00:00",
+      "bars": 33,
+      "sha256": "3a54c6d15e46a15bc708be92f7fd2fb795db779919e6b7adc8abf49b9387d57e"
+    },
+    {
+      "event_id": "1000NEIROCTOUSDT:2026-07-10T00:30:00+00:00",
+      "bars": 33,
+      "sha256": "0d7a7bb3e6290ad1acde555b33f63991687c828c5875b9ad4a1e08a5ba2adc1c"
+    },
+    {
+      "event_id": "1000PEPEUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "dacacc0b44cc210ea472ec8bd4c654f6d6c87cadca718a07235dba78c09917a1"
+    },
+    {
+      "event_id": "1000RATSUSDT:2026-06-05T16:00:00+00:00",
+      "bars": 33,
+      "sha256": "d34acb0914004d39a2d1f25d828466a16ab570516f6551b15fd5850a70f606e1"
+    },
+    {
+      "event_id": "1000RATSUSDT:2026-07-18T11:30:00+00:00",
+      "bars": 33,
+      "sha256": "accc5864b36b2963d2eedbd3f34843843bfeccbe94d13876db4dd799cd3812fe"
+    },
+    {
+      "event_id": "1000TAGUSDT:2026-06-13T06:15:00+00:00",
+      "bars": 33,
+      "sha256": "0b117f8b05174a2a528d9fbd67f2d284bd31cdfaae468d4ffd119162ef96730b"
+    },
+    {
+      "event_id": "1000TAGUSDT:2026-06-15T15:30:00+00:00",
+      "bars": 33,
+      "sha256": "fba9578a5f6a7f840b3a6f5fa61f093c9c5af9c2d320e2169f65c2fba1f5239f"
+    },
+    {
+      "event_id": "1000TAGUSDT:2026-08-23T02:15:00+00:00",
+      "bars": 33,
+      "sha256": "6778c88e67d6418d5a0b8c052c1686b9788c20cd7389d90e0ba9a23662072f4f"
+    },
+    {
+      "event_id": "1000TOSHIUSDT:2026-07-31T00:45:00+00:00",
+      "bars": 33,
+      "sha256": "3779e19efb7482b6896de2271a9f4eee35577e4b2810081c6224a95f7df6a938"
+    },
+    {
+      "event_id": "1000TURBOUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "d13a149ff36605b8f2a97fb1cf0b9b41f57d5e99b8a98d7667fcb1e3476f6812"
+    },
+    {
+      "event_id": "1000TURBOUSDT:2026-07-22T12:45:00+00:00",
+      "bars": 33,
+      "sha256": "b1563375d344e14a4a18e46b719533b169f7e9d1b06168b2256a4f358b5dceab"
+    },
+    {
+      "event_id": "1000XECUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "0f0d1634c6a644985ee6b7f2178dc4a0fb3e002f1e684979250bd28255902434"
+    },
+    {
+      "event_id": "1000XECUSDT:2026-07-12T23:45:00+00:00",
+      "bars": 33,
+      "sha256": "3e6fcd1cf061f6fbe5241552fab4853fe9e7c60ce224a082f6e2bcc7b3f51f6e"
+    },
+    {
+      "event_id": "ACEUSDT:2026-08-26T15:15:00+00:00",
+      "bars": 33,
+      "sha256": "6164498893672a4e6eadcf6ab16d586a0b84390d3227893995ccf044d7f3b3d8"
+    },
+    {
+      "event_id": "AIOUSDT:2026-08-06T08:15:00+00:00",
+      "bars": 33,
+      "sha256": "6989afbd2b942a0d2b4499761637da812f3d4df8d71a66af6db785770e6b1b47"
+    },
+    {
+      "event_id": "AIXBTUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "362efcee4759d5d459af264621dc483db42c4fd2f84ed767f2cf3a4865dde32c"
+    },
+    {
+      "event_id": "ALCHUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "0375289105a3d64d0c1079c928833c6f20b27f004ceab6d7ee9e805d185fc229"
+    },
+    {
+      "event_id": "ALCHUSDT:2026-07-06T12:00:00+00:00",
+      "bars": 33,
+      "sha256": "e6c356bab631e53b7d41f85112de22480c610c53a9975087344ef6bcbd04bce0"
+    },
+    {
+      "event_id": "ALGOUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "6f1f831530674926fa69fc5311dac57704c02483f69404f3fdacb96b6ded9ab4"
+    },
+    {
+      "event_id": "ALTUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "dc64fb3e212b6a89670e7a75912deec695ceed1d76122fdff258cc950c9001e6"
+    },
+    {
+      "event_id": "ANKRUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "26e8e7768b29e79d7a18d53e7c2fbc356f5268fd0a4deadd090dd68690fdc114"
+    },
+    {
+      "event_id": "ARBUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "70433f399099f184e791ec9455fb585b70c94494f0e57414173d55772c806c28"
+    },
+    {
+      "event_id": "ATHUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "a6ba0a682d0d9f04d33e0664f67a6ebb6cd0aafcb0d8f49d0fca515910abeb7a"
+    },
+    {
+      "event_id": "ATOMUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "43a565d2b19818678e198d4a32d0f3ded7a4798a103cc3a7249773bb0641b55d"
+    },
+    {
+      "event_id": "ATOMUSDT:2026-07-17T13:00:00+00:00",
+      "bars": 33,
+      "sha256": "753af9b022b8ac6f1fac28345934d50a0c1fd95cea152a59f1be3ea953cc660b"
+    },
+    {
+      "event_id": "AUCTIONUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "c142efb7870e0595d9dd3479810be373488ef8caf4e5a46915a13177febf8d82"
+    },
+    {
+      "event_id": "AUSDT:2026-07-17T06:30:00+00:00",
+      "bars": 33,
+      "sha256": "790994db25bc37d97748184c8e9acf5cf0d261a1f56b5b21f9b003b64021f632"
+    },
+    {
+      "event_id": "AVAAIUSDT:2026-07-31T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "b24e9f23046d6bc20fc8860463fb1e649bd00cb1dece55f22680b28667b76a2f"
+    },
+    {
+      "event_id": "AVAAIUSDT:2026-08-12T05:30:00+00:00",
+      "bars": 33,
+      "sha256": "3b3638bdae3b17746e5d378878a005b46c02b9dfac53117738f792730ea77104"
+    },
+    {
+      "event_id": "AVAXUSDT:2026-06-20T06:45:00+00:00",
+      "bars": 33,
+      "sha256": "97d7a6f2d0a58293e70d335348d107687e9a34211bc44fa9287d36613300d982"
+    },
+    {
+      "event_id": "AWEUSDT:2026-06-15T12:45:00+00:00",
+      "bars": 33,
+      "sha256": "8384c8533883083c1aa86344e8f0264c2832199018b05e256c870bca2ddd2525"
+    },
+    {
+      "event_id": "AWEUSDT:2026-09-02T10:45:00+00:00",
+      "bars": 33,
+      "sha256": "ecc09447926817e17a4ccd843ae38bde8b177090d7f9daa3010adbaefac37127"
+    },
+    {
+      "event_id": "AZTECUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "435046ee90799811fd46efcebd16bb85d589e98ef2f16e1b99791bb62784107b"
+    },
+    {
+      "event_id": "B2USDT:2026-07-28T03:00:00+00:00",
+      "bars": 33,
+      "sha256": "11b2eb405b74c101efb288f2b32afe5d4fe632dfe1732dafa9a1774842cb854a"
+    },
+    {
+      "event_id": "BANANAUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "d6dce85571c166237b4b71316ea5daf6bb85cffeeb2f7830105b0826a1035e61"
+    },
+    {
+      "event_id": "BCHUSDT:2026-06-02T02:00:00+00:00",
+      "bars": 33,
+      "sha256": "acf3352b911cc4ca9bad058fbe780abb472c49ae00d5304f43dd64c1d7d72336"
+    },
+    {
+      "event_id": "BIOUSDT:2026-09-02T21:45:00+00:00",
+      "bars": 33,
+      "sha256": "7a10082af2d0966181c6df22d129380ad010b77d616e5826ce65f49e41d0241d"
+    },
+    {
+      "event_id": "BLUAIUSDT:2026-06-11T22:00:00+00:00",
+      "bars": 33,
+      "sha256": "023adec3f834e91f2900b752b46bca19f154c0462d92ce4f286872117a53f5d4"
+    },
+    {
+      "event_id": "BLUAIUSDT:2026-07-22T00:15:00+00:00",
+      "bars": 33,
+      "sha256": "5d623950d98692b2a6ef421fa3269c1253cca69425e7e2ca02fcd26750047dde"
+    },
+    {
+      "event_id": "BLUAIUSDT:2026-08-28T11:45:00+00:00",
+      "bars": 33,
+      "sha256": "6d57b1702233eb467ad1ea73f2076b00c194384f3307933ff2bbc4a52729462c"
+    },
+    {
+      "event_id": "BLURUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "82b17852b2d24d3b05808bb0d89db3b07bee82bb3c00e6baef4249d5eb968fff"
+    },
+    {
+      "event_id": "BRUSDT:2026-07-02T06:00:00+00:00",
+      "bars": 33,
+      "sha256": "976cb03a669e87b6a871abf469b1c9962f1c1d8dae6dd1c8589f7025d131fce4"
+    },
+    {
+      "event_id": "BRUSDT:2026-07-26T08:15:00+00:00",
+      "bars": 33,
+      "sha256": "a69f14554caed875d40eaa121c9d70eb9d052fcc1fcc0fb0d7c4c23b53fa9953"
+    },
+    {
+      "event_id": "C98USDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "44a14212c1daa0b19513c89f9c1b1205b3c38b37ed7cf98633ea5f2baad89e4d"
+    },
+    {
+      "event_id": "CFXUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "26884adf1fa3ffc7624722a6c6f94b744f843786dc8273b3a680bfdb8b739cd0"
+    },
+    {
+      "event_id": "CHILLGUYUSDT:2026-06-03T16:15:00+00:00",
+      "bars": 33,
+      "sha256": "d801bdce11de080fe25c67fb45dbccbd38d161a390e9948293094ed0a179cfe0"
+    },
+    {
+      "event_id": "CHRUSDT:2026-06-25T04:30:00+00:00",
+      "bars": 33,
+      "sha256": "582aacf517b7a2ca522e0ffa80dd0f36bb6e98982fb29ec83f6c8e96e9e84d8b"
+    },
+    {
+      "event_id": "CLANKERUSDT:2026-06-26T06:15:00+00:00",
+      "bars": 33,
+      "sha256": "b528c49b9a080e4862fb2e46e794e06124b44ebfa327e2680b3b3b408a0f14d0"
+    },
+    {
+      "event_id": "CLANKERUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "bf2d2fc1a7d6bccefe0fd694d49493ff5104293db8b19c95a84206f86958d4b6"
+    },
+    {
+      "event_id": "CLANKERUSDT:2026-08-05T01:15:00+00:00",
+      "bars": 33,
+      "sha256": "255a8935558668e4ca0befe04a00d85ac9a774a382c39dd8ef260f317a6ae80e"
+    },
+    {
+      "event_id": "CLANKERUSDT:2026-09-02T01:45:00+00:00",
+      "bars": 33,
+      "sha256": "728a1450ceb64b6a16f27e2ed6be4273fa4394da25cc7704615b32d10ebf0124"
+    },
+    {
+      "event_id": "COOKIEUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "ad0e7433f86b70bf5ca0523a7dffeebb3be99bb04fe80b91aa03252b4665e803"
+    },
+    {
+      "event_id": "COREUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "5eba7f7c86bb579f741cb920a7ab025e61f03156945d4a922a4aa7cb1e9ccb04"
+    },
+    {
+      "event_id": "COREUSDT:2026-08-15T23:15:00+00:00",
+      "bars": 33,
+      "sha256": "c822f56b441c5c1c5277c64f3d373074d98e512a0539a800079f5008fd8d9fb1"
+    },
+    {
+      "event_id": "COTIUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "92e4f5820df32e8eb57ad67b3d818ef32aac84a3f5c33cf9d14214e6a43b08bf"
+    },
+    {
+      "event_id": "COTIUSDT:2026-08-06T03:00:00+00:00",
+      "bars": 33,
+      "sha256": "0f05e46846c530df7bbe5e30cbf90085759d1ea8cf7c94199c2a75bde8872c69"
+    },
+    {
+      "event_id": "COTIUSDT:2026-08-18T12:15:00+00:00",
+      "bars": 33,
+      "sha256": "36e14245d2febe69e6e961b0239c9e088c23e8c7d8eb30311f392234e62c98a2"
+    },
+    {
+      "event_id": "CRVUSDT:2026-06-25T04:30:00+00:00",
+      "bars": 33,
+      "sha256": "fbee0f3c486da28937d0011bddbf35b0e0e5d129211723f1761950be9223c19d"
+    },
+    {
+      "event_id": "CUSDT:2026-06-27T10:45:00+00:00",
+      "bars": 33,
+      "sha256": "d1a1e6176cfea9d2007d6cc1c742cb31aa1b0c308f4008ac79001db80f2e1b02"
+    },
+    {
+      "event_id": "CVCUSDT:2026-06-19T12:30:00+00:00",
+      "bars": 33,
+      "sha256": "80c2c8224e52f4c6c541582e0357817c3e0d4eaf22a2b16448a8bef40bd788ec"
+    },
+    {
+      "event_id": "CVCUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "8085784143f00519eb7afda85c66b5b20a1f3b7dbc902357395e25bfee4e90db"
+    },
+    {
+      "event_id": "CVCUSDT:2026-07-12T00:00:00+00:00",
+      "bars": 33,
+      "sha256": "614034d0081ac80d219a0e125e2cf66dc8d65642c6edd9af322e860023ccdf59"
+    },
+    {
+      "event_id": "DUSKUSDT:2026-06-07T08:30:00+00:00",
+      "bars": 33,
+      "sha256": "fdde911ec203d483d66b794a394e8e0dec34accff195453bb74701f8478bb493"
+    },
+    {
+      "event_id": "DUSKUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "8577a86ec54b21ca668a3a0f9e9a2e70bde1d932f2fcd8f9c14b02b567071d34"
+    },
+    {
+      "event_id": "DYDXUSDT:2026-07-08T01:30:00+00:00",
+      "bars": 33,
+      "sha256": "e8b114ae1e4c9a322ae203d9484644f14f9da1e5ff00ef8125e13b1bf52aa8ba"
+    },
+    {
+      "event_id": "EDGEUSDT:2026-07-31T02:30:00+00:00",
+      "bars": 33,
+      "sha256": "a1b8c4389907b7fe7ae80ae6105d45549b3db61e1a9f405f66b9d2da784022e8"
+    },
+    {
+      "event_id": "EDGEUSDT:2026-08-01T02:45:00+00:00",
+      "bars": 33,
+      "sha256": "157178e64bafba4598b8dbd533c557d8f5d136fb14b2010c50c01552ee92633c"
+    },
+    {
+      "event_id": "EDGEUSDT:2026-08-01T05:15:00+00:00",
+      "bars": 33,
+      "sha256": "8be2c79e45eb738a840678453fc906df18858021e7cb99a5fbc1f01bbc90ef15"
+    },
+    {
+      "event_id": "EGLDUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "0f48a9b85efc7062b0abaf81d1cc9b91f9ae657e5bc493d4b4dd1b341a8296af"
+    },
+    {
+      "event_id": "EGLDUSDT:2026-07-25T09:00:00+00:00",
+      "bars": 33,
+      "sha256": "b675b7320fb1e3020057c04e9c76d2f11c016ff83123c19725f6b9b50c9d6e12"
+    },
+    {
+      "event_id": "ELSAUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "a9a7013867e2f23e590f139898b8647928da55894a434a709b6145f351eed65a"
+    },
+    {
+      "event_id": "ELSAUSDT:2026-07-19T23:45:00+00:00",
+      "bars": 33,
+      "sha256": "1ae32b6aaa150b5b6f0d4a66f6c2754f310f946780afc6c4a2d6a71b8c60b661"
+    },
+    {
+      "event_id": "ENSUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "a43ccf7773921bbc20dbe278e73edccf73953f165c3d0cdbce6b944952f68918"
+    },
+    {
+      "event_id": "ENSUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "4b83f202f3ec2acbab1862418c3004aa52d375778b92213efccc3ff34c273d04"
+    },
+    {
+      "event_id": "ESPUSDT:2026-08-30T21:00:00+00:00",
+      "bars": 33,
+      "sha256": "894b237db9af133b1185aadb1fd85b0036ccbb5d069c6e5ef6e7a3deaa3d615d"
+    },
+    {
+      "event_id": "EVAAUSDT:2026-07-17T22:15:00+00:00",
+      "bars": 33,
+      "sha256": "6512427cbcb913bd17ab0a0a0ecc1d2defdc65c9cf350bc31619e96e1306bc6e"
+    },
+    {
+      "event_id": "EVAAUSDT:2026-08-12T18:15:00+00:00",
+      "bars": 33,
+      "sha256": "91c4c5bd3363099086ddfe82a4093338955d66ac8a4c4ac0b927396f69ae5a53"
+    },
+    {
+      "event_id": "FARTCOINUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "83ccf067ce7ae016b929f8b267038e65a31fc9c44a43c7e3bcafed48acbf6146"
+    },
+    {
+      "event_id": "FARTCOINUSDT:2026-07-23T19:45:00+00:00",
+      "bars": 33,
+      "sha256": "54851ce72e96ce9fd9dac8e21f892c66c3b45e02b80b480ca7910aeb3add4a8e"
+    },
+    {
+      "event_id": "FILUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "9a92ef81c7a9acbf49e9eaa2b0a4081bc7d8cb8d088fba83195c901ec155e77f"
+    },
+    {
+      "event_id": "FLRUSDT:2026-06-04T22:30:00+00:00",
+      "bars": 33,
+      "sha256": "ad342ba839b503102cfca834f454ea6868a62595be807eb2b8bf434b83abed65"
+    },
+    {
+      "event_id": "FOGOUSDT:2026-06-10T12:15:00+00:00",
+      "bars": 33,
+      "sha256": "5c0de1646178cd73a3f79b5e1af45275bcc446928d14eb58df1bba36f3d7716a"
+    },
+    {
+      "event_id": "FOGOUSDT:2026-08-14T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "d0995c5d47d7081e8d857adff555b044afe0d91b1994196626f5bdfc6b821ab3"
+    },
+    {
+      "event_id": "FORMUSDT:2026-09-08T02:30:00+00:00",
+      "bars": 33,
+      "sha256": "c3dbcec971f14b502e74b7188011f38966cdb82681161e587e9870fca54cbed9"
+    },
+    {
+      "event_id": "FUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "4840f10d6b86f4755f66b8536289c89a020069e860885468fc48526e7c3a70ad"
+    },
+    {
+      "event_id": "GIGGLEUSDT:2026-06-27T12:00:00+00:00",
+      "bars": 33,
+      "sha256": "5a532f0eb258d0ef9c7636eac5069a6b1c3287cfa6778430ecad188e103c0d95"
+    },
+    {
+      "event_id": "GMTUSDT:2026-08-28T14:15:00+00:00",
+      "bars": 33,
+      "sha256": "798db4704e626f552f3d59147cb2d55575b5d71e734a833548814f819a6d192f"
+    },
+    {
+      "event_id": "GPSUSDT:2026-08-11T17:15:00+00:00",
+      "bars": 33,
+      "sha256": "8470d2da19f495cb8bd43c7b3e27d846cc792309883bfed61aa6a51d241130b6"
+    },
+    {
+      "event_id": "GRTUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "ada36c40fb3355103c3c8684a74f808dc7e660c05c143bd27d7585dca292e32a"
+    },
+    {
+      "event_id": "GUNUSDT:2026-06-07T21:45:00+00:00",
+      "bars": 33,
+      "sha256": "5f50716398d2a8484ac04325ff2cbcf969b8470df661e59e5282213cbfed5b94"
+    },
+    {
+      "event_id": "GUNUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "fe7be94e209c7184a580847025d87e55cb4902999b47bdd07f6ffa3a08961e62"
+    },
+    {
+      "event_id": "HANAUSDT:2026-06-07T21:45:00+00:00",
+      "bars": 33,
+      "sha256": "d5deaee5940f8bff26e424a7991493e1870226193124e70395635609eeb100cd"
+    },
+    {
+      "event_id": "HOLOUSDT:2026-07-08T11:15:00+00:00",
+      "bars": 33,
+      "sha256": "2bd319d67888800958e9cdb0f917b86aee2f2450fc269c3dbfe54e3efaf48c33"
+    },
+    {
+      "event_id": "HOMEUSDT:2026-07-27T14:30:00+00:00",
+      "bars": 33,
+      "sha256": "f780d7f33a876c67f971f5cbed4b6ac169508484c117f19562aec877f6f1174b"
+    },
+    {
+      "event_id": "HOMEUSDT:2026-08-24T00:30:00+00:00",
+      "bars": 33,
+      "sha256": "1da5ee5a15d91b37fbcda78e0438706021e428d5532a8331fa00b2f07bdb4f58"
+    },
+    {
+      "event_id": "HUMAUSDT:2026-08-13T07:15:00+00:00",
+      "bars": 33,
+      "sha256": "89eb14481570912324451ef3fb919d9fc024bc1798b660e6a322a74418616d01"
+    },
+    {
+      "event_id": "HYPERUSDT:2026-07-31T07:00:00+00:00",
+      "bars": 33,
+      "sha256": "7c4c47441e4d4e3480fc5ce19421cc41da78194fd1dec1eb22d960d64e2f2ff3"
+    },
+    {
+      "event_id": "ICNTUSDT:2026-07-10T00:00:00+00:00",
+      "bars": 33,
+      "sha256": "50b792a69e2e54522415f6ebe02932efc716adab6f5b3b1c4021b4347b4454bf"
+    },
+    {
+      "event_id": "IMXUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "e81e07a0020379f572870c640d8719fd68d0fdda8cd9ffb76ac4747369cbb43a"
+    },
+    {
+      "event_id": "INITUSDT:2026-06-08T08:00:00+00:00",
+      "bars": 33,
+      "sha256": "2c6710ef3c00cd343c49bb836ecbafd9b9ec8421a4870ccc6ba35592cbd7d26e"
+    },
+    {
+      "event_id": "INUSDT:2026-06-10T09:15:00+00:00",
+      "bars": 33,
+      "sha256": "1c4cff5ddf7fd3e95fa5d7d4c86eb81a465092cb7b1951cf24d94cc945153516"
+    },
+    {
+      "event_id": "IOUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "305edd7777d54c1c5a899b98c77778d9ebddffe7e543571e34af7845e742f840"
+    },
+    {
+      "event_id": "JELLYJELLYUSDT:2026-07-10T14:30:00+00:00",
+      "bars": 33,
+      "sha256": "1b2cec2055fb414d9454ddc53306ddf2d10e02de8ce63aaafd825ad95b740ff0"
+    },
+    {
+      "event_id": "KASUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "b7a54ec87b84bde68184aeda8d0ed1a417eccfdc839523af981aa0fc122a64b7"
+    },
+    {
+      "event_id": "KATUSDT:2026-06-17T05:15:00+00:00",
+      "bars": 33,
+      "sha256": "e5edd6894ae0f7a12b6c4e6199f7d66d052cb4fe068c6ee586ad3ed5983e0472"
+    },
+    {
+      "event_id": "KERNELUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "a76105b834c743b7fd0f9ecf97f66be2cfc1e60e36c9d69d9cf0aa106910982f"
+    },
+    {
+      "event_id": "KGENUSDT:2026-08-19T00:00:00+00:00",
+      "bars": 33,
+      "sha256": "352ca9f426fc110f54b3fc660985a40c5b134e01dd0758be74555a68aef01289"
+    },
+    {
+      "event_id": "KITEUSDT:2026-06-11T07:00:00+00:00",
+      "bars": 33,
+      "sha256": "83ead1de6e849bc2f3f4f3dd049cba9711322ff0cfe75df774f539a8ccd4b893"
+    },
+    {
+      "event_id": "KITEUSDT:2026-06-18T10:00:00+00:00",
+      "bars": 33,
+      "sha256": "6941698ce04480e9fd6cbd60e61dfdb76f15dce6c49d5e3f638777d8e7e05f30"
+    },
+    {
+      "event_id": "LIGHTUSDT:2026-09-03T03:45:00+00:00",
+      "bars": 33,
+      "sha256": "0a9dfe1423a6a5f5c9c009fb1d68d9bd5521549038997a8a13f6730a37d9b63d"
+    },
+    {
+      "event_id": "MANAUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "477bc16b14f8bed14d50c193040c80c30b56d4d4ab16f07deba240820aa1acd4"
+    },
+    {
+      "event_id": "MASKUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "b2ff2bbebf754ffb62d3bca7dbc89da08f5155b5a7f354a703c7e0e2f6ae38d5"
+    },
+    {
+      "event_id": "MAVIAUSDT:2026-06-07T16:45:00+00:00",
+      "bars": 33,
+      "sha256": "ab5f7ffb28cae7e432a95e7fc21a5e03ab88815689460fa60e4127052542ac49"
+    },
+    {
+      "event_id": "MEGAUSDT:2026-08-28T14:15:00+00:00",
+      "bars": 33,
+      "sha256": "5e2eb3d55a29ec3e4381bac876d617f6c743db74d95d3e400501fb93e8dd1da1"
+    },
+    {
+      "event_id": "METISUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "fd911164865accaf8c283d60776ac73212c8a40c2bebd1c844215852399b813d"
+    },
+    {
+      "event_id": "MEUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "4f98d0ead81692415996034b965d1de9dae47772ef196a4a04b1f026ce7329c3"
+    },
+    {
+      "event_id": "MEUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "95a632581eb6f050d292238f2e1e5da495a7d30b7574f5ec1f2bc1a5c0ac2520"
+    },
+    {
+      "event_id": "MEWUSDT:2026-06-25T04:30:00+00:00",
+      "bars": 33,
+      "sha256": "07ae822aef7ee987b635f853b4748ebd50eeb494016c9cbaa4eca05a7f704b8c"
+    },
+    {
+      "event_id": "MINAUSDT:2026-06-27T14:45:00+00:00",
+      "bars": 33,
+      "sha256": "14b8b1fc86ab4b0dc145b410d14f9ff65a48aadf0fb6178e5eba09c4f76f7ede"
+    },
+    {
+      "event_id": "MITOUSDT:2026-07-03T14:15:00+00:00",
+      "bars": 33,
+      "sha256": "9d9048d36590a68ada5765adaf702a24036b59e7db25abb8862ff349f21784ad"
+    },
+    {
+      "event_id": "MOODENGUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "c8c332d283c7ba7b30379f9dec36b3457e4405b1e745805a2e57c891fc3358cb"
+    },
+    {
+      "event_id": "NAORISUSDT:2026-06-17T04:15:00+00:00",
+      "bars": 33,
+      "sha256": "07ea88ecec221f9651542d17fe00e83452b67964e17327ea1b7bba9f6eb46694"
+    },
+    {
+      "event_id": "NAORISUSDT:2026-06-19T12:00:00+00:00",
+      "bars": 33,
+      "sha256": "6fd80ec7c108101ef5bba10c190fe80f7db4f52017c919d3e37c3d158ba777d2"
+    },
+    {
+      "event_id": "NEWTUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "ac6519bdf3c09617fe9e950c66fadae4204f79e246a605a238db64d7c7cf4e42"
+    },
+    {
+      "event_id": "NOTUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "94e45dec50376cd9bf080380a50528d98c2eb376a866beb9df0fb27893865caf"
+    },
+    {
+      "event_id": "NOTUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "3e62bf1e7bb0b9abbd0e5eaf0139d94c1f8a7e09c04218c96a71d2cf564b5b63"
+    },
+    {
+      "event_id": "NXPCUSDT:2026-08-01T02:00:00+00:00",
+      "bars": 33,
+      "sha256": "d5c4a4c55bf744950dafce40926bc1df364d93b7b9f9b9b7562e45aa937322e4"
+    },
+    {
+      "event_id": "PEOPLEUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "afaa4979885836d1d5a8d47f137e829db47b38f8b625f8653e7f0e52da2adde1"
+    },
+    {
+      "event_id": "PIEVERSEUSDT:2026-07-03T18:00:00+00:00",
+      "bars": 33,
+      "sha256": "003729430c2509dbaad01c18a17631763f4ae42f2413a1e7b39cbeb57735aade"
+    },
+    {
+      "event_id": "PLUMEUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "56e712f21589c5b2cc10374b1ba76b4425e5a13e332846dcc84c45c67cfa4974"
+    },
+    {
+      "event_id": "PROVEUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "dec424c7ad3f32e27ddc8a5505f2f3c3a09c095dad0a10059fcda0422f82a9d3"
+    },
+    {
+      "event_id": "PYTHUSDT:2026-07-28T10:15:00+00:00",
+      "bars": 33,
+      "sha256": "aefffc8dd44be10e8ac31df18eba32334a0a9bc0e258d0e321beff96e3fdb40c"
+    },
+    {
+      "event_id": "RAYDIUMUSDT:2026-06-25T04:30:00+00:00",
+      "bars": 33,
+      "sha256": "48815091e3fbcb4fec4c9749312f6ec31af812a58c80b75d20a11d053df44ad8"
+    },
+    {
+      "event_id": "RLCUSDT:2026-06-19T12:30:00+00:00",
+      "bars": 33,
+      "sha256": "b5e42cd666bf2fd0c2273af4a99e57219a032cee11ad04abdfea9cc91d959c48"
+    },
+    {
+      "event_id": "ROSEUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "4ac19ab6fc3ff49379e7e303a44e5067c70952598a19d879976f67534999d600"
+    },
+    {
+      "event_id": "ROSEUSDT:2026-07-13T14:15:00+00:00",
+      "bars": 33,
+      "sha256": "a995dcef78a31bc453268aac0a1991612d86c2770c4aa3ae0fe216536fdfcee2"
+    },
+    {
+      "event_id": "SAHARAUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "b99d1418a8f59ad5b2491d119d89280479d909d7dbbb11f5804aa1940cbea552"
+    },
+    {
+      "event_id": "SAPIENUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "3e33fa6e2d0a2f9ed400bba681b40e062d947fe504fb0abdaa8ab356402e19f8"
+    },
+    {
+      "event_id": "SAPIENUSDT:2026-07-02T00:30:00+00:00",
+      "bars": 33,
+      "sha256": "cbc2d97279aa91d0ee38a3399fa27ea3181b104e5954576ea38506f349b9150b"
+    },
+    {
+      "event_id": "SAPIENUSDT:2026-07-10T14:30:00+00:00",
+      "bars": 33,
+      "sha256": "d1b7c3b8640d5c23f9cf3f4b422f7741a2385bce549a0995e59e7457f3ac7db6"
+    },
+    {
+      "event_id": "SAPIENUSDT:2026-08-05T04:15:00+00:00",
+      "bars": 33,
+      "sha256": "c269c67e3ead93f39208e27fb5425f7d836497d52a1337a1549094c5b286cebc"
+    },
+    {
+      "event_id": "SHELLUSDT:2026-07-31T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "750717841abb536e3536073642f77943da9421fc006017d697555a9d4159ae29"
+    },
+    {
+      "event_id": "SOLAYERUSDT:2026-07-17T00:30:00+00:00",
+      "bars": 33,
+      "sha256": "c33433a84fd3fdb7f4b682decfe7f69115269a2564e6e3197ac12cc49e95d3e3"
+    },
+    {
+      "event_id": "SOMIUSDT:2026-06-08T08:45:00+00:00",
+      "bars": 33,
+      "sha256": "147ac64c8fb397c5bf687200eb4f5610a0e0ed3b40094326d7f6cc18533e3c05"
+    },
+    {
+      "event_id": "SOMIUSDT:2026-06-25T04:30:00+00:00",
+      "bars": 33,
+      "sha256": "8a887c6582acc9277fa71c2b89e72cbe90d13345afa16c4b314ff960a39f83dd"
+    },
+    {
+      "event_id": "SOMIUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "39ade40f6244feb437b6b528521cf44cc8a0dbf11faa35cebf77adbe501db117"
+    },
+    {
+      "event_id": "SONICUSDT:2026-07-15T17:45:00+00:00",
+      "bars": 33,
+      "sha256": "296e0587b32c599aaa145bed7d4e6573b56e26534c2a8b458a8dc141ad04b74b"
+    },
+    {
+      "event_id": "SOPHUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "923725fa3ab4b4d1749b305f9671df795f388c662d858ad11ca48f815596ac5c"
+    },
+    {
+      "event_id": "SOSOUSDT:2026-06-24T22:15:00+00:00",
+      "bars": 33,
+      "sha256": "e688fb3263dc826086f17cbacbfae14357c636b9810e46ae513ea306ea0bab0d"
+    },
+    {
+      "event_id": "SOSOUSDT:2026-07-18T18:30:00+00:00",
+      "bars": 33,
+      "sha256": "6a7971b57ffdaa7130713e7d838f32e990fe7f67cb4a674db8c44cc9cb58158e"
+    },
+    {
+      "event_id": "SPORTFUNUSDT:2026-06-04T02:00:00+00:00",
+      "bars": 33,
+      "sha256": "b4a424d17a15d5fa727cdb2b3ee941fc158a578e9c4b676cee3a1f94c91f7e51"
+    },
+    {
+      "event_id": "SPXUSDT:2026-06-05T16:00:00+00:00",
+      "bars": 33,
+      "sha256": "b6439902a59768df855b390b020bb76c16d55e8478b4096f5e5074442e060dba"
+    },
+    {
+      "event_id": "SPXUSDT:2026-06-09T16:30:00+00:00",
+      "bars": 33,
+      "sha256": "1ca3c39760d8ff596891c83de0215b4084590deb37da48c22f269d309ba4cb0a"
+    },
+    {
+      "event_id": "SPXUSDT:2026-07-29T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "ca4656abd450a9f136174d9252579a662ce29c9bb5b451440331c497a203430a"
+    },
+    {
+      "event_id": "SQDUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "fdaf89c55e2a9791eff0d1271928bb76652daea7c028e44b8c74080c68636ae2"
+    },
+    {
+      "event_id": "SSVUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "e57576df9210ae199e8a0e3c5773524efbc8e06a71ac6a93cb5227fad255ed23"
+    },
+    {
+      "event_id": "STABLEUSDT:2026-06-09T16:00:00+00:00",
+      "bars": 33,
+      "sha256": "7148ac13e01b1d8609f235e08b37557c0c1f0102743e14bbf4d3d3ea69b23733"
+    },
+    {
+      "event_id": "STABLEUSDT:2026-08-15T19:15:00+00:00",
+      "bars": 33,
+      "sha256": "3fa986bab4983b27a8ccb14ef963743a7a8b42c1ee3f5e1efd33c9b12772cf11"
+    },
+    {
+      "event_id": "STORJUSDT:2026-06-21T23:45:00+00:00",
+      "bars": 33,
+      "sha256": "86a6a15d042d7c65a3734050598935a8dbea5f580139557ca22fe26dbc9422bf"
+    },
+    {
+      "event_id": "STXUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "4ef2ed6e3fcbea00e1de2ef324bc28480d3e075e45e0f65498872ade9d67dd3f"
+    },
+    {
+      "event_id": "STXUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "f3603eb3b9d0887e6c2c52de0b3a7388e739779b40749ee2b64a6df4930c48aa"
+    },
+    {
+      "event_id": "STXUSDT:2026-07-26T02:00:00+00:00",
+      "bars": 33,
+      "sha256": "bed7afb9391e2f6e12ad05842b8ab4d4b7e2fb213082fdcb865840fe56af6da0"
+    },
+    {
+      "event_id": "STXUSDT:2026-08-30T21:00:00+00:00",
+      "bars": 33,
+      "sha256": "26694e3885698ba6f911095a405a9e99290d49324bca8846f0277349b9a187a9"
+    },
+    {
+      "event_id": "SUPERUSDT:2026-06-10T09:15:00+00:00",
+      "bars": 33,
+      "sha256": "5f61d12d07ffcbb092996f5744f015942d44ceb6f426ab79817892013e1b126d"
+    },
+    {
+      "event_id": "SUPERUSDT:2026-07-10T14:30:00+00:00",
+      "bars": 33,
+      "sha256": "ac1623c547d9fa0772b0967fd6872bd7ab87e8b69ceaec7ea215594618404fca"
+    },
+    {
+      "event_id": "SUPERUSDT:2026-08-30T21:00:00+00:00",
+      "bars": 33,
+      "sha256": "ef261c6140dc4787af460f4aa9ff5caa1f8542782733366753982670363d51c0"
+    },
+    {
+      "event_id": "TAOUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "25b76afd5b6ff17976838a1e4cbc95a77c09d72a4e8f881b645e6f9fa7838e2c"
+    },
+    {
+      "event_id": "TAUSDT:2026-06-24T23:45:00+00:00",
+      "bars": 33,
+      "sha256": "895e47405891cb54acbc04df4d1e4373058f0f52e565ac6ad67a1602d6538685"
+    },
+    {
+      "event_id": "TNSRUSDT:2026-08-18T06:00:00+00:00",
+      "bars": 33,
+      "sha256": "e64e6b8aa5831b48ba45aaccfead53510d446770fb13d328f8f8bd8c21214c98"
+    },
+    {
+      "event_id": "TOWNSUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "34d504d6c2abb6ded4096011683f414eefd01f5fc23a10071da1b1a7e91b8f89"
+    },
+    {
+      "event_id": "TOWNSUSDT:2026-07-13T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "b76b302e90c35226c4762de1a121f9e49bcc2f8d7695e56e607fd142cfa38962"
+    },
+    {
+      "event_id": "TRUSTUSDT:2026-08-28T14:15:00+00:00",
+      "bars": 33,
+      "sha256": "c8eb961a5a380cc03180424b80817131d5986a184004eb53dec2f44c2c469d6a"
+    },
+    {
+      "event_id": "UNIUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "01ba7653f41e790b903e6a368276c2c6024f7a302e4bc159dd428803a6a12b15"
+    },
+    {
+      "event_id": "USUALUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "743aa2a8a90d8c23c0e3c0a9b174a73f3255be9c84dc48bf6d6edb059b035b90"
+    },
+    {
+      "event_id": "VETUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "727049f2149531c3a9f1a95f8ac48dd50c3ea141d6bc9403562c8857260f9b8f"
+    },
+    {
+      "event_id": "VETUSDT:2026-07-27T18:45:00+00:00",
+      "bars": 33,
+      "sha256": "a38669582e1cac15774ca59d3bb2de3a50721c053bb9fc13637eb2ac89b73636"
+    },
+    {
+      "event_id": "VVVUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "cc4678cc303a52a8da018a2bdfd9e3cad9ea034b4ff32f206b6c74ef16def5a4"
+    },
+    {
+      "event_id": "VVVUSDT:2026-07-31T05:45:00+00:00",
+      "bars": 33,
+      "sha256": "e3655b6ea2a244f4391c25a4b7daaea0198b702a3e1a9b2d574f36d8e60d2b89"
+    },
+    {
+      "event_id": "VVVUSDT:2026-07-31T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "2eeaa8a66681411653bf3f44a72299b7d10903c4bdcb394a03fbffc33e15d774"
+    },
+    {
+      "event_id": "WALUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "9c2f14eb6a6d8ddf12ec3b3e38fb14ac6d8f8b6f19d23c7a335fb0ec786a1ead"
+    },
+    {
+      "event_id": "WAVESUSDT:2026-07-19T22:30:00+00:00",
+      "bars": 33,
+      "sha256": "1df639922a0027d3fce094710094c8113e3b7402d093e99554ba1b8ea4497b73"
+    },
+    {
+      "event_id": "WCTUSDT:2026-07-25T02:00:00+00:00",
+      "bars": 33,
+      "sha256": "312b11ab0a86d555655158662f29fb9dc0c76e64e44a5efc03c6e4444e37c7bd"
+    },
+    {
+      "event_id": "WUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "ee01fde418d8f496edf523556ff966843227b1e3e8960c541703f66cc4c687af"
+    },
+    {
+      "event_id": "XANUSDT:2026-07-09T06:00:00+00:00",
+      "bars": 33,
+      "sha256": "fa174aba9a7c8473b9a7fe0bed8803d2db245a0b464a953f26f9fa1781574d9a"
+    },
+    {
+      "event_id": "XTZUSDT:2026-08-29T02:45:00+00:00",
+      "bars": 33,
+      "sha256": "493ca66ed9bc84a5ddcecfae0c5352785ad39326ad0ce635f9da295e3ece111b"
+    },
+    {
+      "event_id": "YGGUSDT:2026-06-26T13:15:00+00:00",
+      "bars": 33,
+      "sha256": "b12bfd54b0f0cd7c109d71dd8e538786032065ddfbe6d20f2034cf2fd6d83a92"
+    },
+    {
+      "event_id": "ZBCNUSDT:2026-07-31T12:15:00+00:00",
+      "bars": 33,
+      "sha256": "c16569a09e85ab0da2039a0f5807fb542367cf7f9c406afdd1e6b6f25b378099"
+    },
+    {
+      "event_id": "ZBCNUSDT:2026-08-17T14:00:00+00:00",
+      "bars": 33,
+      "sha256": "a26e831488a386477b27cdec01b292e2dc9525109d4abf66fd1371a804a9c40d"
+    },
+    {
+      "event_id": "ZBTUSDT:2026-08-09T00:00:00+00:00",
+      "bars": 33,
+      "sha256": "0a1f6d1dd62da3891aa3ad4483a477b760404cd57791bd55eabed42b7cb58c0e"
+    },
+    {
+      "event_id": "ZKUSDT:2026-07-01T13:30:00+00:00",
+      "bars": 33,
+      "sha256": "ba5ff5f0b87eb00e1362980e1256edf5473b123d76ba389559eab537157dfa49"
+    }
+  ],
+  "requested_candidates": 191,
+  "completed_candidates": 191,
+  "original_admitted": 134,
+  "start": "2026-06-01 00:00:00+00:00",
+  "end": "2026-09-09 00:00:00+00:00",
+  "parameters": {
+    "weak_check_bars": 4,
+    "weak_mfe_R_below": 0.5,
+    "weak_net_R_at_most": 0,
+    "extension_check_bars": 16,
+    "extension_net_R_at_least": 0.5,
+    "max_hold_bars": 32,
+    "cost_round_trip": 0.001
+  },
+  "original_legacy_portfolio": {
+    "trades": 134,
+    "net_pnl": 164.36252310413522,
+    "return_pct": 0.1643625231041352,
+    "profit_factor": 1.382795924473501,
+    "win_rate": 0.5074626865671642,
+    "mean_R": 0.12265859933144423,
+    "mean_stop_pct": 0.029310138013308885,
+    "mean_cost_R": 0.042529605639507105,
+    "realized_max_drawdown": -0.08931539358029128
+  },
+  "portfolios": {
+    "baseline": {
+      "trades": 134,
+      "net_pnl": 164.36252310413522,
+      "return_pct": 0.1643625231041352,
+      "profit_factor": 1.382795924473501,
+      "win_rate": 0.5074626865671642,
+      "mean_R": 0.12265859933144423,
+      "mean_stop_pct": 0.029310138013308885,
+      "mean_cost_R": 0.042529605639507105,
+      "realized_max_drawdown": -0.08931539358029128,
+      "rejected": 57,
+      "exit_reasons": {
+        "fixed_4h": 105,
+        "structural_stop": 29
+      },
+      "by_month": {
+        "2026-06": {
+          "n": 47,
+          "pnl": 105.45225901100821
+        },
+        "2026-07": {
+          "n": 52,
+          "pnl": -34.6128245144668
+        },
+        "2026-08": {
+          "n": 29,
+          "pnl": 21.46154736061895
+        },
+        "2026-09": {
+          "n": 6,
+          "pnl": 72.06154124697485
+        }
+      }
+    },
+    "weak_1h": {
+      "trades": 135,
+      "net_pnl": 187.5422896614681,
+      "return_pct": 0.18754228966146808,
+      "profit_factor": 1.56773164044854,
+      "win_rate": 0.37037037037037035,
+      "mean_R": 0.13892021456405046,
+      "mean_stop_pct": 0.029523990631884878,
+      "mean_cost_R": 0.04234188978865312,
+      "realized_max_drawdown": -0.06785276792055595,
+      "rejected": 56,
+      "exit_reasons": {
+        "fixed_4h": 66,
+        "weak_1h": 61,
+        "structural_stop": 8
+      },
+      "by_month": {
+        "2026-06": {
+          "n": 47,
+          "pnl": 100.78219924712566
+        },
+        "2026-07": {
+          "n": 52,
+          "pnl": -32.19630022928132
+        },
+        "2026-08": {
+          "n": 30,
+          "pnl": 53.31790237660706
+        },
+        "2026-09": {
+          "n": 6,
+          "pnl": 65.63848826701671
+        }
+      }
+    },
+    "extend_8h": {
+      "trades": 134,
+      "net_pnl": 161.17453975036574,
+      "return_pct": 0.16117453975036575,
+      "profit_factor": 1.3753711964268336,
+      "win_rate": 0.5074626865671642,
+      "mean_R": 0.12027950727639238,
+      "mean_stop_pct": 0.029310138013308885,
+      "mean_cost_R": 0.042529605639507105,
+      "realized_max_drawdown": -0.09192850986037104,
+      "rejected": 57,
+      "exit_reasons": {
+        "fixed_4h": 75,
+        "lost_1h_mean": 30,
+        "structural_stop": 29
+      },
+      "by_month": {
+        "2026-06": {
+          "n": 47,
+          "pnl": 86.2846396607741
+        },
+        "2026-07": {
+          "n": 52,
+          "pnl": -49.29546321598467
+        },
+        "2026-08": {
+          "n": 29,
+          "pnl": 21.275294106538823
+        },
+        "2026-09": {
+          "n": 6,
+          "pnl": 102.9100691990375
+        }
+      }
+    }
+  },
+  "paired_all": {
+    "weak_1h": {
+      "n": 191,
+      "changed": 69,
+      "activated": 69,
+      "delta_pnl": 11.317518733690129,
+      "mean_delta_R": 0.005925402478371787,
+      "entry_day_cluster_bootstrap_95CI": [
+        -0.045603427136704074,
+        0.07859877731510256
+      ],
+      "improved": 33,
+      "worsened": 36,
+      "baseline_loser_delta": 141.91842547194142,
+      "baseline_winner_delta": -130.6009067382513,
+      "winners_to_losses": 23,
+      "losses_to_winners": 0,
+      "top5_baseline_winner_delta": 0.0,
+      "changed_events": [
+        {
+          "event_id": "1000RATSUSDT:2026-06-05T16:00:00+00:00",
+          "baseline_pnl": -10.235477629987901,
+          "variant_pnl": -1.5897702539298713,
+          "delta": 8.64570737605803,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TAGUSDT:2026-06-13T06:15:00+00:00",
+          "baseline_pnl": 1.9945689271405713,
+          "variant_pnl": -0.1244398278676473,
+          "delta": -2.1190087550082186,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TAGUSDT:2026-06-15T15:30:00+00:00",
+          "baseline_pnl": -10.392283441793204,
+          "variant_pnl": -3.186209689081687,
+          "delta": 7.206073752711516,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TOSHIUSDT:2026-07-31T00:45:00+00:00",
+          "baseline_pnl": 0.4436825755436845,
+          "variant_pnl": -3.035560576108498,
+          "delta": -3.4792431516521827,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ACEUSDT:2026-08-26T15:15:00+00:00",
+          "baseline_pnl": 0.4946685397016512,
+          "variant_pnl": -2.9329854839788463,
+          "delta": -3.4276540236804975,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AIXBTUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 2.3134124816138013,
+          "variant_pnl": -0.7607627652868516,
+          "delta": -3.074175246900653,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ALCHUSDT:2026-07-06T12:00:00+00:00",
+          "baseline_pnl": -3.893312693498461,
+          "variant_pnl": -3.2121981424148744,
+          "delta": 0.6811145510835868,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AWEUSDT:2026-06-15T12:45:00+00:00",
+          "baseline_pnl": -0.5947787459422464,
+          "variant_pnl": -1.742907910473279,
+          "delta": -1.1481291645310325,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AWEUSDT:2026-09-02T10:45:00+00:00",
+          "baseline_pnl": -7.775478260869587,
+          "variant_pnl": -3.971130434782625,
+          "delta": 3.804347826086962,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "B2USDT:2026-07-28T03:00:00+00:00",
+          "baseline_pnl": 1.4665629860030622,
+          "variant_pnl": -2.2037325038880042,
+          "delta": -3.6702954898910667,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BIOUSDT:2026-09-02T21:45:00+00:00",
+          "baseline_pnl": 3.09835828600931,
+          "variant_pnl": -1.9610118740319822,
+          "delta": -5.059370160041293,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-06-11T22:00:00+00:00",
+          "baseline_pnl": 1.250740862693442,
+          "variant_pnl": -3.899078037537036,
+          "delta": -5.149818900230478,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-07-22T00:15:00+00:00",
+          "baseline_pnl": 4.604848958842508,
+          "variant_pnl": -1.4172450874963345,
+          "delta": -6.022094046338843,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-08-28T11:45:00+00:00",
+          "baseline_pnl": -10.53999681071598,
+          "variant_pnl": -2.549245734332615,
+          "delta": 7.990751076383365,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BRUSDT:2026-07-02T06:00:00+00:00",
+          "baseline_pnl": 15.389447983014845,
+          "variant_pnl": -0.4237154989384297,
+          "delta": -15.813163481953275,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "CLANKERUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 1.988652392947068,
+          "variant_pnl": -1.714118387909343,
+          "delta": -3.7027707808564108,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "COTIUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 4.9390915563149616,
+          "variant_pnl": -0.9615207176419908,
+          "delta": -5.900612273956952,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "CUSDT:2026-06-27T10:45:00+00:00",
+          "baseline_pnl": -3.2121852731591343,
+          "variant_pnl": -1.604901029295318,
+          "delta": 1.6072842438638162,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EDGEUSDT:2026-07-31T02:30:00+00:00",
+          "baseline_pnl": -5.070931502574507,
+          "variant_pnl": -6.643719769074734,
+          "delta": -1.5727882665002264,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EDGEUSDT:2026-08-01T05:15:00+00:00",
+          "baseline_pnl": -6.905472000000015,
+          "variant_pnl": -4.665472000000003,
+          "delta": 2.2400000000000118,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ELSAUSDT:2026-07-19T23:45:00+00:00",
+          "baseline_pnl": -10.646103896103881,
+          "variant_pnl": -7.009740259740281,
+          "delta": 3.6363636363636003,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EVAAUSDT:2026-07-17T22:15:00+00:00",
+          "baseline_pnl": -1.1904965843405342,
+          "variant_pnl": -2.9377377824487714,
+          "delta": -1.7472411981082372,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EVAAUSDT:2026-08-12T18:15:00+00:00",
+          "baseline_pnl": -0.7689647326506908,
+          "variant_pnl": -1.087508532423188,
+          "delta": -0.31854379977249714,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "FARTCOINUSDT:2026-07-23T19:45:00+00:00",
+          "baseline_pnl": -5.622991902258847,
+          "variant_pnl": -2.4009433158118885,
+          "delta": 3.2220485864469586,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "FOGOUSDT:2026-08-14T14:00:00+00:00",
+          "baseline_pnl": 3.321356226907221,
+          "variant_pnl": -4.224829384916324,
+          "delta": -7.546185611823546,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GMTUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.343097910550854,
+          "variant_pnl": -4.5979761699188115,
+          "delta": 5.745121740632043,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GPSUSDT:2026-08-11T17:15:00+00:00",
+          "baseline_pnl": -0.46470468085109307,
+          "variant_pnl": -0.4408748936170199,
+          "delta": 0.02382978723407314,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GUNUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": 7.402496565260045,
+          "variant_pnl": -0.5111442590775185,
+          "delta": -7.9136408243375636,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HANAUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": -2.8311294360182564,
+          "variant_pnl": -3.284670887940015,
+          "delta": -0.45354145192175865,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HOMEUSDT:2026-08-24T00:30:00+00:00",
+          "baseline_pnl": 0.08101711816520181,
+          "variant_pnl": -7.969506398537488,
+          "delta": -8.05052351670269,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HUMAUSDT:2026-08-13T07:15:00+00:00",
+          "baseline_pnl": -4.4069291338582675,
+          "variant_pnl": -1.2573228346456835,
+          "delta": 3.149606299212584,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ICNTUSDT:2026-07-10T00:00:00+00:00",
+          "baseline_pnl": 3.5860206185565957,
+          "variant_pnl": -2.4758350515463876,
+          "delta": -6.061855670102983,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "INITUSDT:2026-06-08T08:00:00+00:00",
+          "baseline_pnl": 8.363474882042743,
+          "variant_pnl": -1.1175131834582308,
+          "delta": -9.480988065500974,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "INUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": -10.38503411971145,
+          "variant_pnl": -4.75235718463633,
+          "delta": 5.6326769350751205,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KATUSDT:2026-06-17T05:15:00+00:00",
+          "baseline_pnl": -1.194945533769058,
+          "variant_pnl": -6.5979956427014885,
+          "delta": -5.4030501089324305,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KGENUSDT:2026-08-19T00:00:00+00:00",
+          "baseline_pnl": -10.503021582733801,
+          "variant_pnl": -3.9562589928057625,
+          "delta": 6.546762589928038,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KITEUSDT:2026-06-18T10:00:00+00:00",
+          "baseline_pnl": -3.4284945332211922,
+          "variant_pnl": -1.1744995794785207,
+          "delta": 2.2539949537426716,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "LIGHTUSDT:2026-09-03T03:45:00+00:00",
+          "baseline_pnl": 4.906850078356237,
+          "variant_pnl": -0.2611805676475826,
+          "delta": -5.16803064600382,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MANAUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": -0.40423726188632225,
+          "variant_pnl": -1.3582406690413524,
+          "delta": -0.9540034071550302,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MAVIAUSDT:2026-06-07T16:45:00+00:00",
+          "baseline_pnl": -10.399264864864882,
+          "variant_pnl": -2.0641297297297356,
+          "delta": 8.335135135135147,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MEGAUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.3049115913556,
+          "variant_pnl": -2.5838899803536357,
+          "delta": 7.721021611001964,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MEUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": -0.0001947148817957777,
+          "variant_pnl": -0.7303755215577272,
+          "delta": -0.7301808066759314,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MINAUSDT:2026-06-27T14:45:00+00:00",
+          "baseline_pnl": -10.95195164075994,
+          "variant_pnl": -0.9519516407599281,
+          "delta": 10.000000000000012,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "NAORISUSDT:2026-06-19T12:00:00+00:00",
+          "baseline_pnl": 5.598955634079301,
+          "variant_pnl": -2.701005104043983,
+          "delta": -8.299960738123284,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "PIEVERSEUSDT:2026-07-03T18:00:00+00:00",
+          "baseline_pnl": -2.1706388526727634,
+          "variant_pnl": -3.1254076822786043,
+          "delta": -0.954768829605841,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "PYTHUSDT:2026-07-28T10:15:00+00:00",
+          "baseline_pnl": -10.499890985324944,
+          "variant_pnl": -4.843706498951834,
+          "delta": 5.65618448637311,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ROSEUSDT:2026-07-13T14:15:00+00:00",
+          "baseline_pnl": -10.380028790786955,
+          "variant_pnl": -3.537418426103615,
+          "delta": 6.84261036468334,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SAPIENUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 1.2873408488063762,
+          "variant_pnl": -0.6622612732095351,
+          "delta": -1.9496021220159112,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SHELLUSDT:2026-07-31T14:00:00+00:00",
+          "baseline_pnl": -4.423999999999982,
+          "variant_pnl": -5.47564319248831,
+          "delta": -1.0516431924883287,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SOLAYERUSDT:2026-07-17T00:30:00+00:00",
+          "baseline_pnl": -10.720300276570512,
+          "variant_pnl": -7.136736467799305,
+          "delta": 3.583563808771207,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SONICUSDT:2026-07-15T17:45:00+00:00",
+          "baseline_pnl": -5.701429718875503,
+          "variant_pnl": -4.8018313253011575,
+          "delta": 0.8995983935743457,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SOPHUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 0.3980838872335157,
+          "variant_pnl": -0.8212606005042543,
+          "delta": -1.21934448773777,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SOSOUSDT:2026-07-18T18:30:00+00:00",
+          "baseline_pnl": -1.0041791867677503,
+          "variant_pnl": -1.4673080634045472,
+          "delta": -0.4631288766367969,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SQDUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 1.5674190506130152,
+          "variant_pnl": -0.1050110028293371,
+          "delta": -1.6724300534423524,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STORJUSDT:2026-06-21T23:45:00+00:00",
+          "baseline_pnl": -3.7730429266229635,
+          "variant_pnl": -5.016434764220777,
+          "delta": -1.2433918375978132,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STXUSDT:2026-07-26T02:00:00+00:00",
+          "baseline_pnl": 4.920725075528658,
+          "variant_pnl": -3.9614501510574134,
+          "delta": -8.882175226586071,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STXUSDT:2026-08-30T21:00:00+00:00",
+          "baseline_pnl": -10.384802705749733,
+          "variant_pnl": -7.171724915445312,
+          "delta": 3.213077790304421,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": 6.620640260444846,
+          "variant_pnl": -0.31732320491961097,
+          "delta": -6.937963465364457,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-08-30T21:00:00+00:00",
+          "baseline_pnl": -10.563684893419818,
+          "variant_pnl": -3.210580166821088,
+          "delta": 7.353104726598731,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TAUSDT:2026-06-24T23:45:00+00:00",
+          "baseline_pnl": -2.6209880095923337,
+          "variant_pnl": -2.822426858513198,
+          "delta": -0.20143884892086428,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TNSRUSDT:2026-08-18T06:00:00+00:00",
+          "baseline_pnl": -10.760484848484888,
+          "variant_pnl": -7.305939393939472,
+          "delta": 3.454545454545416,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TOWNSUSDT:2026-07-13T14:00:00+00:00",
+          "baseline_pnl": -10.305469199769721,
+          "variant_pnl": -0.6278641335636059,
+          "delta": 9.677605066206116,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TRUSTUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.473612117220952,
+          "variant_pnl": -3.331695752387224,
+          "delta": 7.141916364833728,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VETUSDT:2026-07-27T18:45:00+00:00",
+          "baseline_pnl": -10.481038961038974,
+          "variant_pnl": -2.351168831168789,
+          "delta": 8.129870129870186,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VVVUSDT:2026-07-31T05:45:00+00:00",
+          "baseline_pnl": -10.58481796529434,
+          "variant_pnl": -5.538883974140797,
+          "delta": 5.045933991153543,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VVVUSDT:2026-07-31T14:00:00+00:00",
+          "baseline_pnl": -6.816629401316489,
+          "variant_pnl": -5.909723121930823,
+          "delta": 0.9069062793856659,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "WAVESUSDT:2026-07-19T22:30:00+00:00",
+          "baseline_pnl": -10.97289437585737,
+          "variant_pnl": -4.045596707819062,
+          "delta": 6.9272976680383085,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "XTZUSDT:2026-08-29T02:45:00+00:00",
+          "baseline_pnl": -2.026696108197616,
+          "variant_pnl": -1.1765719017388943,
+          "delta": 0.8501242064587218,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ZBTUSDT:2026-08-09T00:00:00+00:00",
+          "baseline_pnl": -0.452324352198012,
+          "variant_pnl": -0.41622792316615437,
+          "delta": 0.03609642903185761,
+          "reason": "weak_1h"
+        }
+      ]
+    },
+    "extend_8h": {
+      "n": 191,
+      "changed": 53,
+      "activated": 54,
+      "delta_pnl": -32.321161285204305,
+      "mean_delta_R": -0.01692207397131114,
+      "entry_day_cluster_bootstrap_95CI": [
+        -0.04484513339009465,
+        0.03312062580267485
+      ],
+      "improved": 9,
+      "worsened": 44,
+      "baseline_loser_delta": 0.0,
+      "baseline_winner_delta": -32.3211612852043,
+      "winners_to_losses": 0,
+      "losses_to_winners": 0,
+      "top5_baseline_winner_delta": 17.033807106649277,
+      "changed_events": [
+        {
+          "event_id": "1000PEPEUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 8.722261484098995,
+          "variant_pnl": 7.450176678445186,
+          "delta": -1.272084805653809,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000TURBOUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 15.568627125674128,
+          "variant_pnl": 13.478208212360101,
+          "delta": -2.0904189133140267,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000TURBOUSDT:2026-07-22T12:45:00+00:00",
+          "baseline_pnl": 5.425484508899079,
+          "variant_pnl": 3.764311140408584,
+          "delta": -1.6611733684904952,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000XECUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.307561307901906,
+          "variant_pnl": 13.735354223433266,
+          "delta": -0.5722070844686407,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000XECUSDT:2026-07-12T23:45:00+00:00",
+          "baseline_pnl": 23.6318369507677,
+          "variant_pnl": 22.075457914240424,
+          "delta": -1.5563790365272752,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AIOUSDT:2026-08-06T08:15:00+00:00",
+          "baseline_pnl": 15.515232495991528,
+          "variant_pnl": 12.372528059861157,
+          "delta": -3.142704436130371,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ALGOUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 7.155971119133484,
+          "variant_pnl": 5.841891696750794,
+          "delta": -1.3140794223826893,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ARBUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.04060404174993,
+          "variant_pnl": 13.66751943149011,
+          "delta": -0.37308461025982,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ATOMUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 10.915183525136221,
+          "variant_pnl": 10.372482132041164,
+          "delta": -0.5427013930950579,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ATOMUSDT:2026-07-17T13:00:00+00:00",
+          "baseline_pnl": 9.899188528596838,
+          "variant_pnl": 6.477321166693721,
+          "delta": -3.421867361903117,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AUCTIONUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 9.434423592493244,
+          "variant_pnl": 9.584557640750617,
+          "delta": 0.15013404825737275,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AUSDT:2026-07-17T06:30:00+00:00",
+          "baseline_pnl": 18.89072919350687,
+          "variant_pnl": 20.33365627415615,
+          "delta": 1.4429270806492802,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AVAAIUSDT:2026-08-12T05:30:00+00:00",
+          "baseline_pnl": 75.2131544047993,
+          "variant_pnl": 73.53333122829156,
+          "delta": -1.679823176507739,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "BLURUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 6.289211891023275,
+          "variant_pnl": 5.021225622671793,
+          "delta": -1.267986268351482,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "BRUSDT:2026-07-02T06:00:00+00:00",
+          "baseline_pnl": 15.389447983014845,
+          "variant_pnl": 11.317261146496758,
+          "delta": -4.072186836518087,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "C98USDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 7.778917617502358,
+          "variant_pnl": 7.573746467078376,
+          "delta": -0.2051711504239826,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CFXUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 8.33689822294031,
+          "variant_pnl": 6.97987075928923,
+          "delta": -1.3570274636510797,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CLANKERUSDT:2026-08-05T01:15:00+00:00",
+          "baseline_pnl": 7.3664322647364635,
+          "variant_pnl": 13.881427094105533,
+          "delta": 6.514994829369069,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CLANKERUSDT:2026-09-02T01:45:00+00:00",
+          "baseline_pnl": 11.808069716775545,
+          "variant_pnl": 15.895215686274401,
+          "delta": 4.087145969498856,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "COOKIEUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 9.177147277227652,
+          "variant_pnl": 7.531107673267317,
+          "delta": -1.646039603960335,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "COTIUSDT:2026-08-06T03:00:00+00:00",
+          "baseline_pnl": 8.360744815253938,
+          "variant_pnl": 8.524013294719031,
+          "delta": 0.16326847946509382,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CRVUSDT:2026-06-25T04:30:00+00:00",
+          "baseline_pnl": 10.079552715654915,
+          "variant_pnl": 7.172204472843421,
+          "delta": -2.9073482428114934,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CVCUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 11.161298701298806,
+          "variant_pnl": 9.34311688311695,
+          "delta": -1.8181818181818556,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "DUSKUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 19.74740623766292,
+          "variant_pnl": 18.752538491906883,
+          "delta": -0.9948677457560358,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "EGLDUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 5.430846981750131,
+          "variant_pnl": 4.906747777257824,
+          "delta": -0.5240992044923072,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ENSUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 16.574578889297495,
+          "variant_pnl": 15.544788525192969,
+          "delta": -1.0297903641045263,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "FARTCOINUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 22.306303236797234,
+          "variant_pnl": 21.761158432708626,
+          "delta": -0.5451448040886078,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "FILUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.620129228430264,
+          "variant_pnl": 14.354070695552975,
+          "delta": -0.2660585328772882,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "FORMUSDT:2026-09-08T02:30:00+00:00",
+          "baseline_pnl": 61.87783015821765,
+          "variant_pnl": 88.63921214078142,
+          "delta": 26.761381982563776,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "GRTUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 17.023895619757724,
+          "variant_pnl": 14.936290773532134,
+          "delta": -2.08760484622559,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "GUNUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": 7.402496565260045,
+          "variant_pnl": 4.709660451422929,
+          "delta": -2.6928361138371164,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "IMXUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 10.886146023998403,
+          "variant_pnl": 9.092369330892835,
+          "delta": -1.7937766931055688,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "KASUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 8.423044719314962,
+          "variant_pnl": 7.757012369172189,
+          "delta": -0.666032350142773,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "KERNELUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 7.4785057471263965,
+          "variant_pnl": 6.558965517241376,
+          "delta": -0.9195402298850208,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "KITEUSDT:2026-06-11T07:00:00+00:00",
+          "baseline_pnl": 18.371753828373432,
+          "variant_pnl": 18.048147934123193,
+          "delta": -0.3236058942502389,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "MASKUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 8.24143478260857,
+          "variant_pnl": 7.226942028985401,
+          "delta": -1.014492753623169,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "METISUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 7.880891417733534,
+          "variant_pnl": 6.686012328117595,
+          "delta": -1.194879089615939,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "MOODENGUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 40.83379310344819,
+          "variant_pnl": 35.89126436781604,
+          "delta": -4.942528735632145,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "NAORISUSDT:2026-06-19T12:00:00+00:00",
+          "baseline_pnl": 5.598955634079301,
+          "variant_pnl": 1.8062583431487997,
+          "delta": -3.7926972909305015,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "PLUMEUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 16.487738732854222,
+          "variant_pnl": 12.647111691704643,
+          "delta": -3.8406270411495793,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SAPIENUSDT:2026-07-02T00:30:00+00:00",
+          "baseline_pnl": 5.573888426311395,
+          "variant_pnl": 2.6985067998889143,
+          "delta": -2.875381626422481,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SAPIENUSDT:2026-08-05T04:15:00+00:00",
+          "baseline_pnl": 6.629348066298309,
+          "variant_pnl": 4.587359116022116,
+          "delta": -2.0419889502761936,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SOMIUSDT:2026-06-08T08:45:00+00:00",
+          "baseline_pnl": 12.387787921348247,
+          "variant_pnl": 12.879360955056155,
+          "delta": 0.4915730337079083,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SPXUSDT:2026-06-05T16:00:00+00:00",
+          "baseline_pnl": 7.123547137322422,
+          "variant_pnl": 8.750753336203168,
+          "delta": 1.6272061988807458,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SPXUSDT:2026-06-09T16:30:00+00:00",
+          "baseline_pnl": 6.76144927536225,
+          "variant_pnl": 6.085120772946852,
+          "delta": -0.676328502415398,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "STABLEUSDT:2026-06-09T16:00:00+00:00",
+          "baseline_pnl": 37.67921240495403,
+          "variant_pnl": 34.573989441179414,
+          "delta": -3.105222963774615,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "STXUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.69216216216226,
+          "variant_pnl": 14.421891891891994,
+          "delta": -0.2702702702702666,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "STXUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 11.002558502340158,
+          "variant_pnl": 10.784149765990776,
+          "delta": -0.21840873634938163,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": 6.620640260444846,
+          "variant_pnl": 3.4301899077589937,
+          "delta": -3.1904503526858523,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "TAOUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 8.089634005393583,
+          "variant_pnl": 7.190699884422749,
+          "delta": -0.8989341209708339,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "USUALUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 5.011172379533101,
+          "variant_pnl": 4.037501241927508,
+          "delta": -0.9736711376055931,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "XANUSDT:2026-07-09T06:00:00+00:00",
+          "baseline_pnl": 9.637824609109408,
+          "variant_pnl": 9.685411284840214,
+          "delta": 0.04758667573080544,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "YGGUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 17.874490861618785,
+          "variant_pnl": 16.046814621409954,
+          "delta": -1.827676240208831,
+          "reason": "lost_1h_mean"
+        }
+      ]
+    }
+  },
+  "paired_original_cohort": {
+    "weak_1h": {
+      "n": 134,
+      "changed": 60,
+      "activated": 60,
+      "delta_pnl": 24.356338459071743,
+      "mean_delta_R": 0.018176371984381892,
+      "entry_day_cluster_bootstrap_95CI": [
+        -0.05369204823729076,
+        0.09673293994148324
+      ],
+      "improved": 31,
+      "worsened": 29,
+      "baseline_loser_delta": 140.51248547931365,
+      "baseline_winner_delta": -116.15614702024189,
+      "winners_to_losses": 18,
+      "losses_to_winners": 0,
+      "top5_baseline_winner_delta": 0.0,
+      "changed_events": [
+        {
+          "event_id": "1000RATSUSDT:2026-06-05T16:00:00+00:00",
+          "baseline_pnl": -10.235477629987901,
+          "variant_pnl": -1.5897702539298713,
+          "delta": 8.64570737605803,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TAGUSDT:2026-06-13T06:15:00+00:00",
+          "baseline_pnl": 1.9945689271405713,
+          "variant_pnl": -0.1244398278676473,
+          "delta": -2.1190087550082186,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TAGUSDT:2026-06-15T15:30:00+00:00",
+          "baseline_pnl": -10.392283441793204,
+          "variant_pnl": -3.186209689081687,
+          "delta": 7.206073752711516,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "1000TOSHIUSDT:2026-07-31T00:45:00+00:00",
+          "baseline_pnl": 0.4436825755436845,
+          "variant_pnl": -3.035560576108498,
+          "delta": -3.4792431516521827,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ACEUSDT:2026-08-26T15:15:00+00:00",
+          "baseline_pnl": 0.4946685397016512,
+          "variant_pnl": -2.9329854839788463,
+          "delta": -3.4276540236804975,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AIXBTUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 2.3134124816138013,
+          "variant_pnl": -0.7607627652868516,
+          "delta": -3.074175246900653,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ALCHUSDT:2026-07-06T12:00:00+00:00",
+          "baseline_pnl": -3.893312693498461,
+          "variant_pnl": -3.2121981424148744,
+          "delta": 0.6811145510835868,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AWEUSDT:2026-06-15T12:45:00+00:00",
+          "baseline_pnl": -0.5947787459422464,
+          "variant_pnl": -1.742907910473279,
+          "delta": -1.1481291645310325,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "AWEUSDT:2026-09-02T10:45:00+00:00",
+          "baseline_pnl": -7.775478260869587,
+          "variant_pnl": -3.971130434782625,
+          "delta": 3.804347826086962,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "B2USDT:2026-07-28T03:00:00+00:00",
+          "baseline_pnl": 1.4665629860030622,
+          "variant_pnl": -2.2037325038880042,
+          "delta": -3.6702954898910667,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BIOUSDT:2026-09-02T21:45:00+00:00",
+          "baseline_pnl": 3.09835828600931,
+          "variant_pnl": -1.9610118740319822,
+          "delta": -5.059370160041293,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-06-11T22:00:00+00:00",
+          "baseline_pnl": 1.250740862693442,
+          "variant_pnl": -3.899078037537036,
+          "delta": -5.149818900230478,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-07-22T00:15:00+00:00",
+          "baseline_pnl": 4.604848958842508,
+          "variant_pnl": -1.4172450874963345,
+          "delta": -6.022094046338843,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BLUAIUSDT:2026-08-28T11:45:00+00:00",
+          "baseline_pnl": -10.53999681071598,
+          "variant_pnl": -2.549245734332615,
+          "delta": 7.990751076383365,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "BRUSDT:2026-07-02T06:00:00+00:00",
+          "baseline_pnl": 15.389447983014845,
+          "variant_pnl": -0.4237154989384297,
+          "delta": -15.813163481953275,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "CUSDT:2026-06-27T10:45:00+00:00",
+          "baseline_pnl": -3.2121852731591343,
+          "variant_pnl": -1.604901029295318,
+          "delta": 1.6072842438638162,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EDGEUSDT:2026-07-31T02:30:00+00:00",
+          "baseline_pnl": -5.070931502574507,
+          "variant_pnl": -6.643719769074734,
+          "delta": -1.5727882665002264,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ELSAUSDT:2026-07-19T23:45:00+00:00",
+          "baseline_pnl": -10.646103896103881,
+          "variant_pnl": -7.009740259740281,
+          "delta": 3.6363636363636003,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EVAAUSDT:2026-07-17T22:15:00+00:00",
+          "baseline_pnl": -1.1904965843405342,
+          "variant_pnl": -2.9377377824487714,
+          "delta": -1.7472411981082372,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "EVAAUSDT:2026-08-12T18:15:00+00:00",
+          "baseline_pnl": -0.7689647326506908,
+          "variant_pnl": -1.087508532423188,
+          "delta": -0.31854379977249714,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "FARTCOINUSDT:2026-07-23T19:45:00+00:00",
+          "baseline_pnl": -5.622991902258847,
+          "variant_pnl": -2.4009433158118885,
+          "delta": 3.2220485864469586,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "FOGOUSDT:2026-08-14T14:00:00+00:00",
+          "baseline_pnl": 3.321356226907221,
+          "variant_pnl": -4.224829384916324,
+          "delta": -7.546185611823546,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GMTUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.343097910550854,
+          "variant_pnl": -4.5979761699188115,
+          "delta": 5.745121740632043,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GPSUSDT:2026-08-11T17:15:00+00:00",
+          "baseline_pnl": -0.46470468085109307,
+          "variant_pnl": -0.4408748936170199,
+          "delta": 0.02382978723407314,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "GUNUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": 7.402496565260045,
+          "variant_pnl": -0.5111442590775185,
+          "delta": -7.9136408243375636,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HANAUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": -2.8311294360182564,
+          "variant_pnl": -3.284670887940015,
+          "delta": -0.45354145192175865,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HOMEUSDT:2026-08-24T00:30:00+00:00",
+          "baseline_pnl": 0.08101711816520181,
+          "variant_pnl": -7.969506398537488,
+          "delta": -8.05052351670269,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "HUMAUSDT:2026-08-13T07:15:00+00:00",
+          "baseline_pnl": -4.4069291338582675,
+          "variant_pnl": -1.2573228346456835,
+          "delta": 3.149606299212584,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ICNTUSDT:2026-07-10T00:00:00+00:00",
+          "baseline_pnl": 3.5860206185565957,
+          "variant_pnl": -2.4758350515463876,
+          "delta": -6.061855670102983,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "INITUSDT:2026-06-08T08:00:00+00:00",
+          "baseline_pnl": 8.363474882042743,
+          "variant_pnl": -1.1175131834582308,
+          "delta": -9.480988065500974,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "INUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": -10.38503411971145,
+          "variant_pnl": -4.75235718463633,
+          "delta": 5.6326769350751205,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KATUSDT:2026-06-17T05:15:00+00:00",
+          "baseline_pnl": -1.194945533769058,
+          "variant_pnl": -6.5979956427014885,
+          "delta": -5.4030501089324305,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KGENUSDT:2026-08-19T00:00:00+00:00",
+          "baseline_pnl": -10.503021582733801,
+          "variant_pnl": -3.9562589928057625,
+          "delta": 6.546762589928038,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "KITEUSDT:2026-06-18T10:00:00+00:00",
+          "baseline_pnl": -3.4284945332211922,
+          "variant_pnl": -1.1744995794785207,
+          "delta": 2.2539949537426716,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "LIGHTUSDT:2026-09-03T03:45:00+00:00",
+          "baseline_pnl": 4.906850078356237,
+          "variant_pnl": -0.2611805676475826,
+          "delta": -5.16803064600382,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MAVIAUSDT:2026-06-07T16:45:00+00:00",
+          "baseline_pnl": -10.399264864864882,
+          "variant_pnl": -2.0641297297297356,
+          "delta": 8.335135135135147,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MEGAUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.3049115913556,
+          "variant_pnl": -2.5838899803536357,
+          "delta": 7.721021611001964,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "MINAUSDT:2026-06-27T14:45:00+00:00",
+          "baseline_pnl": -10.95195164075994,
+          "variant_pnl": -0.9519516407599281,
+          "delta": 10.000000000000012,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "NAORISUSDT:2026-06-19T12:00:00+00:00",
+          "baseline_pnl": 5.598955634079301,
+          "variant_pnl": -2.701005104043983,
+          "delta": -8.299960738123284,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "PIEVERSEUSDT:2026-07-03T18:00:00+00:00",
+          "baseline_pnl": -2.1706388526727634,
+          "variant_pnl": -3.1254076822786043,
+          "delta": -0.954768829605841,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "PYTHUSDT:2026-07-28T10:15:00+00:00",
+          "baseline_pnl": -10.499890985324944,
+          "variant_pnl": -4.843706498951834,
+          "delta": 5.65618448637311,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ROSEUSDT:2026-07-13T14:15:00+00:00",
+          "baseline_pnl": -10.380028790786955,
+          "variant_pnl": -3.537418426103615,
+          "delta": 6.84261036468334,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SHELLUSDT:2026-07-31T14:00:00+00:00",
+          "baseline_pnl": -4.423999999999982,
+          "variant_pnl": -5.47564319248831,
+          "delta": -1.0516431924883287,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SOLAYERUSDT:2026-07-17T00:30:00+00:00",
+          "baseline_pnl": -10.720300276570512,
+          "variant_pnl": -7.136736467799305,
+          "delta": 3.583563808771207,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SONICUSDT:2026-07-15T17:45:00+00:00",
+          "baseline_pnl": -5.701429718875503,
+          "variant_pnl": -4.8018313253011575,
+          "delta": 0.8995983935743457,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SOSOUSDT:2026-07-18T18:30:00+00:00",
+          "baseline_pnl": -1.0041791867677503,
+          "variant_pnl": -1.4673080634045472,
+          "delta": -0.4631288766367969,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STORJUSDT:2026-06-21T23:45:00+00:00",
+          "baseline_pnl": -3.7730429266229635,
+          "variant_pnl": -5.016434764220777,
+          "delta": -1.2433918375978132,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STXUSDT:2026-07-26T02:00:00+00:00",
+          "baseline_pnl": 4.920725075528658,
+          "variant_pnl": -3.9614501510574134,
+          "delta": -8.882175226586071,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "STXUSDT:2026-08-30T21:00:00+00:00",
+          "baseline_pnl": -10.384802705749733,
+          "variant_pnl": -7.171724915445312,
+          "delta": 3.213077790304421,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": 6.620640260444846,
+          "variant_pnl": -0.31732320491961097,
+          "delta": -6.937963465364457,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-08-30T21:00:00+00:00",
+          "baseline_pnl": -10.563684893419818,
+          "variant_pnl": -3.210580166821088,
+          "delta": 7.353104726598731,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TAUSDT:2026-06-24T23:45:00+00:00",
+          "baseline_pnl": -2.6209880095923337,
+          "variant_pnl": -2.822426858513198,
+          "delta": -0.20143884892086428,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TNSRUSDT:2026-08-18T06:00:00+00:00",
+          "baseline_pnl": -10.760484848484888,
+          "variant_pnl": -7.305939393939472,
+          "delta": 3.454545454545416,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TOWNSUSDT:2026-07-13T14:00:00+00:00",
+          "baseline_pnl": -10.305469199769721,
+          "variant_pnl": -0.6278641335636059,
+          "delta": 9.677605066206116,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "TRUSTUSDT:2026-08-28T14:15:00+00:00",
+          "baseline_pnl": -10.473612117220952,
+          "variant_pnl": -3.331695752387224,
+          "delta": 7.141916364833728,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VETUSDT:2026-07-27T18:45:00+00:00",
+          "baseline_pnl": -10.481038961038974,
+          "variant_pnl": -2.351168831168789,
+          "delta": 8.129870129870186,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VVVUSDT:2026-07-31T05:45:00+00:00",
+          "baseline_pnl": -10.58481796529434,
+          "variant_pnl": -5.538883974140797,
+          "delta": 5.045933991153543,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "VVVUSDT:2026-07-31T14:00:00+00:00",
+          "baseline_pnl": -6.816629401316489,
+          "variant_pnl": -5.909723121930823,
+          "delta": 0.9069062793856659,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "WAVESUSDT:2026-07-19T22:30:00+00:00",
+          "baseline_pnl": -10.97289437585737,
+          "variant_pnl": -4.045596707819062,
+          "delta": 6.9272976680383085,
+          "reason": "weak_1h"
+        },
+        {
+          "event_id": "ZBTUSDT:2026-08-09T00:00:00+00:00",
+          "baseline_pnl": -0.452324352198012,
+          "variant_pnl": -0.41622792316615437,
+          "delta": 0.03609642903185761,
+          "reason": "weak_1h"
+        }
+      ]
+    },
+    "extend_8h": {
+      "n": 134,
+      "changed": 30,
+      "activated": 30,
+      "delta_pnl": -3.1879833537694875,
+      "mean_delta_R": -0.002379092055051845,
+      "entry_day_cluster_bootstrap_95CI": [
+        -0.037102030615081896,
+        0.049638601691191296
+      ],
+      "improved": 8,
+      "worsened": 22,
+      "baseline_loser_delta": 0.0,
+      "baseline_winner_delta": -3.187983353769482,
+      "winners_to_losses": 0,
+      "losses_to_winners": 0,
+      "top5_baseline_winner_delta": 21.862883886403427,
+      "changed_events": [
+        {
+          "event_id": "1000PEPEUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 8.722261484098995,
+          "variant_pnl": 7.450176678445186,
+          "delta": -1.272084805653809,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000TURBOUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 15.568627125674128,
+          "variant_pnl": 13.478208212360101,
+          "delta": -2.0904189133140267,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000TURBOUSDT:2026-07-22T12:45:00+00:00",
+          "baseline_pnl": 5.425484508899079,
+          "variant_pnl": 3.764311140408584,
+          "delta": -1.6611733684904952,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000XECUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.307561307901906,
+          "variant_pnl": 13.735354223433266,
+          "delta": -0.5722070844686407,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "1000XECUSDT:2026-07-12T23:45:00+00:00",
+          "baseline_pnl": 23.6318369507677,
+          "variant_pnl": 22.075457914240424,
+          "delta": -1.5563790365272752,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AIOUSDT:2026-08-06T08:15:00+00:00",
+          "baseline_pnl": 15.515232495991528,
+          "variant_pnl": 12.372528059861157,
+          "delta": -3.142704436130371,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ALGOUSDT:2026-07-01T13:30:00+00:00",
+          "baseline_pnl": 7.155971119133484,
+          "variant_pnl": 5.841891696750794,
+          "delta": -1.3140794223826893,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ARBUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 14.04060404174993,
+          "variant_pnl": 13.66751943149011,
+          "delta": -0.37308461025982,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "ATOMUSDT:2026-07-17T13:00:00+00:00",
+          "baseline_pnl": 9.899188528596838,
+          "variant_pnl": 6.477321166693721,
+          "delta": -3.421867361903117,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AUSDT:2026-07-17T06:30:00+00:00",
+          "baseline_pnl": 18.89072919350687,
+          "variant_pnl": 20.33365627415615,
+          "delta": 1.4429270806492802,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "AVAAIUSDT:2026-08-12T05:30:00+00:00",
+          "baseline_pnl": 75.2131544047993,
+          "variant_pnl": 73.53333122829156,
+          "delta": -1.679823176507739,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "BRUSDT:2026-07-02T06:00:00+00:00",
+          "baseline_pnl": 15.389447983014845,
+          "variant_pnl": 11.317261146496758,
+          "delta": -4.072186836518087,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "C98USDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 7.778917617502358,
+          "variant_pnl": 7.573746467078376,
+          "delta": -0.2051711504239826,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CFXUSDT:2026-06-26T13:15:00+00:00",
+          "baseline_pnl": 8.33689822294031,
+          "variant_pnl": 6.97987075928923,
+          "delta": -1.3570274636510797,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CLANKERUSDT:2026-08-05T01:15:00+00:00",
+          "baseline_pnl": 7.3664322647364635,
+          "variant_pnl": 13.881427094105533,
+          "delta": 6.514994829369069,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CLANKERUSDT:2026-09-02T01:45:00+00:00",
+          "baseline_pnl": 11.808069716775545,
+          "variant_pnl": 15.895215686274401,
+          "delta": 4.087145969498856,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "COTIUSDT:2026-08-06T03:00:00+00:00",
+          "baseline_pnl": 8.360744815253938,
+          "variant_pnl": 8.524013294719031,
+          "delta": 0.16326847946509382,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "CRVUSDT:2026-06-25T04:30:00+00:00",
+          "baseline_pnl": 10.079552715654915,
+          "variant_pnl": 7.172204472843421,
+          "delta": -2.9073482428114934,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "FORMUSDT:2026-09-08T02:30:00+00:00",
+          "baseline_pnl": 61.87783015821765,
+          "variant_pnl": 88.63921214078142,
+          "delta": 26.761381982563776,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "GUNUSDT:2026-06-07T21:45:00+00:00",
+          "baseline_pnl": 7.402496565260045,
+          "variant_pnl": 4.709660451422929,
+          "delta": -2.6928361138371164,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "KITEUSDT:2026-06-11T07:00:00+00:00",
+          "baseline_pnl": 18.371753828373432,
+          "variant_pnl": 18.048147934123193,
+          "delta": -0.3236058942502389,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "NAORISUSDT:2026-06-19T12:00:00+00:00",
+          "baseline_pnl": 5.598955634079301,
+          "variant_pnl": 1.8062583431487997,
+          "delta": -3.7926972909305015,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SAPIENUSDT:2026-07-02T00:30:00+00:00",
+          "baseline_pnl": 5.573888426311395,
+          "variant_pnl": 2.6985067998889143,
+          "delta": -2.875381626422481,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SAPIENUSDT:2026-08-05T04:15:00+00:00",
+          "baseline_pnl": 6.629348066298309,
+          "variant_pnl": 4.587359116022116,
+          "delta": -2.0419889502761936,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SOMIUSDT:2026-06-08T08:45:00+00:00",
+          "baseline_pnl": 12.387787921348247,
+          "variant_pnl": 12.879360955056155,
+          "delta": 0.4915730337079083,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SPXUSDT:2026-06-05T16:00:00+00:00",
+          "baseline_pnl": 7.123547137322422,
+          "variant_pnl": 8.750753336203168,
+          "delta": 1.6272061988807458,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SPXUSDT:2026-06-09T16:30:00+00:00",
+          "baseline_pnl": 6.76144927536225,
+          "variant_pnl": 6.085120772946852,
+          "delta": -0.676328502415398,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "STABLEUSDT:2026-06-09T16:00:00+00:00",
+          "baseline_pnl": 37.67921240495403,
+          "variant_pnl": 34.573989441179414,
+          "delta": -3.105222963774615,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "SUPERUSDT:2026-06-10T09:15:00+00:00",
+          "baseline_pnl": 6.620640260444846,
+          "variant_pnl": 3.4301899077589937,
+          "delta": -3.1904503526858523,
+          "reason": "lost_1h_mean"
+        },
+        {
+          "event_id": "XANUSDT:2026-07-09T06:00:00+00:00",
+          "baseline_pnl": 9.637824609109408,
+          "variant_pnl": 9.685411284840214,
+          "delta": 0.04758667573080544,
+          "reason": "lost_1h_mean"
+        }
+      ]
+    }
+  },
+  "halves": {
+    "baseline": {
+      "first": {
+        "trades": 79,
+        "net_pnl": 112.72645750477467,
+        "return_pct": 0.11272645750477467,
+        "profit_factor": 1.5017653480086466,
+        "win_rate": 0.5316455696202531,
+        "mean_R": 0.14269171836047428,
+        "mean_stop_pct": 0.029144573771574502,
+        "mean_cost_R": 0.04219466097679007,
+        "realized_max_drawdown": -0.041098568015360826
+      },
+      "second": {
+        "trades": 55,
+        "net_pnl": 51.636065599360535,
+        "return_pct": 0.051636065599360535,
+        "profit_factor": 1.2522350912459974,
+        "win_rate": 0.4727272727272727,
+        "mean_R": 0.09388375563520099,
+        "mean_stop_pct": 0.029547948469618248,
+        "mean_cost_R": 0.043010707973227924,
+        "realized_max_drawdown": -0.0985977051618091
+      }
+    },
+    "weak_1h": {
+      "first": {
+        "trades": 79,
+        "net_pnl": 112.19021792630485,
+        "return_pct": 0.11219021792630485,
+        "profit_factor": 1.6497144576039167,
+        "win_rate": 0.4177215189873418,
+        "mean_R": 0.1420129340839302,
+        "mean_stop_pct": 0.02914457377157451,
+        "mean_cost_R": 0.04219466097679007,
+        "realized_max_drawdown": -0.02903105383464344
+      },
+      "second": {
+        "trades": 56,
+        "net_pnl": 75.35207173516322,
+        "return_pct": 0.07535207173516321,
+        "profit_factor": 1.477940422174773,
+        "win_rate": 0.30357142857142855,
+        "mean_R": 0.13455727095564865,
+        "mean_stop_pct": 0.03005923941696558,
+        "mean_cost_R": 0.04254958757681707,
+        "realized_max_drawdown": -0.06938924401911972
+      }
+    },
+    "extend_8h": {
+      "first": {
+        "trades": 79,
+        "net_pnl": 80.53737282151322,
+        "return_pct": 0.08053737282151321,
+        "profit_factor": 1.3584860537268015,
+        "win_rate": 0.5316455696202531,
+        "mean_R": 0.1019460415462193,
+        "mean_stop_pct": 0.02914457377157451,
+        "mean_cost_R": 0.04219466097679007,
+        "realized_max_drawdown": -0.04230249125249841
+      },
+      "second": {
+        "trades": 55,
+        "net_pnl": 80.63716692885254,
+        "return_pct": 0.08063716692885253,
+        "profit_factor": 1.3939014896280115,
+        "win_rate": 0.4727272727272727,
+        "mean_R": 0.1466130307797319,
+        "mean_stop_pct": 0.029547948469618248,
+        "mean_cost_R": 0.043010707973227924,
+        "realized_max_drawdown": -0.09876592542260776
+      }
+    }
+  },
+  "limitations": [
+    "Exploratory retrospective study; this same period was already inspected, so halves are not clean OOS.",
+    "Original current eligible universe has survivorship/selection lookahead risk. Frozen simplified confirmation policy, not full production strategy.",
+    "Stop path uses 15m OHLC; intrabar stop exits timestamped at bar end. No floating drawdown, funding or liquidation simulation.",
+    "Data retrieved again; each old entry/exit/PnL/MFE/MAE summary must reproduce, but full historical input hashes are unavailable for these shorter windows.",
+    "All discretionary and timed exits execute next open; the old 4h-close baseline is audited separately.",
+    "Bootstrap clusters by entry UTC day, does not remove all cross-day dependence; intervals are exploratory.",
+    "Independent portfolio replay and fixed original-admitted cohort answer different questions; candidate PnL is not an account return."
+  ],
+  "source_sha256": "9098aa0fc26e3820a15da9f5a08d04cfce9dca591463bc7e40ae862907601dd6",
+  "provenance": {
+    "source_commit": "3d3efbd281ef021211fb87e450fc4e5dda8c8a15",
+    "deployment": "8b438f73-1944-4f20-9233-6f1f4d70a0b0",
+    "archive_sha256": "79ca4ad0b22b032b8817b1fbdf09dd5624e1c41dabdf60ea4dcbf3750032f36c",
+    "validated_windows": 191,
+    "offline_reproduction": "All portfolio, paired and half results exactly reproduced; 8 execution tests passed."
+  }
+}
